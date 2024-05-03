@@ -7,6 +7,7 @@
         <style>
             h1{
                 text-align: center;
+        
             }
             .container {
                 overflow: hidden;
@@ -24,7 +25,16 @@
             body {
                 margin: 0;
                 padding: 0;
-                font-family: Arial, sans-serif;
+                font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+            }
+            .mySlide {
+                display: none;
+            }
+            img {
+                vertical-align: middle;
+            }
+            .slideshow-container{
+                max-width: 100%;
             }
             .dropdown-child{
             
@@ -32,108 +42,166 @@
                 text-decoration: none;
                 display: block
             }
-        </style>
-        
+            * {
+                box-sizing: border-box;
+            }
+            .slideshow-container {
+                max-width: 100%;
+                position: relative;
+                margin: auto;
+                height: 600; 
+              }
+              
+              .mySlide {
+                display: none;
+                height: 450px;
+              }
+              
+              img {
+                vertical-align: auto;
+                width: 100%; 
+                height: 100%; /
+                
+              }
+        </style>    
     </head>
     <body>
-        <h1>Pagina Inicial</h1>
-        <p>Aqui você encontra tudo sobre a nba</p>
-        <hr>
+        <div class="slideshow-container">
+            <div class="mySlide">
+                <img src="https://cdn.nba.com/teams/legacy/www.nba.com/pistons/sites/pistons/files/gettyimages-1236194001.jpg" alt="Imagem 1">
+            </div>
+            <div class="mySlide">
+                <img src="https://cdn.nba.com/teams/uploads/sites/1610612765/2023/11/20231114_vsATL_ajc74.jpg?imwidth=1000&imheight=667" alt="Imagem 2">
+            </div>
+            <div class="mySlide">
+                <img src="https://cdn.nba.com/teams/uploads/sites/1610612747/2024/04/james-drive-den-240429-1000x1000-GettyImages-2150273457.jpg?imwidth=1500&imheight=1000" alt="Imagem 3">
+            </div>
+            <div class="mySlide">
+                <img src="https://images.ctfassets.net/a4rx79jcl3n1/36lH23YxES86fLUxIXR5Ol/30abf036477444d913748856a708b25f/feat_image__top_moments_20240429.png" alt="Imagem 4">
+            </div>
+            <div class="mySlide">
+                <img src="https://images.ctfassets.net/a4rx79jcl3n1/6kOVktFx0UhvJRQoskVA86/7a67e28a87ef778bcb74cd5d60ba9d15/feat_image__exit_interview_2.0_20240418.png" alt="Imagem 5">
+            </div>
+            <div class="mySlide">
+                <img src="https://cdn.nba.com/teams/legacy/www.nba.com/pistons/sites/pistons/files/gettyimages-1236194188.jpg" alt="Imagem 6">
+            </div>
+            <div class="mySlide">
+                <img src="https://cdn.nba.com/teams/uploads/sites/1610612740/2024/04/Gallery-Playoffs-Game-4-Pelicans-Thunder-v2-042924-02.jpg?imwidth=1920&imheight=1280" alt="Imagem 7">
+            </div>
+            <div class="mySlide">
+                <img src="https://cdn.nba.com/teams/uploads/sites/1610612743/2024/04/GettyImages-2150273220.jpg?imwidth=1024&imheight=683" alt="Imagem 8">
+            </div>
+            <div class="mySlide">
+                <img src="https://cdn.nba.com/teams/uploads/sites/1610612750/2024/04/GettyImages-2147042099.jpg?imwidth=5616&imheight=3744" alt="Imagem 9">
+            </div>
+            <div class="mySlide">
+                <img src="https://cdn.nba.com/teams/uploads/sites/1610612756/2024/04/GamePRebiew_0428.png" alt="Imagem 10">
+            </div>
+            <div class="mySlide">
+                <img src="https://cdn.nba.com/teams/uploads/sites/1610612747/2024/04/davis-layup-mem-240412-1500x1000-GettyImages-2147756322.jpg?imwidth=1500&imheight=1000" alt="Imagem 11">
+            </div>
+
+        </div>
+
+        <h1>Página Inicial</h1>
+            <p style="text-align: center">Aqui você encontra tudo sobre a NBA</p>
+            <hr>
+           
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            function showSlides() {
+                let i;
+                const slides = document.querySelectorAll('.mySlide');
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 2500); 
+            }
+        </script>
         <div class="dropdown">
-            <!-- <button class=",mainmenubtn">Main Menu</button> -->
+            <nav>
             <div class ="dropdown-child">
                 <a href="file:///C:/Users/Bianca/pasta_teste/paginainicial.html">Pagina Inicial</a>
                 <a href="file:///C:/Users/Bianca/pasta_teste/players.html">Jogadores</a>
                 <a href="file:///C:/Users/Bianca/pasta_teste/arenas.html">Arenas</a>
-        
+            </nav>
             </div>
-
-        <h3>Destaques da historia da NBA</h3>
-        <div class="container">
-        <ul>
-            <li>
-                <h4>Michael Jordan</h4>
+       <header> <h3>Destaques da historia da NBA</h3></header>
+        <section class="container">
+            <div>
+                <article>
+                <h4>Michael Jordan</h4></article>
                 <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/893.png" class="player-img" alt="Michael Jordan">
                 <section><p> Michael Jordan é considerado um dos maiores jogadores de basquete de todos os tempos, atuando como meio armador ao longo da carreira. Seu trabalho mais reconhecido foi no time Chicago Bulls, onde ele quebrou diversos recordes. Ele também recebeu diversos prêmios e se tornou um rosto bastante popular em propagandas</p> </section>
-            </li>
-            <li>
-                <h4>LeBron James</h4>
+            </div>
+            <div>
+                <article>
+                <h4>LeBron James</h4></article>
                 <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png" class="player-img" alt="LeBron James">
                 <section><p>LeBron é o único atleta com sete prêmios de Melhor Jogador da NBA pela ESPY, o Oscar do Esporte Americano. Em 2019, ele foi nomeado o Atleta da Década de 2010 pela Associated Press. Em 2021, ele foi homenageado como um dos 75 maiores jogadores da história da NBA.</p></section>
-            </li>
-            <li>
-                <h4>Kareem Abdul-Jabbar</h4>
+            </div>
+            <div>
+                <article>
+                <h4>Kareem Abdul-Jabbar</h4></article>
                 <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/76003.png" class="player-img" alt="Kareem Abdul-Jabbar">
                 <section><p>Abdul-Jabbar é o segundo maior cestinha da história da NBA, com 38.387 pontos. Ele manteve por quase 39 anos o recorde, que foi quebrado em fevereiro por Lebron James. Nos últimos anos, Kareem enfrentou problemas graves de saúde, como o câncer de próstata que revelou em 2020.</p></section>
-            </li>
-            <li>
-                <h4>Magic Johnson</h4>
+            </div>
+            <div>
+                <article>
+                <h4>Magic Johnson</h4></article>
                 <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/77142.png" class="player-img" alt="Magic Johnson">
                 <section><p> É um empresário e comentarista esportivo norte-americano. É mais conhecido pela sua carreira como basquetebolista na National Basketball Association (NBA), na qual foi armador e, posteriormente, presidente de operações desportivas do Los Angeles Lakers.</p></section>
-            </li>
-            <li>
-                <h4>Larry Bird</h4>
+            </div>
+            <div>
+                <article>
+                <h4>Larry Bird</h4></article>
                 <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1449.png" class="player-img" alt="Larry Bird">
                 <section><P>Ele é a única pessoa na história da NBA a receber os prêmios de Calouro do Ano, MVP, MVP das Finais, MVP do Jogo das Estrelas, Técnico do Ano e Executivo do Ano. Em 1996, foi escolhido um dos 50 maiores jogadores da história da NBA e, em 2021, foi escolhido um dos 75 maiores jogadores da história da NBA.</P></section>
-            </li>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <li>
-                <h4>Wilt Chamberlain</h4>
+            </div>
+
+            <div>
+                <article>
+                <h4>Wilt Chamberlain</h4></article>
                 <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/76375.png" class="player-img" alt="Wilt Chamberlain">
                 <section><P>Wilt Chamberlain foi um jogador à frente de seu tempo no basquete. O pivô de 2,16m - que começou a carreira como membro do Harlem Globetrotters - atuou na NBA de 1959 a 1973, ganhou dois títulos (um pelo Philadelphia 76ers e outro com o Los Angeles Lakers) e fez com que o esporte mudasse de patamar.</P></section>
-            </li>
-            <li>
-                <h4>Bill Russell</h4>
+            </div>
+            <div>
+                <article>
+                <h4>Bill Russell</h4></article>
                 <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/78049.png" class="player-img" alt="Bill Russell">
                 <section><p>William Felton "Bill" Russell (West Monroe, 12 de fevereiro de 1934 – Mercer Island, 31 de julho de 2022) foi um jogador e treinador profissional de basquete norte-americano, que atuou como pivô no Boston Celtics, usando a camisa Lendária de número 6.</p>></section>
-            </li>
+            </div>
  
-            <li>
-                <h4>Shaquille O'Neal</h4>
+            <div>
+                <article>
+                <h4>Shaquille O'Neal</h4></article>
                 <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/406.png" class="player-img" alt="Shaquille O'Neal">
                 <p>Foi duas vezes o cestinha da temporada, escolhido 15 vezes para o Jogo das Estrelas e 14 vezes para o Melhor Time da NBA. Em 1996, apenas seu quarto ano na liga, foi escolhido um dos 50 maiores jogadores da história da NBA e, em 2021, foi escolhido um dos 75 maiores jogadores da história da NBA.</p>
-            </li>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <li>
-                <h4>Tim Duncan</h4>
+            </div>
+        
+            <div>
+                <article>
+                <h4>Tim Duncan</h4></article>
                 <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1495.png" class="player-img" alt="Tim Duncan">
                 <p>Duncan é considerado o maior ala-pivô da história da NBA. Ele ganhou cinco vezes o título da NBA, duas vezes o prêmio de MVP, três vezes o prêmio de MVP das Finais, uma vez o prêmio de MVP do Jogo das Estrelas e uma medalha de bronze olímpica com a Seleção Americana de Basquete.</p>
-            </li>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <li>
-                <h4>Kobe Bryant</h4>
+            </div>
+
+            <div>
+                <article><
+                <h4>Kobe Bryant</h4></article>
                 <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/977.png" class="player-img" alt="Kobe Bryant">
                 <p>Kobe Bean Bryant atuou como jogador do Los Angeles Lakers durante 20 anos, até sua aposentadoria, em 2016. Acumulou diversos títulos, tanto coletivos como individuais. Além disso, foi vencedor de um Oscar de melhor curta metragem, com “Dear Basketball”.</p>
                 <p>Vítima de um acidente de helicóptero na Califórnia, o jogador faleceu em janeiro de 2020, deixando um grande legado para o basquete e sua marca na história do esporte. Nascido em 23 de agosto de 1978, na cidade da Filadélfia, Kobe Bean Bryant demonstrou desde cedo a paixão pelo esporte que moldaria sua vida</p>
-            </li>
-        </ul>
+            </section>
     </div>
+    <footer>
+        contato contato
+    </footer>
     </body>
 </html>
