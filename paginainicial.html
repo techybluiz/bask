@@ -1,206 +1,158 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Pagina Inicial - NBA </title>
-        <style>
-            h1{
-                text-align: center;
-                color: azure;
-            }
-            .container {
-                overflow: hidden;
-                display: inline-block;
-              }
-            .player-img  {
-                float: left;
-                width: 350px;
-                margin-right: 30px;
-            }
-            section {
-                display: inline-block; 
-                overflow: hidden;
-            }
-            body {
-                color: azure;
-                margin: 0;
-                padding: 0;
-                font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
-                background-color: rgb(253, 253, 255);
-            }
-            .mySlide {
-                display: none;
-            }
-            img {
-                vertical-align: middle;
-            }
-            .slideshow-container{
-                max-width: 100%;
-            }
-            .dropdown-child{
-            
-                padding: 20px;
-                text-decoration: none;
-                display: block
-            }
-            * {
-                box-sizing: border-box;
-            }
-            .slideshow-container {
-                max-width: 100%;
-                position: relative;
-                margin: auto;
-                height: 600; 
-              }
-              .mySlide {
-                display: none;
-                height: 390px;
-                width: 100%;
-              }
-              img {
-                vertical-align: auto;
-                width: 100%; 
-                height: 100%; 
-              }
-        </style>    
-    </head>
-    <body>
-        <div class="slideshow-container">
-            <div class="mySlide">
-                <img src="https://cdn.nba.com/teams/legacy/www.nba.com/pistons/sites/pistons/files/gettyimages-1236194001.jpg" alt="Imagem 1">
-            </div>
-            <div class="mySlide">
-                <img src="https://cdn.nba.com/teams/uploads/sites/1610612765/2023/11/20231114_vsATL_ajc74.jpg?imwidth=1000&imheight=667" alt="Imagem 2">
-            </div>
-            <div class="mySlide">
-                <img src="https://cdn.nba.com/teams/uploads/sites/1610612747/2024/04/james-drive-den-240429-1000x1000-GettyImages-2150273457.jpg?imwidth=1500&imheight=1000" alt="Imagem 3">
-            </div>
-            <div class="mySlide">
-                <img src="https://images.ctfassets.net/a4rx79jcl3n1/36lH23YxES86fLUxIXR5Ol/30abf036477444d913748856a708b25f/feat_image__top_moments_20240429.png" alt="Imagem 4">
-            </div>
-            <div class="mySlide">
-                <img src="https://images.ctfassets.net/a4rx79jcl3n1/6kOVktFx0UhvJRQoskVA86/7a67e28a87ef778bcb74cd5d60ba9d15/feat_image__exit_interview_2.0_20240418.png" alt="Imagem 5">
-            </div>
-            <div class="mySlide">
-                <img src="https://cdn.nba.com/teams/legacy/www.nba.com/pistons/sites/pistons/files/gettyimages-1236194188.jpg" alt="Imagem 6">
-            </div>
-            <div class="mySlide">
-                <img src="https://cdn.nba.com/teams/uploads/sites/1610612740/2024/04/Gallery-Playoffs-Game-4-Pelicans-Thunder-v2-042924-02.jpg?imwidth=1920&imheight=1280" alt="Imagem 7">
-            </div>
-            <div class="mySlide">
-                <img src="https://cdn.nba.com/teams/uploads/sites/1610612743/2024/04/GettyImages-2150273220.jpg?imwidth=1024&imheight=683" alt="Imagem 8">
-            </div>
-            <div class="mySlide">
-                <img src="https://cdn.nba.com/teams/uploads/sites/1610612750/2024/04/GettyImages-2147042099.jpg?imwidth=5616&imheight=3744" alt="Imagem 9">
-            </div>
-            <div class="mySlide">
-                <img src="https://cdn.nba.com/teams/uploads/sites/1610612756/2024/04/GamePRebiew_0428.png" alt="Imagem 10">
-            </div>
-            <div class="mySlide">
-                <img src="https://cdn.nba.com/teams/uploads/sites/1610612747/2024/04/davis-layup-mem-240412-1500x1000-GettyImages-2147756322.jpg?imwidth=1500&imheight=1000" alt="Imagem 11">
-            </div>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórum de Perguntas e Respostas</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos para o modal de login */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+}
 
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+header{
+    color: black;
+    padding: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img class="navbar-brand" src="data:image/png;base64,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"></a>
+            <h1>Página Inicial</h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">All Star Games</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Arenas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Times</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Jogadores</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contato</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <section>
+        <h1>Fórum de Perguntas e Respostas</h1>
+        <div id="user-info">
+            <span id="user-name">Olá, convidado</span>
+            <button id="login-button">Login</button>
         </div>
-        <div class="dropdown">
-            <nav>
-            <div class ="dropdown-child">
-                <a href="file:///C:/Users/Bianca/pasta_teste/paginainicial.html">Pagina Inicial</a>
-                <a href="file:///C:/Users/Bianca/pasta_teste/players.html">Jogadores</a>
-                <a href="file:///C:/Users/Bianca/pasta_teste/arenas.html">Arenas</a>
-            </nav>
-            </div>
-        <h1>Página Inicial</h1>
-            <b><p style="text-align: center"> <i>Aqui você encontra tudo sobre a NBA</i></p></b>
-            <hr>
-           
-        <script>
-            let slideIndex = 0;
-            showSlides();
-            function showSlides() {
-                let i;
-                const slides = document.querySelectorAll('.mySlide');
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                slideIndex++;
-                if (slideIndex > slides.length) {
-                    slideIndex = 1
-                }
-                slides[slideIndex - 1].style.display = "block";
-                setTimeout(showSlides, 2500); 
-            }
-        </script>
-       <b><header> <h3>Destaques da historia da <b>NBA</b></h3></header></b>
-        <section class="container">
-            <div>
-                <article>
-                <a href=" "> <h4>Michael Jordan</h4></article></a>
-                <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/893.png" class="player-img" alt="Michael Jordan">
-                <section><p> Michael Jordan é considerado um dos maiores jogadores de basquete de todos os tempos, atuando como meio armador ao longo da carreira. Seu trabalho mais reconhecido foi no time Chicago Bulls, onde ele quebrou diversos recordes. Ele também recebeu diversos prêmios e se tornou um rosto bastante popular em propagandas</p> </section>
-            </div>
-            <div>
-                <article>
-                <h4>LeBron James</h4></article>
-                <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png" class="player-img" alt="LeBron James">
-                <section><p>LeBron é o único atleta com sete prêmios de Melhor Jogador da NBA pela ESPY, o Oscar do Esporte Americano. Em 2019, ele foi nomeado o Atleta da Década de 2010 pela Associated Press. Em 2021, ele foi homenageado como um dos 75 maiores jogadores da história da NBA.</p></section>
-            </div>
-            <div>
-                <article>
-                <h4>Kareem Abdul-Jabbar</h4></article>
-                <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/76003.png" class="player-img" alt="Kareem Abdul-Jabbar">
-                <section><p>Abdul-Jabbar é o segundo maior cestinha da história da NBA, com 38.387 pontos. Ele manteve por quase 39 anos o recorde, que foi quebrado em fevereiro por Lebron James. Nos últimos anos, Kareem enfrentou problemas graves de saúde, como o câncer de próstata que revelou em 2020.</p></section>
-            </div>
-            <div>
-                <article>
-                <h4>Magic Johnson</h4></article>
-                <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/77142.png" class="player-img" alt="Magic Johnson">
-                <section><p> É um empresário e comentarista esportivo norte-americano. É mais conhecido pela sua carreira como basquetebolista na National Basketball Association (NBA), na qual foi armador e, posteriormente, presidente de operações desportivas do Los Angeles Lakers.</p></section>
-            </div>
-            <div>
-                <article>
-                <h4>Larry Bird</h4></article>
-                <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1449.png" class="player-img" alt="Larry Bird">
-                <section><P>Ele é a única pessoa na história da NBA a receber os prêmios de Calouro do Ano, MVP, MVP das Finais, MVP do Jogo das Estrelas, Técnico do Ano e Executivo do Ano. Em 1996, foi escolhido um dos 50 maiores jogadores da história da NBA e, em 2021, foi escolhido um dos 75 maiores jogadores da história da NBA.</P></section>
-            </div>
+    </section>
+    <main>
+        <!-- Aqui irão as perguntas e respostas -->
+        <section id="questions">
+            <h2>Perguntas</h2>
+            <!-- Perguntas e respostas serão adicionadas aqui via JavaScript -->
+        </section>
+        <section id="quizzes">
+            <h2>Quizzes</h2>
+            <!-- Quizzes serão adicionados aqui via JavaScript -->
+        </section>
+    </main>
+   <script>
+    // Exemplo de código JavaScript para adicionar interatividade, como abrir o modal de login ao clicar no botão "Login"
 
-            <div>
-                <article>
-                <h4>Wilt Chamberlain</h4></article>
-                <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/76375.png" class="player-img" alt="Wilt Chamberlain">
-                <section><P>Wilt Chamberlain foi um jogador à frente de seu tempo no basquete. O pivô de 2,16m - que começou a carreira como membro do Harlem Globetrotters - atuou na NBA de 1959 a 1973, ganhou dois títulos (um pelo Philadelphia 76ers e outro com o Los Angeles Lakers) e fez com que o esporte mudasse de patamar.</P></section>
-            </div>
-            <div>
-                <article>
-                <h4>Bill Russell</h4></article>
-                <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/78049.png" class="player-img" alt="Bill Russell">
-                <section><p>William Felton "Bill" Russell (West Monroe, 12 de fevereiro de 1934 – Mercer Island, 31 de julho de 2022) foi um jogador e treinador profissional de basquete norte-americano, que atuou como pivô no Boston Celtics, usando a camisa Lendária de número 6.</p>></section>
-            </div>
- 
-            <div>
-                <article>
-                <h4>Shaquille O'Neal</h4></article>
-                <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/406.png" class="player-img" alt="Shaquille O'Neal">
-                <p>Foi duas vezes o cestinha da temporada, escolhido 15 vezes para o Jogo das Estrelas e 14 vezes para o Melhor Time da NBA. Em 1996, apenas seu quarto ano na liga, foi escolhido um dos 50 maiores jogadores da história da NBA e, em 2021, foi escolhido um dos 75 maiores jogadores da história da NBA.</p>
-            </div>
-        
-            <div>
-                <article>
-                <h4>Tim Duncan</h4></article>
-                <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1495.png" class="player-img" alt="Tim Duncan">
-                <p>Duncan é considerado o maior ala-pivô da história da NBA. Ele ganhou cinco vezes o título da NBA, duas vezes o prêmio de MVP, três vezes o prêmio de MVP das Finais, uma vez o prêmio de MVP do Jogo das Estrelas e uma medalha de bronze olímpica com a Seleção Americana de Basquete.</p>
-            </div>
-
-            <div>
-                <article><
-                <h4>Kobe Bryant</h4></article>
-                <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/977.png" class="player-img" alt="Kobe Bryant">
-                <p>Kobe Bean Bryant atuou como jogador do Los Angeles Lakers durante 20 anos, até sua aposentadoria, em 2016. Acumulou diversos títulos, tanto coletivos como individuais. Além disso, foi vencedor de um Oscar de melhor curta metragem, com “Dear Basketball”.</p>
-                <p>Vítima de um acidente de helicóptero na Califórnia, o jogador faleceu em janeiro de 2020, deixando um grande legado para o basquete e sua marca na história do esporte. Nascido em 23 de agosto de 1978, na cidade da Filadélfia, Kobe Bean Bryant demonstrou desde cedo a paixão pelo esporte que moldaria sua vida</p>
-            </section>
+    // Obtém elementos do DOM
+    const loginButton = document.getElementById('login-button');
+    const loginModal = document.getElementById('login-modal');
+    const closeModal = document.getElementsByClassName('close')[0];
+    
+    // Adiciona evento de clique ao botão de login para abrir o modal
+    loginButton.addEventListener('click', () => {
+        loginModal.style.display = 'block';
+    });
+    
+    // Adiciona evento de clique ao botão de fechar o modal
+    closeModal.addEventListener('click', () => {
+        loginModal.style.display = 'none';
+    });
+    
+    // Fecha o modal quando o usuário clicar fora dele
+    window.addEventListener('click', (event) => {
+        if (event.target == loginModal) {
+            loginModal.style.display = 'none';
+        }
+    });
+    
+    // Exemplo de código JavaScript para lidar com a submissão do formulário de login
+    const loginForm = document.getElementById('login-form');
+    
+    loginForm.addEventListener('submit', (event) => {
+        event.preventDefault(); // Impede o envio padrão do formulário
+    
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+    
+        // Aqui você pode adicionar lógica para autenticar o usuário
+        // Por exemplo, enviando os dados para um servidor via AJAX
+    });
+   </script> 
+    
+    <!-- Formulário de Login (modal) -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password">
+                <input type="submit" value="Login">
+            </form>
+        </div>
     </div>
-    <footer>
-        contato contato
-    </footer>
-    </body>
+
+    <script src="script.js"></script>
+</body>
 </html>
