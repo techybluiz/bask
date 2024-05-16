@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br"></html>
+<html lang="pt-BR"></html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -59,8 +59,14 @@
             text-align: justify;
             padding: 20px;
         }
-        
+        li{
+            list-style: circle;
+        }
+        .list {
+            list-style: square;
+        }
     </style>
+    <script>alert('Site demonstrativo, apenas para estudos')</script>
 </head>
 <body>
     <header>
@@ -262,9 +268,27 @@
             </li>
     </ul>
     </section>
+<ul>
+    <li class="list"></li>
+    <li class="list"></li>
+    <li>Enable switching theme</li>
+</ul>
 
-    <section id="contato">
-        <h2>Contato</h2>
-        <p></p>
-    </section>
+    <section id="analises">
+        <h2>Análises e Opiniões</h2>
+        <section id="opinioes">
+            <h2>Deixe sua Opinião</h2>
+            <form action="enviar_opiniao.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="opiniao">Sua Opinião:</label><br>
+                <textarea id="opiniao" name="opiniao" rows="4" cols="50" required></textarea><br><br>
+                
+                <input type="submit" value="Enviar Opinião">
+            </form>
+        </section>
 </body>

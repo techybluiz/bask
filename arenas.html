@@ -1,45 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-</html>
-<head> 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>Arenas - NBA</title>
-    <style>
-        body{
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-        body{
-            background-color: rgb(24, 23, 23);
-            color: azure;
-        }
-        img {
-            float: left;
-            width: auto;
-            margin-right: auto; 
-        }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Arenas - NBA</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    header{
+        color: black;
+        padding: 5px;
+    }
+    .analise{
+        padding: 15px;
+    }
+    footer{
+        text-align: center;
+        width: 100%;
+    }
+    hr{
+        color: black;
+    }
+    h1{
+        text-align: center;
+        padding: 5px;
+    }
+    body{
+        padding: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    p {
+        padding: 5px;
+        font-size: medium;
+        font-family: Arial, Helvetica, sans-serif;
+    }
     .carousel-inner > .item > img,
     .carousel-inner > .item > a > img {
-    width: 100% ;
-    height: 427px;
-    margin: auto;
-  }
-    .logo {
-        display: flex; 
-        align-items: center;
-        width: 2em;
-        height: 2em;
-        margin-right:0.5em ;
-    }
-    h1 {
-        text-align: center;
-    }
-    </style>
+        width: 100% ;
+        height: 427px;
+        margin: auto;
+        padding-left: 5px;
+}
+  </style>
 </head>
 <body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img class="navbar-brand" src="data:image/png;base64,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"></a>
+        <h1>Arenas </h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">All Star Games</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Arenas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Times</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Jogadores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+</header>
+<hr>
+<section>
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -55,24 +98,28 @@
               <h3>Paycom Center in Oklahoma City, Oklahoma.</h3>
             </div>
           </div>
+
           <div class="item">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/TargetCenter.jpg/1280px-TargetCenter.jpg" alt="Target Center">
             <div class="carousel-caption">
               <h3>Target Center</h3>
             </div>
           </div>
+
           <div class="item">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Bankers_Life_Fieldhouse%2C_Indian%C3%A1polis%2C_Estados_Unidos%2C_2012-10-22%2C_DD_02.jpg/1024px-Bankers_Life_Fieldhouse%2C_Indian%C3%A1polis%2C_Estados_Unidos%2C_2012-10-22%2C_DD_02.jpg" alt="Bankers Life FieldHouse">
             <div class="carousel-caption">
               <h3>Bankers Life FieldHouse</h3>
             </div>
           </div>
+
           <div class="item">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Modacenter2019.jpg/960px-Modacenter2019.jpg" alt="Flower">
+            <img src="https://www.ballarena.com/media/1zpparjw/ball-arena.jpg" alt="Ball Arena">
             <div class="carousel-caption">
-              <h3>Flowers</h3>
+              <h3>Ball Arena</h3>
             </div>
           </div>
+          
           <div class="item">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Little_Caesars_Arena_panorama.jpg/1280px-Little_Caesars_Arena_panorama.jpg" alt="Little Caesars Arena">
             <div class="carousel-caption">
@@ -80,230 +127,16 @@
             </div>
           </div>
         </div>
-        
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
       </div>
-    </div>
-    <h1>Arenas - NBA </h1>
-    <br>
-    <section>
-        <div id="StateFarmArena">
-        <h3>Atlanta Hawks: <b>State Farm Arena</b></h3>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/State_Farm_%28Phillips%29_Arena%2C_Atlanta%2C_GA_%2846558861525%29.jpg/120px-State_Farm_%28Phillips%29_Arena%2C_Atlanta%2C_GA_%2846558861525%29.jpg">
-       <div> <p>A State Farm Arena é uma arena multiuso localizada em Atlanta, Geórgia, nos Estados Unidos. Inaugurada originalmente em 1999 como Philips Arena, foi renomeada para State Farm Arena em 2018, após um acordo de patrocínio com a empresa de seguros State Farm.<br>
-        A arena é lar do <a href="">Atlanta Hawks</a>, time de basquete da NBA, e também serve como palco para uma variedade de outros eventos esportivos, incluindo jogos de hóquei no gelo, lutas de boxe, eventos de luta livre profissional e muito mais. Além disso, a State Farm Arena é um local popular para shows e apresentações de grandes artistas, bem como para eventos corporativos e comunitários.<br>
-        Em 2018, a State Farm Arena passou por uma grande reforma e renovação, que incluiu a atualização de assentos, concessionárias, áreas de concourse e tecnologia de ponta para melhorar a experiência dos fãs. A arena também é conhecida por suas iniciativas de sustentabilidade, incluindo a instalação de painéis solares e a implementação de práticas ecológicas em suas operações.
-        </p>
-    </div>
-    </div>
 </section>
-<div id="TDGarden">
-    <h3>Boston Celtics: TD Garden</h3>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/TD_Garden_%28crop%29.JPG/120px-TD_Garden_%28crop%29.JPG" alt="TD Garden">
-    <p> </p>
-</div>
-<section>
-    <div id="TDGarden">
-        <h3>Brooklyn Nets: Barclays Center</h3>
-        <img src="" alt="">
-        <p> </p>
-    </div>
-</section>
-<section>
-    <div id="TDGarden">
-        <h3>Charlotte Hornets: Spectrum Center</h3>
-        <img src="" alt="">
-        <p> </p>
-    </div>
-</section>
-<section>
-    <div id="TDGarden">
-        <h3>Chicago Bulls: United Center</h3>
-        <img src="" alt="">
-        <p> </p>
-    </div>
-</section>
-<section>
-    <div id="TDGarden">
-        <h3>Cleveland Cavaliers: Rocket Mortgage FieldHouse</h3>
-        <img src="" alt="">
-        <p> </p>
-    </div>
-</section>
-<section>
-    <div id="TDGarden">
-        <h3>Dallas Mavericks: American Airlines Center</h3>
-        <img src="" alt="">
-        <p> </p>
-    </div>
-</section>
-<section>
-    <div id="TDGarden">
-        <h3>Denver Nuggets: Ball Arena (antiga Pepsi Center)</h3>
-        <img src="" alt="">
-        <p> </p>
-    </div>
-</section>
-<section>
-    <div id="TDGarden">
-        <h3>Detroit Pistons: Little Caesars Arena</h3>
-        <img src="" alt="">
-        <p> </p>
-    </div>
-</section>
-<section>
-    <div id="TDGarden">
-        <h3>Golden State Warriors: Chase Center</h3>
-        <img src="" alt="">
-        <p> </p>
-    </div>
-</section>
-<section>
-    <div id="TDGarden">
-        <h3>Houston Rockets: Toyota Center</h3>
-        <img src="" alt="">
-        <p> </p>
-    </div>
-</section>
-<section>
-    <div id="TDGarden">
-        <h3>Indiana Pacers: Bankers Life FieldHouse</h3>
-        <img src="" alt="">
-        <p> </p>
-    </div>
-</section>
-<section>
-    <div id="TDGarden">
-        <h3>Los Angeles Clippers: Crypto.com Arena</h3>
-        <img src="" alt="">
-        <p> </p>
-    </div>
-</section>
-<section>
-    <div id="TDGarden">
-        <h3>Los Angeles Lakers: Crypto.com Arena </h3>
-        <img src="" alt="">
-        <p> </p>
-    </div>
-</section>
-<section>
-    <div id="TDGarden">
-        <h3>Memphis Grizzlies: FedEx Forum</h3>
-        <img src="" alt="">
-        <p> </p>
-    </div>
-</section>
-<section>
-    <div id="TDGarden">
-        <h3>Miami Heat: Kaseya Center</h3>
-        <img src="" alt="">
-        <p> </p>
-    </div>
-</section>
-<section>
-    <div id="TDGarden">
-        <h3>Milwaukee Bucks: Fiserv Forum</h3>
-        <img src="" alt="">
-        <p> </p>
-    </div>
-</section>
-<section>
-    <div id="TDGarden">
-        <h3>Minnesota Timberwolves: Target Center</h3>
-        <img src="" alt="">
-        <p> </p>
-    </div>
-</section>
-<section>
-    <div id="TDGarden">
-        <h3>New Orleans Pelicans: Smoothie King Center</h3>
-        <img src="" alt="">
-        <p> </p>
-    </div>
-</section>
-<section>
-    <div id="TDGarden">
-        <h3>New York Knicks: Madison Square Garden</h3>
-        <img src="" alt="">
-        <p> </p>
-    </div>
-</section>
-<section>
-    <div id="TDGarden">
-        <h3>Oklahoma City Thunder: Chesapeake Energy Arena</h3>
-        <img src="" alt="">
-        <p> </p>
-    </div>
-</section>
-<section>
-    <div id="TDGarden">
-        <h3>Orlando Magic: Amway Center</h3>
-        <img src="" alt="">
-        <p> </p>
-    </div>
-</section>
-<section>
-    <div id="TDGarden">
-        <h3>Phoenix Suns: Footprint Center</h3>
-        <img src="" alt="">
-        <p> </p>
-    </div>
-</section><section>
-    <div id="WellsFargoCenter">
-        <h3>Philadelphia 76ers: Wells Fargo Center</h3>
-        <img src="" alt="">
-        <p> </p>
-    </div>
-</section>
-<section>
-    <div id="ModaCenter">
-        <h3>Boston Celtics: TD Garden</h3>
-        <img src="" alt="">
-        <p> </p>
-    </div>
-</section>
-<section>
-    <div id="Golden1Center">
-        <h3>Sacramento Kings: Golden 1 Center</h3>
-        <img src="" alt="">
-        <p> </p>
-    </div>
-</section>
-
-<section>
-    <div id="AT&TCenter">
-        <h3>San Antonio Spurs: AT&T Center</h3>
-        <img src="" alt="AT&T Center">
-        <p> </p>
-    </div>
-</section>
-<section>
-    <div id="ScotiabankArena">
-        <h3>Toronto Raptors: Scotiabank Arena</h3>
-        <img src="" alt="Scotiabank Arena">
-        <p> </p>
-    </div>
-</section>
-<section>
-    <div id="VivintSmartHomeArena">
-        <h3>Utah Jazz: Vivint Smart Home Arena</h3>
-        <img src="" alt="">
-        <p> </p>
-    </div>
-</section>
-<section>
-    <div id="CapitalOneArena">
-        <h3>Washington Wizards: Capital One Arena</h3>
-        <img src="" alt="Capital One Arena">
-        <p> </p>
-    </div>
-</section>
+<h1>Arenas</h1>
 </body>
-</html>
