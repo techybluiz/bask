@@ -6,92 +6,135 @@
     <title> Los Angeles Lakers </title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        img {
-            float: right;
-            width: 410px;
-            margin-right: 30px; 
+        header{
+            color: #e03a3e;
         }
-        
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #552583; 
-            color: #ffffff;
-        }       
-        
-        header {
-            background-color: #FDB927; 
-            color: #f3f3f3;
-            padding: 20px;
+        hr{
+            color: #e03a3e;
+        }
+        h1{
+            text-align: right;
             text-align: center;
+            padding: 5px;
+            color: #fd0000;
         }
-        
-        nav ul {
-            list-style-type: none;
-            padding: 0;
+        h2, h3{
+            color: #e03a3e;
+        }
+        b {
+            font-size: 1em;
+        }
+        .analise{
+            padding: 15px;
+        }
+        footer{
             text-align: center;
             width: 100%;
         }
-        
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
+        body{
+            
+            color: rgb(0, 0, 0);
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 15px;
+            
         }
-        
-        section {
-            padding: 20px;
-        }
-        
-        section h2 {
-            margin-top: 0;
-        }
-        
-        .player-img {
-            float: right;
-            width: 410px;
-            margin-right: 30px; 
-        }
-        
         p {
-            margin-left: 20px; 
-            margin-right: 30px; 
-            text-align: justify;
+            padding: 5px;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 15px;
+        }
+        section{
+            padding: 10px;
+        }
+        img{
+            width:340px;
+            float: right;
+            margin-right: 30px;
+            padding: 15px;
+        }
+        navbar-brand{
+            width: 150px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #e03a3e;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .logo{
+            width: 5em;
+            height: 5em;
+        }
+        .texto-lista{
+            padding: 15px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
             padding: 20px;
-        }
-        li{
-            list-style: circle;
-        }
-        .list {
-            list-style: square;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
     </style>
-    <script>alert('Site demonstrativo, apenas para estudos')</script>
 </head>
 <body>
     <header>
-        <h1>Los Angeles Lakers</h1>
-        <img src="https://cdn.nba.com/teams/uploads/sites/1610612747/2021/12/lakers_70x70.svg" alt="LA">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
+            <h1>Teams </h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">All Star Games</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Arenas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Times</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Jogadores</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contato</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#elenco">Elenco</a></li>
-            <li><a href="#história">História</a></li>
-            <li><a href="#contato">Contato</a></li>
-            </li>
-    </ul>
-    </nav>
-
+    <section>
+        <div>
+            <img src="https://cdn.nba.com/teams/uploads/sites/1610612747/2021/12/lakers_70x70.svg" alt="Los Angeles Lakers">
+            <br>
+            <h1><b>Los Angeles Lakers</b></h1>
+            <p>
     <section id="sobre">
         <h2>Sobre</h2>
         <p> <h3>A história dos Los Angeles Lakers é uma saga de sucesso e glória no mundo do basquete:</h3></p>
-            
-            <b>Origens em Minneapolis:</b> Fundados em 1947 como Minneapolis Lakers, a equipe conquistou cinco títulos da NBA durante sua estadia em Minneapolis, liderados por George Mi
-            <b>Mudança para Los Angeles:</b> Em 1960, os Lakers se mudaram para Los Angeles, abrindo uma nova era na costa oeste.
-            <b>Era de Jerry West e Elgin Baylor:</b> Nos anos 1960, apesar da presença de lendas como Jerry West e Elgin Baylor, os Lakers não conseguiram conquistar o título da NBA.
-            <b>Chegada de Wilt Chamberlain:</b> Em 1968, os Lakers adquiriram Wilt Chamberlain, levando ao título da NBA em 1972.
-            <b>Era Showtime:</b> Nos anos 1980, liderados por Magic Johnson e treinados por Pat Riley, os Lakers entraram na era "Showtime", conquistando cinco títulos da NBA durante a década.
+            Fundados em 1947 como Minneapolis Lakers, a equipe conquistou cinco títulos da NBA durante sua estadia em Minneapolis, liderados por George Mi
+            Em 1960, os Lakers se mudaram para Los Angeles, abrindo uma nova era na costa oeste.
+            Nos anos 1960, apesar da presença de lendas como Jerry West e Elgin Baylor, os Lakers não conseguiram conquistar o título da NBA.
+            Em 1968, os Lakers adquiriram Wilt Chamberlain, levando ao título da NBA em 1972.
+            Nos anos 1980, liderados por Magic Johnson e treinados por Pat Riley, os Lakers entraram na era "Showtime", conquistando cinco títulos da NBA durante a década.
             
             <b>Era Kobe e Shaq:</b> Nos anos 2000, Kobe Bryant e Shaquille O'Neal lideraram os Lakers para três títulos consecutivos da NBA em 2000, 2001 e 2002.
             
@@ -268,27 +311,43 @@
             </li>
     </ul>
     </section>
-<ul>
-    <li class="list"></li>
-    <li class="list"></li>
-    <li>Enable switching theme</li>
-</ul>
+    <div class="container">
+        <h1>Houston Rockets Core Players</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Number</th>
+                    <th>Height</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>James Harden</td>
+                    <td>Guard</td>
+                    <td>13</td>
+                    <td>6'5"</td>
+                </tr>
+                <tr>
+                    <td>John Wall</td>
+                    <td>Guard</td>
+                    <td>1</td>
+                    <td>6'4"</td>
+                </tr>
+                <tr>
+                    <td>Christian Wood</td>
+                    <td>Forward-Center</td>
+                    <td>35</td>
+                    <td>6'10"</td>
+                </tr>
+                <!-- Add more players as needed -->
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <p>&copy; 2024 NBA - Houston Rockets </p>
+      </footer>
 
-    <section id="analises">
-        <h2>Análises e Opiniões</h2>
-        <section id="opinioes">
-            <h2>Deixe sua Opinião</h2>
-            <form action="enviar_opiniao.php" method="post">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required><br><br>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
-                
-                <label for="opiniao">Sua Opinião:</label><br>
-                <textarea id="opiniao" name="opiniao" rows="4" cols="50" required></textarea><br><br>
-                
-                <input type="submit" value="Enviar Opinião">
-            </form>
-        </section>
+
 </body>

@@ -4,87 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Chicago Bulls </title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
-        img {
-            float: right;
-            width: 360px;
-            margin-right: 30px; 
+        header{
+            color: black;
+            padding: 5px;
         }
-        
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff; 
+        h1{
             color: #000000;
-        }       
-        
-        header {
-            background-color: #CE1141; 
-            color: #f3f3f3;
-            padding: 20px;
-            text-align: center;
         }
-        .list {
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-size: 20px;
+        h2{
+            color: #000000;
         }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
+        b {
+            font-size: 1em;
+        }
+        .analise{
+            padding: 15px;
+        }
+        footer{
             text-align: center;
             width: 100%;
         }
-        
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
+        hr{
+            color: black;
         }
-        
-        section {
-            padding: 20px;
+        h1{
+            text-align: right;
+            text-align: center;
+            padding: 5px;
         }
-        
-        section h2 {
-            margin-top: 0;
+        body{
+            padding: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            
         }
-        
-        .player-img {
-            float: right;
-            width: 410px;
-            margin-right: 30px; 
-        }
-        
         p {
-            margin-left: 20px; 
-            margin-right: 30px; 
-            text-align: justify;
-            padding: 20px;
+            padding: 5px;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        li{
-            list-style: circle;
+        img{
+            width:360px;
+            float: right;
+            margin-right: 30px;
         }
-        .list {
-            list-style: square;
+        navbar-brand{
+            width: 150px;
+        }
+        .logo{
+            width: 5em;
+            height: 4em;
+        }
+        .texto-lista{
+            padding: 15px;
         }
     </style>
-    <script>alert('Site demonstrativo, apenas para estudos')</script>
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
+            <h1>Teams</h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">All Star Games</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Arenas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Times</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Jogadores</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contato</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <hr>
     <header>
         <h1>Chicago Bulls</h1>
         <img src="https://cdn.nba.com/logos/nba/1610612741/global/D/logo.svg" alt="Chicago Bulls">
     </header>
-    <nav>
-        <ul>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#Fundação">História</a></li>
-            <li><a href="#elenco">Elenco</a></li>
-            <li><a href="#contato">Contato</a></li>
-            </li>
-    </ul>
-    </nav>
 
     <section id="sobre">
         <h2>Sobre</h2>
@@ -113,3 +130,7 @@
             <p>Embora não fosse um pontuador de elite, sua contribuição na defesa e na liderança ajudou a moldar a identidade dos Bulls nos primeiros anos da franquia.</p>
     </div>
 </section>
+<footer>
+    <p>&copy; 2024 NBA - Oklahoma City Thunder </p>
+  </footer>
+</body>
