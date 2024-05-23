@@ -39,7 +39,7 @@
             
             color: rgb(0, 0, 0);
             font-family: Arial, Helvetica, sans-serif;
-            padding: 15px;
+            
             
         }
         p {
@@ -55,6 +55,9 @@
             width:340px;
             float: right;
             margin-right: 30px;
+            padding: 15px;
+        }
+        div{
             padding: 15px;
         }
         navbar-brand{
@@ -91,13 +94,17 @@
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
+        .bg-light{
+            background: rgb(64,224,208);
+            background: linear-gradient(90deg, rgba(64,224,208,1) 0%, rgba(128,0,128,1) 100%);
+        }
     </style>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
            <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
-            <h1><b>Teams</b></h1> 
+            <h1><b>Teams</b></h1> <i class="fa-solid fa-mosquito"></i>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -125,14 +132,14 @@
             </div>
           </nav>
     </header>
-    <hr>
+
     <section>
         <div>
             <img src="https://cdn.nba.com/teams/uploads/sites/1610612766/2022/04/hornets_logo2.svg" alt="Charlotte Hornets">
             <br>
             <h1><b>Charlotte Hornets</b></h1>
             <p>
-                <h3>História e Fundação:</h3>
+                <h3><b>História e Fundação</b></h3>
                 A história e fundação dos Charlotte Hornets remontam ao início dos anos 1980, quando a NBA (National Basketball Association) decidiu expandir a liga. A cidade de Charlotte, na Carolina do Norte, foi selecionada como uma das cidades a receber uma franquia de expansão.
                 <br>
                 Os Charlotte Hornets foram oficialmente fundados em 1988, quando a NBA concedeu a cidade uma equipe de basquete profissional. O nome "Hornets" foi escolhido em homenagem à história da cidade, que remonta à Guerra Revolucionária Americana, quando o general britânico Cornwallis se referiu a Charlotte como "um ninho de vespas" devido à resiliência e resistência dos residentes locais.
@@ -141,11 +148,12 @@
                 <br>
                 Ao longo dos anos, os Hornets tiveram altos e baixos, incluindo mudanças de propriedade e dificuldades competitivas. Em 2002, a equipe mudou-se temporariamente para New Orleans devido a questões de propriedade, tornando-se os New Orleans Hornets. Enquanto isso, Charlotte foi sem uma equipe por um período.
                 <br>
-                Em 2004, a NBA concedeu a Charlotte uma nova franquia de expansão, e a equipe retornou como os Charlotte Bobcats. Em 2014, os Bobcats optaram por reassumir o nome "Hornets", refletindo o desejo de muitos fãs de trazer de volta a identidade original da equipe. Desde então, os Hornets têm continuado a competir na NBA, procurando construir uma equipe competitiva e solidificar seu lugar na liga.
-                <h3>Arena:</h3>A arena principal dos Charlotte Hornets é o Spectrum Center, localizado no centro de Charlotte, Carolina do Norte, nos Estados Unidos. o Spectrum Center pode acomodar até aproximadamente 19.077 espectadores para eventos de basquete da NBA. 
+                Em 2004, a NBA concedeu a Charlotte uma nova franquia de expansão, e a equipe retornou como os Charlotte Bobcats. Em 2014, os Bobcats optaram por reassumir o nome "Hornets", refletindo o desejo de muitos fãs de trazer de volta a identidade original da equipe. Desde então, os Hornets têm continuado a competir na NBA, procurando construir uma equipe competitiva e solidificar seu lugar na liga.<br>
+                <br>
+                <h3><b>Arena</b></h3>A arena principal dos Charlotte Hornets é o <a href="#">Spectrum Center</a>, localizado no centro de Charlotte, Carolina do Norte, nos Estados Unidos. o Spectrum Center pode acomodar até aproximadamente 19.077 espectadores para eventos de basquete da NBA. 
                 <hr>
                 <img src="https://mascothalloffame.com/wp-content/uploads/bb-plugin/cache/hornets-e1679257371638-circle.jpg" alt="Macoste">
-                <h3>Cores e Mascote:</h3>
+                <h3><b>Cores e Mascote</b></h3>
                 As cores principais dos Charlotte Hornets são roxo, turquesa e branco.
                 <br>
                 O mascote dos Charlotte Hornets, conhecido como<b> Hugo the Hornet</b> ,desempenha um papel importante na história e na cultura da equipe. Hugo foi introduzido quando os Hornets começaram a jogar na NBA em 1988 e rapidamente se tornou uma figura querida pelos fãs.
@@ -158,11 +166,9 @@
             </p>
         </div>
     </section>
-
-
-
+    <hr>
     <div>
-        <h3>Momentos Notáveis:</h3>
+        <h3><b>Momentos Notáveis</b></h3>
         <p>
             <li><b>Inauguração da equipe (1988):</b> O nascimento dos Charlotte Hornets em 1988 marcou um momento histórico para a cidade e para a NBA, trazendo basquete profissional para a região e estabelecendo uma base de fãs dedicada desde o início.</li>
             <li><b>Primeira temporada (1988-1989):</b> A temporada inaugural dos Hornets viu a equipe começar a escrever sua história na NBA, com jogadores como Rex Chapman, Dell Curry e Muggsy Bogues, ajudando a estabelecer a identidade da equipe.</li>
@@ -174,7 +180,7 @@
         </p>
     </div>
     <div>
-        <h3>Rivalidades:</h3>
+        <h3><b>Rivalidades</b></h3>
         <p>
             <li><a href="#">Atlanta Hawks:</a> Como ambas as equipes estão localizadas na região sudeste dos Estados Unidos, os jogos entre os Hornets e os Hawks frequentemente geram rivalidade regional. Embora talvez não seja uma rivalidade tão intensa quanto outras, os confrontos entre essas equipes podem ser competitivos devido à proximidade geográfica.</li>
             <br>
@@ -187,36 +193,135 @@
     <div class="container">
         <h1>Charlotte Hornets Core Players</h1>
         <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Position</th>
-                    <th>Number</th>
-                    <th>Height</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>James Harden</td>
-                    <td>Guard</td>
-                    <td>13</td>
-                    <td>6'5"</td>
-                </tr>
-                <tr>
-                    <td>John Wall</td>
-                    <td>Guard</td>
-                    <td>1</td>
-                    <td>6'4"</td>
-                </tr>
-                <tr>
-                    <td>Christian Wood</td>
-                    <td>Forward-Center</td>
-                    <td>35</td>
-                    <td>6'10"</td>
-                </tr>
-            </tbody>
-        </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Posição</th>
+                        <th>Número</th>
+                        <th>Altura</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Amari Bailey</td>
+                        <td>Armador</td>
+                        <td>10</td>
+                        <td>1,91 m</td>
+                    </tr>
+                    <tr>
+                        <td>LaMelo Ball</td>
+                        <td>Armador</td>
+                        <td>1</td>
+                        <td>2,01 m</td>
+                    </tr>
+                    <tr>
+                        <td>Davis Bertans</td>
+                        <td>Ala</td>
+                        <td>9</td>
+                        <td>2,08 m</td>
+                    </tr>
+                    <tr>
+                        <td>Leaky Black</td>
+                        <td>Armador</td>
+                        <td>12</td>
+                        <td>1,98 m</td>
+                    </tr>
+                    <tr>
+                        <td>Marques Bolden</td>
+                        <td>Pivô</td>
+                        <td>12</td>
+                        <td>2,08 m</td>
+                    </tr>
+                    <tr>
+                        <td>Miles Bridges</td>
+                        <td>Ala</td>
+                        <td>0</td>
+                        <td>2,01 m</td>
+                    </tr>
+                    <tr>
+                        <td>Seth Curry</td>
+                        <td>Ala-armador</td>
+                        <td>30</td>
+                        <td>1,85 m</td>
+                    </tr>
+                    <tr>
+                        <td>Tre Mann</td>
+                        <td>Armador</td>
+                        <td>23</td>
+                        <td>1,91 m</td>
+                    </tr>
+                    <tr>
+                        <td>Cody Martin</td>
+                        <td>Ala</td>
+                        <td>11</td>
+                        <td>1,98 m</td>
+                    </tr>
+                    <tr>
+                        <td>Bryce McGowens</td>
+                        <td>Ala</td>
+                        <td>7</td>
+                        <td>1,98 m</td>
+                    </tr>
+                    <tr>
+                        <td>Vasilije Micic</td>
+                        <td>Armador</td>
+                        <td>22</td>
+                        <td>1,91 m</td>
+                    </tr>
+                    <tr>
+                        <td>Brandon Miller</td>
+                        <td>Armador</td>
+                        <td>24</td>
+                        <td>2,01 m</td>
+                    </tr>
+                    <tr>
+                        <td>Aleksej Pokusevski</td>
+                        <td>Armador</td>
+                        <td>17</td>
+                        <td>2,13 m</td>
+                    </tr>
+                    <tr>
+                        <td>Nick Richards</td>
+                        <td>Pivô</td>
+                        <td>4</td>
+                        <td>2,13 m</td>
+                    </tr>
+                    <tr>
+                        <td>Nick Smith Jr.</td>
+                        <td>Armador</td>
+                        <td>8</td>
+                        <td>1,88 m</td>
+                    </tr>
+                    <tr>
+                        <td>JT Thor</td>
+                        <td>Armador</td>
+                        <td>21</td>
+                        <td>2,06 m</td>
+                    </tr>
+                    <tr>
+                        <td>Grant Williams</td>
+                        <td>Ala-pivô</td>
+                        <td>2</td>
+                        <td>1,98 m</td>
+                    </tr>
+                    <tr>
+                        <td>Mark Williams</td>
+                        <td></td>
+                        <td>5</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
     </div>
+    <div style="position: relative; width: 100%; height: 0; padding-top: 50.0000%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGGDtEOCuc&#x2F;f8cJjWxqyUjsKAdnu2D_cA&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGGDtEOCuc&#x2F;f8cJjWxqyUjsKAdnu2D_cA&#x2F;view?utm_content=DAGGDtEOCuc&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a>
     <footer>
         <p>&copy; 2024 NBA - Charlotte Hornets </p>
       </footer>
