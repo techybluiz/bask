@@ -3,153 +3,359 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Denver Nuggets </title>
-    <link rel="stylesheet" href="styles.css">
+    <title> Denver Nuggets</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
-        img {
-            float: right;
-            width: 360px;
-            margin-right: 30px; 
+        header{
+            color: black;
+            padding: 5px;
         }
-        
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff; 
-            color: #000000;
-        }       
-        
-        header {
-            background-color: #0E2240; 
-            color: #f3f3f3;
-            padding: 20px;
-            text-align: center;
+        h1{
+            color: #FFB20F;
         }
-        
-        nav ul {
-            list-style-type: none;
-            padding: 0;
+        h2{
+            color: #00285E;
+        }
+        b {
+            font-size: 1em;
+        }
+        .analise{
+            padding: 15px;
+        }
+        footer{
             text-align: center;
             width: 100%;
         }
-        
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
+        hr{
+            color: black;
         }
-        
-        section {
-            padding: 20px;
+        h1{
+            text-align: right;
+            text-align: center;
+            padding: 5px;
         }
-        
-        section h2 {
-            margin-top: 0;
+        body{
+            padding: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fff9f9;
+            
         }
-        
-        .player-img {
-            float: right;
-            width: 410px;
-            margin-right: 30px; 
-        }
-        
         p {
-            margin-left: 20px; 
-            margin-right: 30px; 
-            text-align: justify;
+            padding: 5px;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        img{
+            width:360px;
+            float: right;
+            margin-right: 30px;
+        }
+        navbar-brand{
+            width: 150px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #FFB20F;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #25436b;
+        }
+        .logo{
+            width: 5em;
+            height: 4em;
+        }
+        .texto-lista{
+            padding: 15px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
             padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-        li{
-            list-style: circle;
-        }
-        .list {
-            list-style: square;
-        }
-        h3 {
-            color: #FEC524;
-        }
-        h2 {
-            color: #FEC524;
-        }
+
     </style>
 </head>
 <body>
     <header>
-        <h1>Denver Nuggets</h1>
-        <img src="https://cdn.nba.com/teams/uploads/sites/1610612743/2021/11/dnuggets-primary-web.svg" alt="Denver Nuggets">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
+            <h1><b>Teams</b></h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">All Star Games</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Arenas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Times</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Jogadores</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contato</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#elenco">Elenco</a></li>
-            <li><a href="#história">História</a></li>
-            <li><a href="#contato">Contato</a></li>
-            </li>
-    </ul>
-    </nav>
+    <hr>
+    <section>
+        <div>
+            <img src="https://cdn.nba.com/teams/uploads/sites/1610612743/2021/11/dnuggets-primary-web.svg">
+            <br>
+            <h1><b>Denver Nuggets</b></h1>
+            <br>
+            <p>
+                <h2><b>História:</b></h2>
+                O Denver Nuggets foi fundado em 1967 como membro da American Basketball Association (ABA), uma liga concorrente da NBA na época.<br>
+                Com a fusão da ABA com a NBA em 1976, os Denver Nuggets se tornaram uma franquia da NBA. A transição para a NBA trouxe desafios iniciais, mas os Nuggets começaram a construir uma nova identidade na liga.
+                Durante os anos 1980, a equipe teve alguns momentos de destaque, mas também enfrentou dificuldades em competir consistentemente em um nível alto.
+                Nos anos seguintes, os Nuggets passaram por altos e baixos, com períodos de sucesso intercalados com temporadas de reconstrução.
+                Uma das eras mais notáveis veio no início dos anos 2000, quando a equipe foi liderada por estrelas como Carmelo Anthony, Allen Iverson e Marcus Camby.
+                Sob a orientação do técnico George Karl, os Nuggets alcançaram sucessos nos playoffs durante esse período.
+                <br>
+                <b>Arena:</b> A arena atual dos Denver Nuggets é a <a href="#s"> Ball Arena </a> ,Anteriormente conhecida como Pepsi Center, a arena foi renomeada como Ball Arena em 2020, após um acordo de patrocínio com a Ball Corporation.<br>
+                A Ball Arena tem uma capacidade variável dependendo do evento. Para jogos de basquete da NBA, a capacidade é de aproximadamente 19.520  <br>
+                <hr>
+                <img src="https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_1600,h_1600,q_95/v1664718506/bejulxnymdzearilx2kg.jpg" alt="Mascote">
+                <h2><b>Cores e Mascote:</b></h2>
+                <p>As cores principais do Denver Nuggets são azul marinho, ouro e branco. <br>
+                  O mascote do Denver Nuggets é o <b>"Rocky the Mountain Lion"</b> um leão da montanha antropomórfico que representa a equipe desde os anos 1990.<br>
+                  Rocky the Mountain Lion foi introduzido como mascote oficial dos Denver Nuggets durante a temporada de 1990-1991 da NBA.
+                  A criação do mascote foi uma iniciativa para aumentar o envolvimento dos fãs e adicionar um elemento de entretenimento às partidas em casa da equipe.
+                  Ao longo dos anos, Rocky passou por algumas atualizações em seu design e trajes, mas sua personalidade e papel como mascote da equipe permaneceram consistentes.
+                </p>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <div>
+            <h2><b>Momentos Notáveis:</b></h2>
+            <p>
+            <li><b>1976 Fusão com a NBA: </b>Os Denver Nuggets foram uma das equipes da ABA a se juntarem à NBA após a fusão entre as duas ligas em 1976. Isso marcou o início da jornada da equipe na NBA.</li>
+            <li><b>1984-1985 A Era Alex English:</b>Durante essa temporada, Alex English liderou a liga em pontos por jogo e ajudou os Nuggets a alcançarem 52 vitórias, o que foi um recorde da equipe na época. Ele se tornou o primeiro jogador dos Nuggets a vencer o prêmio de MVP do All-Star Game da NBA.</li>
+            <li><b>1994 Chegada de Dikembe Mutombo:</b> Dikembe Mutombo foi selecionado pelo Denver Nuggets como a quarta escolha geral no Draft da NBA de 1991. Sua chegada marcou o início de uma era de sucesso defensivo para a equipe. Ele se tornou um dos melhores bloqueadores da história da NBA e foi uma peça fundamental na defesa dos Nuggets.</li>
+            <li><b>2008-2009 Temporada de 2008-2009: </b> Sob o comando do treinador George Karl, os Nuggets tiveram uma temporada memorável em 2008-2009. Eles terminaram com um recorde de 54-28 e alcançaram as finais da Conferência Oeste, onde foram derrotados pelo Los Angeles Lakers.</li>
+            <li><b>2013 57 pontos de Carmelo Anthony:</b> Em 2013, Carmelo Anthony, ex-jogador dos Nuggets, voltou a Denver como membro do New York Knicks e marcou 57 pontos contra sua antiga equipe. Foi a maior pontuação de sua carreira na época.<li>
+            <li><b>2020 Viagem às Finais da Conferência Oeste:</b> Na bolha da NBA em Orlando, durante a temporada 2019-2020, os Nuggets surpreenderam muitos ao chegar às finais da Conferência Oeste. Eles venceram duas séries de playoffs consecutivas após estarem em desvantagem de 3-1, mostrando resiliência e habilidade.</li>
+        </div>
+        <div>
+          <br>
+            <h2><b>Rivalidades:</b></h2>
+            <p>
+               <a href="#">Utah Jazz:</a> A rivalidade entre Denver Nuggets e Utah Jazz é alimentada pela proximidade geográfica entre as duas equipes e pelos confrontos frequentes na Divisão Noroeste. Jogos entre essas equipes muitas vezes são intensos e competitivos. <br>
+               <a href="#">Portland Trail Blazers:</a> Outra rivalidade da Divisão Noroeste, os jogos entre Denver Nuggets e Portland Trail Blazers são frequentemente emocionantes. As equipes têm competido por posições nos playoffs e os confrontos diretos são sempre aguardados pelos fãs.<br>
+               <a href="#">Los Angeles Lakers: </a> Embora a rivalidade com os Lakers possa não ser tão proeminente quanto outras, os confrontos entre Denver Nuggets e Los Angeles Lakers têm sua importância, especialmente considerando a história e o status dos Lakers como uma das franquias mais prestigiadas da NBA. <br>
+            </p>
+        </div>
+    </section>
+    <div class="container">
+        <h1><b>Denver Nuggets Core Players</b></h1>
+        <table>
+          <thead>
+              <tr>
+                  <th>Nome</th>
+                  <th>Posição</th>
+                  <th>Número</th>
+                  <th>Altura</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Trae Young</td>
+                  <td>Armador</td>
+                  <td>11</td>
+                  <td>1,88 m</td>
+              </tr>
+              <tr>
+                  <td>Bogdan Bogdanović</td>
+                  <td>Armador/Ala-armador</td>
+                  <td>13</td>
+                  <td>1,98 m</td>
+              </tr>
+              <tr>
+                  <td>Kevin Huerter</td>
+                  <td>Ala-armador</td>
+                  <td>3</td>
+                  <td>2,01 m</td>
+              </tr>
+              <tr>
+                  <td>De'Andre Hunter</td>
+                  <td>Ala/Ala-armador</td>
+                  <td>12</td>
+                  <td>2,01 m</td>
+              </tr>
+              <tr>
+                  <td>John Collins</td>
+                  <td>Ala-pivô</td>
+                  <td>20</td>
+                  <td>2,06 m</td>
+              </tr>
+              <tr>
+                  <td>Clint Capela</td>
+                  <td>Pivô</td>
+                  <td>15</td>
+                  <td>2,08 m</td>
+              </tr>
+              <tr>
+                  <td>Danilo Gallinari</td>
+                  <td>Ala/Ala-pivô</td>
+                  <td>8</td>
+                  <td>2,08 m</td>
+              </tr>
+              <tr>
+                  <td>Cam Reddish</td>
+                  <td>Ala/Ala-armador</td>
+                  <td>22</td>
+                  <td>2,01 m</td>
+              </tr>
+              <tr>
+                  <td>Onyeka Okongwu</td>
+                  <td>Pivô</td>
+                  <td>17</td>
+                  <td>2,06 m</td>
+              </tr>
+              <tr>
+                  <td>Lou Williams</td>
+                  <td>Armador/Ala-armador</td>
+                  <td>6</td>
+                  <td>1,85 m</td>
+              </tr>
+              <tr>
+                  <td>Tony Snell</td>
+                  <td>Ala</td>
+                  <td>19</td>
+                  <td>2,01 m</td>
+              </tr>
+              <tr>
+                  <td>Solomon Hill</td>
+                  <td>Ala</td>
+                  <td>18</td>
+                  <td>1,98 m</td>
+              </tr>
+              <tr>
+                  <td>Skylar Mays</td>
+                  <td>Armador</td>
+                  <td>4</td>
+                  <td>1,93 m</td>
+              </tr>
+              <tr>
+                  <td>Gorgui Dieng</td>
+                  <td>Pivô</td>
+                  <td>7</td>
+                  <td>2,11 m</td>
+              </tr>
+              <tr>
+                  <td>Jalen Johnson</td>
+                  <td>Ala</td>
+                  <td>1</td>
+                  <td>2,03 m</td>
+              </tr>
+          </tbody>
+      </table>
+  
 
-    <section id="sobre">
-        <h2>Sobre</h2>
-        <p>O Denver Nuggets, uma franquia da NBA com sede em Denver, Colorado, é uma equipe de basquete reconhecida por sua história vibrante e apaixonada base de fãs. Desde sua fundação em 1967, os Nuggets têm sido uma presença constante na cena do basquete profissional nos Estados Unidos, competindo na Conferência Oeste da NBA. Com um estilo de jogo dinâmico e uma tradição de produzir talentos excepcionais, os Nuggets conquistaram uma base de fãs dedicada e deixaram uma marca duradoura na liga. Com uma identidade marcante e uma história repleta de momentos emocionantes, os Nuggets continuam a ser uma força a ser reconhecida no mundo do basquete.</p>
-        <h2><b>Fundação:</b></h2>
-        <p>O Denver Nuggets foi fundado em 1967 como uma equipe de expansão na American Basketball Association (ABA), uma liga rival da NBA na época. Originalmente conhecido como Denver Larks, o time foi renomeado Denver Rockets antes de sua primeira temporada. Sob o nome Denver Rockets, a equipe teve alguns anos de sucesso na ABA, liderada por jogadores como Byron Beck e Larry Jones.
-    </p>
-    <div id="elenco">
-        <h2>Elenco</h2>
-        <li>Trae Young (armador)</li>
-        <li>Bogdan Bogdanović (armador / ala-armador)</li>
-        <li>Kevin Huerter (ala-armador)</li>
-        <li>De'Andre Hunter (ala / ala-armador)</li>
-        <li>John Collins (ala-pivô)</li>
-        <li>Clint Capela (pivô)</li>
-        <li>Danilo Gallinari (ala / ala-pivô)</li>
-        <li>Cam Reddish (ala / ala-armador)</li>
-        <li>Onyeka Okongwu (pivô)</li>
-        <li>Lou Williams (armador / ala-armador)</li>
-        <li>Tony Snell (ala)</li>
-        <li>Solomon Hill (ala)</li>
-        <li>Skylar Mays (armador)</li>
-        <li>Gorgui Dieng (pivô)</li>
-        <li>Jalen Johnson (ala)</li>
-    </div>
-    
-    <br>
-    <div id="Curiosidades">
-        <h2><b>Curiosidades</b></h2>
-        
-        <h3>Origens da Mascote:</h3>
-        <p> A mascote do Denver Nuggets é chamada de "Rocky", que foi introduzida em 1990. Rocky é um personagem inspirado na montanha rochosa, uma referência ao nome da equipe e à geografia da região de Denver. </p>
-        <br>
-        <h3>Altitude Elevada:</h3>
-        <p> Denver é conhecida como a "Cidade Mile-High" devido à sua altitude de aproximadamente 1 milha (ou cerca de 1,6 km) acima do nível do mar. Isso faz de Denver a cidade mais alta com uma equipe da NBA. A alta altitude pode afetar o desempenho dos jogadores visitantes que não estão acostumados a jogar em tais condições.</p>
-        <h3>Máquina de Pontos:</h3>
-        <p>Nos anos 1980 e 1990, os Nuggets eram conhecidos por seu estilo de jogo rápido e pontuação alta. A equipe era frequentemente chamada de "Máquina de Pontos" devido à sua capacidade de marcar muitos pontos em um curto espaço de tempo.</p>
-        <h3>Carmelo Anthony: </h3>
-        <p>Carmelo Anthony foi selecionado pelo Denver Nuggets como a terceira escolha geral no Draft da NBA de 2003. Ele passou várias temporadas com os Nuggets e se tornou um dos maiores jogadores da história da franquia. Anthony liderou os Nuggets para várias aparições nos playoffs e é considerado um dos maiores pontuadores da NBA.</p>
-        <h3>Temporada de 2012-2013:</h3>
-        <p>Durante a temporada de 2012-2013, os Nuggets tiveram uma série de 15 vitórias consecutivas em casa, estabelecendo um recorde da franquia. Essa série de vitórias em casa contribuiu para uma das melhores temporadas regulares da história da equipe.</p>
-        <h3>Arenas Históricas:</h3>
-        <p>Ao longo dos anos, os Nuggets jogaram em várias arenas em Denver. A primeira arena da equipe foi o Denver Auditorium Arena, seguida pelo McNichols Sports Arena e, mais recentemente, a equipe mudou-se para o Ball Arena (anteriormente conhecido como Pepsi Center), que tem sido sua casa desde 1999.</p>
+      <h2><b>Formulário de Perguntas sobre o Denver Nuggets</b></h2>
+      <form id="nuggets-form">
+          <div class="form-group">
+              <label>Qual é o seu jogador favorito atual do Denver Nuggets?</label>
+              <br>
+              <div>
+                  <label for="player-nikola-jokic">Nikola Jokić</label>
+                  <input type="radio" id="player-nikola-jokic" name="favorite-player" value="Nikola Jokić">
+              </div>
+              <div>
+                  <label for="player-jamal-murray">Jamal Murray</label>
+                  <input type="radio" id="player-jamal-murray" name="favorite-player" value="Jamal Murray">
+              </div>
+              <div>
+                  <label for="player-michael-porter-jr">Michael Porter Jr.</label>
+                  <input type="radio" id="player-michael-porter-jr" name="favorite-player" value="Michael Porter Jr.">
+              </div>
+              <div>
+                  <label for="player-other">Outro:</label>
+                  <input type="text" id="other-player" name="other-player" placeholder="Digite o nome">
+              </div>
+          </div>
+          <div class="form-group">
+              <label>Quem você considera o maior jogador da história do Denver Nuggets?</label>
+              <br>
+              <div>
+                  <label for="greatest-player-alex-english">Alex English</label>
+                  <input type="radio" id="greatest-player-alex-english" name="greatest-player" value="Alex English">
+              </div>
+              <div>
+                  <label for="greatest-player-dikembe-mutombo">Dikembe Mutombo</label>
+                  <input type="radio" id="greatest-player-dikembe-mutombo" name="greatest-player" value="Dikembe Mutombo">
+              </div>
+              <div>
+                  <label for="greatest-player-carmelo-anthony">Carmelo Anthony</label>
+                  <input type="radio" id="greatest-player-carmelo-anthony" name="greatest-player" value="Carmelo Anthony">
+              </div>
+              <div>
+                  <label for="greatest-player-other">Outro:</label>
+                  <input type="text" id="other-greatest-player" name="other-greatest-player" placeholder="Digite o nome">
+              </div>
+          </div>
+          <div class="form-group">
+              <label>Qual é a sua expectativa para a próxima temporada da NBA?</label>
+              <br>
+              <div>
+                  <label for="next-season-expectation-championship">Vencer o campeonato</label>
+                  <input type="radio" id="next-season-expectation-championship" name="next-season-expectation" value="Vencer o campeonato">
+              </div>
+              <div>
+                  <label for="next-season-expectation-playoffs">Chegar aos playoffs</label>
+                  <input type="radio" id="next-season-expectation-playoffs" name="next-season-expectation" value="Chegar aos playoffs">
+              </div>
+              <div>
+                  <label for="next-season-expectation-development">Desenvolvimento dos jogadores</label>
+                  <input type="radio" id="next-season-expectation-development" name="next-season-expectation" value="Desenvolvimento dos jogadores">
+              </div>
+              <div>
+                  <label for="next-season-expectation-other">Outro:</label>
+                  <input type="text" id="other-next-season-expectation" name="other-next-season-expectation" placeholder="Digite a expectativa">
+              </div>
+          </div>
+          <input type="submit" value="Enviar Respostas">
+      </form>
 
-    </div>
 
-    <section id="analises">
-        <h2>Análises e Opiniões</h2>
-        <section id="opinioes">
-            <h2>Deixe sua Opinião</h2>
-            <form action="enviar_opiniao.php" method="post">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required><br><br>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
-                
-                <label for="opiniao">Sua Opinião:</label><br>
-                <textarea id="opiniao" name="opiniao" rows="4" cols="50" required></textarea><br><br>
-                
-                <input type="submit" value="Enviar Opinião">
-            </form>
-        </section>
+
+      <div style="position: relative; width: 100%; height: 0; padding-top: 50.0000%;
+      padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+      border-radius: 8px; will-change: transform;">
+       <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+         src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGGKk53ag0&#x2F;YZCztRcK4TbYvKRaauQUnQ&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+       </iframe>
+     </div>
+     <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGGKk53ag0&#x2F;YZCztRcK4TbYvKRaauQUnQ&#x2F;view?utm_content=DAGGKk53ag0&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a> 
+
         <footer>
-            <p>&copy; 2024 Atlanta Hawks</p>
+            <p>&copy; 2024 NBA - Denver Nuggets </p>
           </footer>
