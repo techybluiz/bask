@@ -98,6 +98,22 @@
             background: rgb(64,224,208);
             background: linear-gradient(90deg, rgba(64,224,208,1) 0%, rgba(128,0,128,1) 100%);
         }
+        .formulario {
+            max-width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #d6e6ee;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .banner {
+        width: 100%;
+        height: auto;
+        padding: 25px;
+    }
     </style>
 </head>
 <body>
@@ -169,7 +185,6 @@
     <hr>
     <div>
         <h3><b>Momentos Notáveis</b></h3>
-        <p>
             <li><b>Inauguração da equipe (1988):</b> O nascimento dos Charlotte Hornets em 1988 marcou um momento histórico para a cidade e para a NBA, trazendo basquete profissional para a região e estabelecendo uma base de fãs dedicada desde o início.</li>
             <li><b>Primeira temporada (1988-1989):</b> A temporada inaugural dos Hornets viu a equipe começar a escrever sua história na NBA, com jogadores como Rex Chapman, Dell Curry e Muggsy Bogues, ajudando a estabelecer a identidade da equipe.</li>
             <li><b>Retorno ao nome "Hornets" (2014):</b>A decisão de retornar ao nome "Hornets" em 2014 foi um momento emocionante para os fãs, trazendo de volta a identidade original da equipe e celebrando sua herança na liga.</li>
@@ -177,7 +192,6 @@
             <li><b>Participação nos playoffs (anos 90):</b> Nos anos 90, os Hornets se tornaram uma equipe regular nos playoffs da NBA, alimentando a paixão dos fãs e consolidando sua presença como uma força competitiva na liga.</li>
             <li><b>Mudança temporária para New Orleans (2002-2004):</b>Embora não seja um momento positivo, a mudança temporária dos Hornets para New Orleans devido a questões de propriedade foi um período desafiador na história da equipe, mas também destacou a dedicação dos fãs de Charlotte.  </li>
             <li><b>Retorno como os Charlotte Bobcats (2004):</b>A reintrodução da equipe como os Charlotte Bobcats em 2004 marcou um novo capítulo na história da franquia, enquanto a equipe buscava reafirmar sua presença na NBA.</li>
-        </p>
     </div>
     <div>
         <h3><b>Rivalidades</b></h3>
@@ -191,7 +205,7 @@
     </div>
 
     <div class="container">
-        <h1>Charlotte Hornets Core Players</h1>
+        <h1><b>Charlotte Hornets Core Players</b></h1>
         <table>
             <table>
                 <thead>
@@ -307,13 +321,80 @@
                     </tr>
                     <tr>
                         <td>Mark Williams</td>
-                        <td></td>
+                        <td>Pivô</td>
                         <td>5</td>
-                        <td></td>
+                        <td>2,13 m</td>
                     </tr>
                 </tbody>
             </table>
     </div>
+
+
+    <div class="formulario">
+        <h2><b>Formulário de Perguntas sobre o Charlotte Hornets</b></h2>
+        <form id="hornets-form">
+            <div class="form-group">
+                <label>Qual é o seu jogador favorito atual do Charlotte Hornets?</label>
+                <br>
+                <div>
+                    <label for="player-lamelo-ball">LaMelo Ball</label>
+                    <input type="radio" id="player-lamelo-ball" name="favorite-player" value="LaMelo Ball">
+                </div>
+                <div>
+                    <label for="player-terry-rozier">Terry Rozier</label>
+                    <input type="radio" id="player-terry-rozier" name="favorite-player" value="Terry Rozier">
+                </div>
+                <div>
+                    <label for="player-miles-bridges">Miles Bridges</label>
+                    <input type="radio" id="player-miles-bridges" name="favorite-player" value="Miles Bridges">
+                </div>
+                <div>
+                    <label for="player-other">Outro:</label>
+                    <input type="text" id="other-player" name="other-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Quem você considera o maior jogador da história do Charlotte Hornets?</label>
+                <br>
+                <div>
+                    <label for="greatest-player-larry-johnson">Larry Johnson</label>
+                    <input type="radio" id="greatest-player-larry-johnson" name="greatest-player" value="Larry Johnson">
+                </div>
+                <div>
+                    <label for="greatest-player-alonzo-mourning">Alonzo Mourning</label>
+                    <input type="radio" id="greatest-player-alonzo-mourning" name="greatest-player" value="Alonzo Mourning">
+                </div>
+                <div>
+                    <label for="greatest-player-kemba-walker">Kemba Walker</label>
+                    <input type="radio" id="greatest-player-kemba-walker" name="greatest-player" value="Kemba Walker">
+                </div>
+                <div>
+                    <label for="greatest-player-other">Outro:</label>
+                    <input type="text" id="other-greatest-player" name="other-greatest-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Qual é a sua expectativa para a próxima temporada da NBA?</label>
+                <br>
+                <div>
+                    <label for="next-season-expectation-playoffs">Chegar aos playoffs</label>
+                    <input type="radio" id="next-season-expectation-playoffs" name="next-season-expectation" value="Chegar aos playoffs">
+                </div>
+                <div>
+                    <label for="next-season-expectation-development">Desenvolvimento dos jogadores</label>
+                    <input type="radio" id="next-season-expectation-development" name="next-season-expectation" value="Desenvolvimento dos jogadores">
+                </div>
+                <div>
+                    <label for="next-season-expectation-other">Outro:</label>
+                    <input type="text" id="other-next-season-expectation" name="other-next-season-expectation" placeholder="Digite a expectativa">
+                </div>
+            </div>
+            <input type="submit" value="Enviar Respostas">
+        </form>
+    </div>
+
+
+
     <div style="position: relative; width: 100%; height: 0; padding-top: 50.0000%;
  padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
  border-radius: 8px; will-change: transform;">
