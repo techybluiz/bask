@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Denver Nuggets</title>
+    <title> Denver Nuggets </title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -11,27 +11,21 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
         header{
-            color: black;
-            padding: 5px;
-        }
-        h1{
-            color: #FFB20F;
+            color: rgb(255, 255, 255);
         }
         h2{
-            color: #00285E;
+            color: #0E2240;
         }
         b {
             font-size: 1em;
-        }
-        .analise{
-            padding: 15px;
+            color: #0E2240;
         }
         footer{
             text-align: center;
             width: 100%;
         }
         hr{
-            color: black;
+            color: rgb(255, 255, 255);
         }
         h1{
             text-align: right;
@@ -39,10 +33,12 @@
             padding: 5px;
         }
         body{
-            padding: 15px;
             font-family: Arial, Helvetica, sans-serif;
-            background-color: #fff9f9;
+            background-color: rgb(234, 237, 241);
             
+        }
+        section{
+            padding: 15px;
         }
         p {
             padding: 5px;
@@ -57,6 +53,10 @@
         navbar-brand{
             width: 150px;
         }
+
+        navbar-brand{
+            width: 150px;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
@@ -67,11 +67,57 @@
             text-align: left;
         }
         th {
-            background-color: #FFB20F;
+            background-color: #FEC524;
             color: white;
         }
         tr:nth-child(even) {
-            background-color: #25436b;
+            background-color: #f2f2f2;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        input[type="text"] {
+            margin-left: 5px;
+        }
+        input[type="submit"] {
+            display: block;
+            margin: 20px auto 0;
+            background-color: #FEC524;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #FEC524;
+        }
+        .bg-light {
+            background: rgb(14,34,64);
+            background: linear-gradient(90deg, rgba(14,34,64,1) 38%, rgba(254,197,36,1) 55%);
+        }
+        .logo{
+            width: 5em;
+            height: 5em;
+        }
+        .texto-lista{
+            padding: 15px;
+        }
+        .formulario {
+            max-width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .logo{
             width: 5em;
@@ -88,14 +134,21 @@
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-
-    </style>
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .banner {
+        width: 100%;
+        height: auto;
+        padding: 25px;
+    }
+</style>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
            <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
-            <h1><b>Teams</b></h1>
+            <h1 style="color: azure;">Teams</h1>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -123,15 +176,14 @@
             </div>
           </nav>
     </header>
-    <hr>
     <section>
         <div>
-            <img src="https://cdn.nba.com/teams/uploads/sites/1610612743/2021/11/dnuggets-primary-web.svg">
+            <img src="https://ssl.gstatic.com/onebox/media/sports/logos/9wPFTOxV_zP1KmRRggJNqQ_96x96.png">
             <br>
             <h1><b>Denver Nuggets</b></h1>
             <br>
             <p>
-                <h2><b>História:</b></h2>
+                <h2><b>História</b></h2>
                 O Denver Nuggets foi fundado em 1967 como membro da American Basketball Association (ABA), uma liga concorrente da NBA na época.<br>
                 Com a fusão da ABA com a NBA em 1976, os Denver Nuggets se tornaram uma franquia da NBA. A transição para a NBA trouxe desafios iniciais, mas os Nuggets começaram a construir uma nova identidade na liga.
                 Durante os anos 1980, a equipe teve alguns momentos de destaque, mas também enfrentou dificuldades em competir consistentemente em um nível alto.
@@ -139,11 +191,12 @@
                 Uma das eras mais notáveis veio no início dos anos 2000, quando a equipe foi liderada por estrelas como Carmelo Anthony, Allen Iverson e Marcus Camby.
                 Sob a orientação do técnico George Karl, os Nuggets alcançaram sucessos nos playoffs durante esse período.
                 <br>
-                <b>Arena:</b> A arena atual dos Denver Nuggets é a <a href="#s"> Ball Arena </a> ,Anteriormente conhecida como Pepsi Center, a arena foi renomeada como Ball Arena em 2020, após um acordo de patrocínio com a Ball Corporation.<br>
+                <h2><b>Arena</b></h2> 
+                A arena atual dos Denver Nuggets é a <a href="#s"> Ball Arena </a>, Anteriormente conhecida como Pepsi Center, a arena foi renomeada como Ball Arena em 2020, após um acordo de patrocínio com a Ball Corporation.<br>
                 A Ball Arena tem uma capacidade variável dependendo do evento. Para jogos de basquete da NBA, a capacidade é de aproximadamente 19.520  <br>
                 <hr>
                 <img src="https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_1600,h_1600,q_95/v1664718506/bejulxnymdzearilx2kg.jpg" alt="Mascote">
-                <h2><b>Cores e Mascote:</b></h2>
+                <h2><b>Cores e Mascote</b></h2>
                 <p>As cores principais do Denver Nuggets são azul marinho, ouro e branco. <br>
                   O mascote do Denver Nuggets é o <b>"Rocky the Mountain Lion"</b> um leão da montanha antropomórfico que representa a equipe desde os anos 1990.<br>
                   Rocky the Mountain Lion foi introduzido como mascote oficial dos Denver Nuggets durante a temporada de 1990-1991 da NBA.
@@ -155,7 +208,7 @@
     <hr>
     <section>
         <div>
-            <h2><b>Momentos Notáveis:</b></h2>
+            <h2><b>Momentos Notáveis</b></h2>
             <p>
             <li><b>1976 Fusão com a NBA: </b>Os Denver Nuggets foram uma das equipes da ABA a se juntarem à NBA após a fusão entre as duas ligas em 1976. Isso marcou o início da jornada da equipe na NBA.</li>
             <li><b>1984-1985 A Era Alex English:</b>Durante essa temporada, Alex English liderou a liga em pontos por jogo e ajudou os Nuggets a alcançarem 52 vitórias, o que foi um recorde da equipe na época. Ele se tornou o primeiro jogador dos Nuggets a vencer o prêmio de MVP do All-Star Game da NBA.</li>
@@ -166,7 +219,7 @@
         </div>
         <div>
           <br>
-            <h2><b>Rivalidades:</b></h2>
+            <h2><b>Rivalidades</b></h2>
             <p>
                <a href="#">Utah Jazz:</a> A rivalidade entre Denver Nuggets e Utah Jazz é alimentada pela proximidade geográfica entre as duas equipes e pelos confrontos frequentes na Divisão Noroeste. Jogos entre essas equipes muitas vezes são intensos e competitivos. <br>
                <a href="#">Portland Trail Blazers:</a> Outra rivalidade da Divisão Noroeste, os jogos entre Denver Nuggets e Portland Trail Blazers são frequentemente emocionantes. As equipes têm competido por posições nos playoffs e os confrontos diretos são sempre aguardados pelos fãs.<br>
@@ -177,174 +230,195 @@
     <div class="container">
         <h1><b>Denver Nuggets Core Players</b></h1>
         <table>
-          <thead>
-              <tr>
-                  <th>Nome</th>
-                  <th>Posição</th>
-                  <th>Número</th>
-                  <th>Altura</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>Trae Young</td>
-                  <td>Armador</td>
-                  <td>11</td>
-                  <td>1,88 m</td>
-              </tr>
-              <tr>
-                  <td>Bogdan Bogdanović</td>
-                  <td>Armador/Ala-armador</td>
-                  <td>13</td>
-                  <td>1,98 m</td>
-              </tr>
-              <tr>
-                  <td>Kevin Huerter</td>
-                  <td>Ala-armador</td>
-                  <td>3</td>
-                  <td>2,01 m</td>
-              </tr>
-              <tr>
-                  <td>De'Andre Hunter</td>
-                  <td>Ala/Ala-armador</td>
-                  <td>12</td>
-                  <td>2,01 m</td>
-              </tr>
-              <tr>
-                  <td>John Collins</td>
-                  <td>Ala-pivô</td>
-                  <td>20</td>
-                  <td>2,06 m</td>
-              </tr>
-              <tr>
-                  <td>Clint Capela</td>
-                  <td>Pivô</td>
-                  <td>15</td>
-                  <td>2,08 m</td>
-              </tr>
-              <tr>
-                  <td>Danilo Gallinari</td>
-                  <td>Ala/Ala-pivô</td>
-                  <td>8</td>
-                  <td>2,08 m</td>
-              </tr>
-              <tr>
-                  <td>Cam Reddish</td>
-                  <td>Ala/Ala-armador</td>
-                  <td>22</td>
-                  <td>2,01 m</td>
-              </tr>
-              <tr>
-                  <td>Onyeka Okongwu</td>
-                  <td>Pivô</td>
-                  <td>17</td>
-                  <td>2,06 m</td>
-              </tr>
-              <tr>
-                  <td>Lou Williams</td>
-                  <td>Armador/Ala-armador</td>
-                  <td>6</td>
-                  <td>1,85 m</td>
-              </tr>
-              <tr>
-                  <td>Tony Snell</td>
-                  <td>Ala</td>
-                  <td>19</td>
-                  <td>2,01 m</td>
-              </tr>
-              <tr>
-                  <td>Solomon Hill</td>
-                  <td>Ala</td>
-                  <td>18</td>
-                  <td>1,98 m</td>
-              </tr>
-              <tr>
-                  <td>Skylar Mays</td>
-                  <td>Armador</td>
-                  <td>4</td>
-                  <td>1,93 m</td>
-              </tr>
-              <tr>
-                  <td>Gorgui Dieng</td>
-                  <td>Pivô</td>
-                  <td>7</td>
-                  <td>2,11 m</td>
-              </tr>
-              <tr>
-                  <td>Jalen Johnson</td>
-                  <td>Ala</td>
-                  <td>1</td>
-                  <td>2,03 m</td>
-              </tr>
-          </tbody>
-      </table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Posição</th>
+                    <th>Número</th>
+                    <th>Altura</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Christian Braun</td>
+                    <td>G</td>
+                    <td>0</td>
+                    <td>1.98 m</td>
+                </tr>
+                <tr>
+                    <td>Kentavious Caldwell-Pope</td>
+                    <td>SG</td>
+                    <td>5</td>
+                    <td>1.96 m</td>
+                </tr>
+                <tr>
+                    <td>Vlatko Cancar</td>
+                    <td>SF</td>
+                    <td>31</td>
+                    <td>2.03 m</td>
+                </tr>
+                <tr>
+                    <td>Collin Gillespie</td>
+                    <td>G</td>
+                    <td>21</td>
+                    <td>1.85 m</td>
+                </tr>
+                <tr>
+                    <td>Aaron Gordon</td>
+                    <td>PF</td>
+                    <td>50</td>
+                    <td>2.03 m</td>
+                </tr>
+                <tr>
+                    <td>Justin Holiday</td>
+                    <td>SF</td>
+                    <td>9</td>
+                    <td>1.98 m</td>
+                </tr>
+                <tr>
+                    <td>Jay Huff</td>
+                    <td>C</td>
+                    <td>30</td>
+                    <td>2.16 m</td>
+                </tr>
+                <tr>
+                    <td>Reggie Jackson</td>
+                    <td>PG</td>
+                    <td>7</td>
+                    <td>1.88 m</td>
+                </tr>
+                <tr>
+                    <td>Nikola Jokic</td>
+                    <td>C</td>
+                    <td>15</td>
+                    <td>2.11 m</td>
+                </tr>
+                <tr>
+                    <td>DeAndre Jordan</td>
+                    <td>C</td>
+                    <td>6</td>
+                    <td>2.11 m</td>
+                </tr>
+                <tr>
+                    <td>Braxton Key</td>
+                    <td>A</td>
+                    <td>11</td>
+                    <td>2.03 m</td>
+                </tr>
+                <tr>
+                    <td>Jamal Murray</td>
+                    <td>PG</td>
+                    <td>27</td>
+                    <td>1.93 m</td>
+                </tr>
+                <tr>
+                    <td>Zeke Nnaji</td>
+                    <td>PF</td>
+                    <td>22</td>
+                    <td>2.06 m</td>
+                </tr>
+                <tr>
+                    <td>Jalen Pickett</td>
+                    <td>G</td>
+                    <td>24</td>
+                    <td>1.88 m</td>
+                </tr>
+                <tr>
+                    <td>Michael Porter Jr.</td>
+                    <td>SF</td>
+                    <td>1</td>
+                    <td>2.08 m</td>
+                </tr>
+                <tr>
+                    <td>Julian Strawther</td>
+                    <td>G</td>
+                    <td>3</td>
+                    <td>1.98 m</td>
+                </tr>
+                <tr>
+                    <td>Hunter Tyson</td>
+                    <td>A</td>
+                    <td>4</td>
+                    <td>2.03 m</td>
+                </tr>
+                <tr>
+                    <td>Peyton Watson</td>
+                    <td>A</td>
+                    <td>8</td>
+                    <td>2.03 m</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="formulario">
+        <h2><b>Formulário de Perguntas sobre o Denver Nuggets</b></h2>
+        <form id="nuggets-form">
+            <div class="form-group">
+                <label>Qual é o seu jogador favorito atual do Denver Nuggets?</label>
+                <br>
+                <div>
+                    <label for="player-nikola-jokic">Nikola Jokić</label>
+                    <input type="radio" id="player-nikola-jokic" name="favorite-player" value="Nikola Jokić">
+                </div>
+                <div>
+                    <label for="player-jamal-murray">Jamal Murray</label>
+                    <input type="radio" id="player-jamal-murray" name="favorite-player" value="Jamal Murray">
+                </div>
+                <div>
+                    <label for="player-michael-porter-jr">Michael Porter Jr.</label>
+                    <input type="radio" id="player-michael-porter-jr" name="favorite-player" value="Michael Porter Jr.">
+                </div>
+                <div>
+                    <label for="player-other">Outro:</label>
+                    <input type="text" id="other-player" name="other-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Quem você considera o maior jogador da história do Denver Nuggets?</label>
+                <br>
+                <div>
+                    <label for="greatest-player-alex-english">Alex English</label>
+                    <input type="radio" id="greatest-player-alex-english" name="greatest-player" value="Alex English">
+                </div>
+                <div>
+                    <label for="greatest-player-dikembe-mutombo">Dikembe Mutombo</label>
+                    <input type="radio" id="greatest-player-dikembe-mutombo" name="greatest-player" value="Dikembe Mutombo">
+                </div>
+                <div>
+                    <label for="greatest-player-carmelo-anthony">Carmelo Anthony</label>
+                    <input type="radio" id="greatest-player-carmelo-anthony" name="greatest-player" value="Carmelo Anthony">
+                </div>
+                <div>
+                    <label for="greatest-player-other">Outro:</label>
+                    <input type="text" id="other-greatest-player" name="other-greatest-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Qual é a sua expectativa para a próxima temporada da NBA?</label>
+                <br>
+                <div>
+                    <label for="next-season-expectation-championship">Vencer o campeonato</label>
+                    <input type="radio" id="next-season-expectation-championship" name="next-season-expectation" value="Vencer o campeonato">
+                </div>
+                <div>
+                    <label for="next-season-expectation-playoffs">Chegar aos playoffs</label>
+                    <input type="radio" id="next-season-expectation-playoffs" name="next-season-expectation" value="Chegar aos playoffs">
+                </div>
+                <div>
+                    <label for="next-season-expectation-development">Desenvolvimento dos jogadores</label>
+                    <input type="radio" id="next-season-expectation-development" name="next-season-expectation" value="Desenvolvimento dos jogadores">
+                </div>
+                <div>
+                    <label for="next-season-expectation-other">Outro:</label>
+                    <input type="text" id="other-next-season-expectation" name="other-next-season-expectation" placeholder="Digite a expectativa">
+                </div>
+            </div>
+            <input type="submit" value="Enviar Respostas">
+        </form>
   
-
-      <h2><b>Formulário de Perguntas sobre o Denver Nuggets</b></h2>
-      <form id="nuggets-form">
-          <div class="form-group">
-              <label>Qual é o seu jogador favorito atual do Denver Nuggets?</label>
-              <br>
-              <div>
-                  <label for="player-nikola-jokic">Nikola Jokić</label>
-                  <input type="radio" id="player-nikola-jokic" name="favorite-player" value="Nikola Jokić">
-              </div>
-              <div>
-                  <label for="player-jamal-murray">Jamal Murray</label>
-                  <input type="radio" id="player-jamal-murray" name="favorite-player" value="Jamal Murray">
-              </div>
-              <div>
-                  <label for="player-michael-porter-jr">Michael Porter Jr.</label>
-                  <input type="radio" id="player-michael-porter-jr" name="favorite-player" value="Michael Porter Jr.">
-              </div>
-              <div>
-                  <label for="player-other">Outro:</label>
-                  <input type="text" id="other-player" name="other-player" placeholder="Digite o nome">
-              </div>
-          </div>
-          <div class="form-group">
-              <label>Quem você considera o maior jogador da história do Denver Nuggets?</label>
-              <br>
-              <div>
-                  <label for="greatest-player-alex-english">Alex English</label>
-                  <input type="radio" id="greatest-player-alex-english" name="greatest-player" value="Alex English">
-              </div>
-              <div>
-                  <label for="greatest-player-dikembe-mutombo">Dikembe Mutombo</label>
-                  <input type="radio" id="greatest-player-dikembe-mutombo" name="greatest-player" value="Dikembe Mutombo">
-              </div>
-              <div>
-                  <label for="greatest-player-carmelo-anthony">Carmelo Anthony</label>
-                  <input type="radio" id="greatest-player-carmelo-anthony" name="greatest-player" value="Carmelo Anthony">
-              </div>
-              <div>
-                  <label for="greatest-player-other">Outro:</label>
-                  <input type="text" id="other-greatest-player" name="other-greatest-player" placeholder="Digite o nome">
-              </div>
-          </div>
-          <div class="form-group">
-              <label>Qual é a sua expectativa para a próxima temporada da NBA?</label>
-              <br>
-              <div>
-                  <label for="next-season-expectation-championship">Vencer o campeonato</label>
-                  <input type="radio" id="next-season-expectation-championship" name="next-season-expectation" value="Vencer o campeonato">
-              </div>
-              <div>
-                  <label for="next-season-expectation-playoffs">Chegar aos playoffs</label>
-                  <input type="radio" id="next-season-expectation-playoffs" name="next-season-expectation" value="Chegar aos playoffs">
-              </div>
-              <div>
-                  <label for="next-season-expectation-development">Desenvolvimento dos jogadores</label>
-                  <input type="radio" id="next-season-expectation-development" name="next-season-expectation" value="Desenvolvimento dos jogadores">
-              </div>
-              <div>
-                  <label for="next-season-expectation-other">Outro:</label>
-                  <input type="text" id="other-next-season-expectation" name="other-next-season-expectation" placeholder="Digite a expectativa">
-              </div>
-          </div>
-          <input type="submit" value="Enviar Respostas">
-      </form>
-
+    </div>
+      
 
 
       <div style="position: relative; width: 100%; height: 0; padding-top: 50.0000%;
