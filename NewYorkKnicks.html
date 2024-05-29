@@ -11,27 +11,21 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
         header{
-            color: black;
-            padding: 5px;
-        }
-        h1{
-            color: #FF7518;
+            color: rgb(255, 255, 255);
         }
         h2{
-            color: #006BB6;
+            color: #FF7518 ;
         }
         b {
             font-size: 1em;
-        }
-        .analise{
-            padding: 15px;
+            color: #FF7518 ;
         }
         footer{
             text-align: center;
             width: 100%;
         }
         hr{
-            color: black;
+            color: rgb(255, 255, 255);
         }
         h1{
             text-align: right;
@@ -39,10 +33,12 @@
             padding: 5px;
         }
         body{
-            padding: 15px;
             font-family: Arial, Helvetica, sans-serif;
-            background-color: #fff9f9;
+            background-color: rgb(240, 237, 235);
             
+        }
+        section{
+            padding: 15px;
         }
         p {
             padding: 5px;
@@ -57,6 +53,10 @@
         navbar-brand{
             width: 150px;
         }
+
+        navbar-brand{
+            width: 150px;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
@@ -67,11 +67,58 @@
             text-align: left;
         }
         th {
-            background-color: #FF7518;
+            background-color: #006BB6 ;
             color: white;
         }
         tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        input[type="text"] {
+            margin-left: 5px;
+        }
+        input[type="submit"] {
+            display: block;
+            margin: 20px auto 0;
             background-color: #006BB6;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #006BB6 ;
+        }
+        .bg-light {
+            background: rgb(0,107,182);
+            background: linear-gradient(90deg, rgba(0,107,182,1) 18%, rgba(255,117,24,1) 100%);
+        
+        }
+        .logo{
+            width: 5em;
+            height: 5em;
+        }
+        .texto-lista{
+            padding: 15px;
+        }
+        .formulario {
+            max-width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .logo{
             width: 5em;
@@ -88,7 +135,14 @@
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-
+         .form-group {
+        margin-bottom: 20px;
+         }
+       .banner {
+        width: 100%;
+        height: auto;
+        padding: 25px;
+        }
     </style>
 </head>
 <body>
@@ -123,7 +177,6 @@
             </div>
           </nav>
     </header>
-    <hr>
     <section>
         <div>
             <img src="https://cdn.nba.com/teams/uploads/sites/1610612752/2022/10/NYK2223-PRIMARY-LOGO.svg">
@@ -131,14 +184,14 @@
             <h1><b>New York Knicks</b></h1>
             <br>
             <p>
-                <h2><b>História:</b></h2>
+                <h2><b>História</b></h2>
                 O New York Knicks foi fundado em 1946 como um dos membros originais da Basketball Association of America (BAA), que mais tarde se fundiu com a National Basketball League (NBL) para formar a National Basketball Association (NBA).<br>
                 Nos primeiros anos da equipe, os Knicks tiveram dificuldades para encontrar sucesso significativo. No entanto, na década de 1950, com a contratação do técnico Joe Lapchick e a adição de jogadores notáveis como Harry Gallatin e Carl Braun, os Knicks começaram a se tornar mais competitivos.<br>
                 A verdadeira era de ouro dos Knicks começou na década de 1970. Sob o comando do técnico Red Holzman e liderados por jogadores como Walt "Clyde" Frazier, Willis Reed, Dave DeBusschere, Bill Bradley e Earl Monroe, os Knicks ganharam dois campeonatos da NBA, em 1970 e 1973.<br>
                 Nas décadas seguintes, os Knicks tiveram altos e baixos, com períodos de sucesso intercalados com temporadas menos impressionantes. Eles foram notáveis durante a década de 1990, quando foram liderados por Patrick Ewing e alcançaram as finais da NBA em 1994, perdendo para o Houston Rockets.<br>
                 Durante os anos seguintes, os 76ers passaram por altos e baixos, mas continuaram a ser uma presença competitiva na NBA. Em 1983, eles ganharam seu terceiro título da NBA com uma equipe estrelada por Julius Erving, conhecido como "Dr. J".<br>
                 <br>
-                <b>Arena:</b> O <a href="#s"> Madison Square Garden </a> ,uma das arenas mais famosas do mundo, é a casa dos New York Knicks.<br>
+                <h2><b>Arena</b></h2> O <a href="#s"> Madison Square Garden </a> ,uma das arenas mais famosas do mundo, é a casa dos New York Knicks.<br>
                 A capacidade é de aproximadamente 19.812 espectadores. <br>
                 <hr>
                 <img src="https://mascothalloffame.com/wp-content/uploads/bb-plugin/cache/Hudson-e1679833011584-circle.jpg" alt="Mascote">
@@ -151,10 +204,9 @@
                 </p>
         </div>
     </section>
-    <hr>
     <section>
         <div>
-            <h2><b>Momentos Notáveis:</b></h2>
+            <h2><b>Momentos Notáveis</b></h2>
             <p>
             <li><b>1969-70 Championship: </b>  O Knicks conquistou seu primeiro título da NBA na temporada 1969-70, liderado por estrelas como Willis Reed, Walt "Clyde" Frazier e Dave DeBusschere. Eles derrotaram o Los Angeles Lakers nas finais em uma série emocionante. </li>
             <li><b>Willis Reed's Dramatic Entrance:</b>Na primeira partida das finais de 1970 contra o Lakers, Willis Reed, o líder da equipe, estava machucado. No entanto, ele surpreendeu a todos aparecendo para jogar, inspirando a equipe e os torcedores. Seu retorno impactante é um dos momentos mais icônicos da história dos Knicks.</li>
@@ -165,7 +217,7 @@
             </p>
         </div>
         <div>
-            <h2><b>Rivalidades:</b></h2>
+            <h2><b>Rivalidades</b></h2>
             <p>
                <a href="#">Brooklyn Nets:</a> Com a mudança dos Nets para Brooklyn em 2012, uma nova rivalidade começou a se desenvolver entre as duas equipes da cidade de Nova York. Os jogos entre os Knicks e os Nets são sempre intensos, com uma forte rivalidade local em jogo. <br>
                <a href="#">Boston Celtics:</a> Esta é uma das rivalidades mais antigas e tradicionais da NBA. Knicks e Celtics competem na Divisão do Atlântico e tiveram muitos confrontos emocionantes ao longo dos anos, especialmente nas décadas de 1960 e 1970. Esta rivalidade é alimentada pela competição entre duas das maiores cidades da costa leste dos Estados Unidos, Nova York e Boston.<br>
@@ -178,35 +230,221 @@
         <table>
             <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Position</th>
-                    <th>Number</th>
-                    <th>Height</th>
+                    <th>Nome</th>
+                    <th>Posição</th>
+                    <th>Número</th>
+                    <th>Altura</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>James Harden</td>
-                    <td>Guard</td>
+                    <td>Precious Achiuwa</td>
+                    <td>Ala-pivô</td>
+                    <td>5</td>
+                    <td>2,03 m</td>
+                </tr>
+                <tr>
+                    <td>OG Anunoby</td>
+                    <td>---</td>
+                    <td>8</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>Bojan Bogdanovic</td>
+                    <td>---</td>
+                    <td>44</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>Charlie Brown Jr.</td>
+                    <td>---</td>
+                    <td>4</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>Jalen Brunson</td>
+                    <td>---</td>
+                    <td>11</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>Alec Burks</td>
+                    <td>---</td>
+                    <td>18</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>Donte DiVincenzo</td>
+                    <td>---</td>
+                    <td>0</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>Mamadi Diakite</td>
+                    <td>---</td>
+                    <td>21</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>Josh Hart</td>
+                    <td>---</td>
+                    <td>3</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>Isaiah Hartenstein</td>
+                    <td>---</td>
+                    <td>55</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>DaQuan Jeffries</td>
+                    <td>---</td>
+                    <td>8</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>Miles McBride</td>
+                    <td>---</td>
+                    <td>2</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>Shake Milton</td>
+                    <td>---</td>
                     <td>13</td>
-                    <td>6'5"</td>
+                    <td>---</td>
                 </tr>
                 <tr>
-                    <td>John Wall</td>
-                    <td>Guard</td>
-                    <td>1</td>
-                    <td>6'4"</td>
+                    <td>Julius Randle</td>
+                    <td>---</td>
+                    <td>30</td>
+                    <td>---</td>
                 </tr>
                 <tr>
-                    <td>Christian Wood</td>
-                    <td>Forward-Center</td>
-                    <td>35</td>
-                    <td>6'10"</td>
+                    <td>Mitchell Robinson</td>
+                    <td>---</td>
+                    <td>23</td>
+                    <td>---</td>
                 </tr>
-                
+                <tr>
+                    <td>Jericho Sims</td>
+                    <td>---</td>
+                    <td>45</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>Jacob Toppin</td>
+                    <td>---</td>
+                    <td>00</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>Duane Washington Jr</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                </tr>
             </tbody>
         </table>
     </div>
+
+
+    <div class="formulario">
+        <h2><b>Formulário de Perguntas sobre o New York Knicks</b></h2>
+        <form id="knicks-form">
+            <div class="form-group">
+                <label>Qual é o seu jogador favorito atual do New York Knicks?</label>
+                <br>
+                <div>
+                    <label for="player-julius-randle">Julius Randle</label>
+                    <input type="radio" id="player-julius-randle" name="favorite-player" value="Julius Randle">
+                    
+                </div>
+                <div>
+                    <label for="player-rj-barrett">RJ Barrett</label>
+                    <input type="radio" id="player-rj-barrett" name="favorite-player" value="RJ Barrett">
+                    
+                </div>
+                <div>
+                    <label for="player-derrick-rose">Derrick Rose</label>
+                    <input type="radio" id="player-derrick-rose" name="favorite-player" value="Derrick Rose">
+                    
+                </div>
+                <div>
+                    
+                    <label for="player-other">Outro:</label>
+                    <input type="text" id="other-player" name="other-player" placeholder="Digite o nome">
+                    
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Quem você considera o maior jogador da história do New York Knicks?</label>
+                <br>
+                <div>
+                    <label for="greatest-player-willis-reed">Willis Reed</label>
+                    <input type="radio" id="greatest-player-willis-reed" name="greatest-player" value="Willis Reed">    
+                </div>
+                <div>   
+                    <label for="greatest-player-patrick-ewing">Patrick Ewing</label>
+                    <input type="radio" id="greatest-player-patrick-ewing" name="greatest-player" value="Patrick Ewing">
+                </div>
+                <div>
+                    <label for="greatest-player-walt-frazier">Walt Frazier</label>
+                    <input type="radio" id="greatest-player-walt-frazier" name="greatest-player" value="Walt Frazier">
+                </div>
+                <div>
+                    <label for="greatest-player-other">Outro:</label>
+                    <input type="text" id="other-greatest-player" name="other-greatest-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Qual é a sua expectativa para a próxima temporada do New York Knicks?</label>
+                <br>
+                <div>
+                    <label for="next-season-expectation-playoffs">Chegar aos playoffs</label>
+                    <input type="radio" id="next-season-expectation-playoffs" name="next-season-expectation" value="Chegar aos playoffs">
+                    
+                </div>
+                <div>
+                    <label for="next-season-expectation-development">Desenvolvimento dos jogadores</label>
+                    <input type="radio" id="next-season-expectation-development" name="next-season-expectation" value="Desenvolvimento dos jogadores">
+                    
+                </div>
+                <div>
+                    <label for="next-season-expectation-other">Outro:</label>
+                    <input type="text" id="other-next-season-expectation" name="other-next-season-expectation" placeholder="Digite a expectativa">
+                </div>
+                <br>
+                <div>
+                    <label for="next-season-expectation-question">Quais áreas você acredita que o New York Knicks precisa melhorar para ter sucesso na próxima temporada?</label>
+                    <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+                </div>
+                <br>
+                <div>
+                    <label for="next-season-expectation-question">Como você avalia as contratações feitas pelo New York Knicks nesta offseason?</label>
+                    <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+                </div>
+                <br>
+                <div>
+                    <label for="next-season-expectation-question">Qual é a sua opinião sobre o treinador atual do New York Knicks, e o que você gostaria de ver diferente na abordagem técnica da equipe?</label>
+                    <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+                </div>
+            </div>
+            <input type="submit" value="Enviar Respostas">
+        </form>
+    </div>
+
+
+    <div style="position: relative; width: 100%; height: 0; padding-top: 50.0000%;
+    padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+    border-radius: 8px; will-change: transform;">
+     <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+       src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGGFCE0ajA&#x2F;8xYaupNX7lwoJ5Ay8A6eeA&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+     </iframe>
+   </div>
+   <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGGFCE0ajA&#x2F;8xYaupNX7lwoJ5Ay8A6eeA&#x2F;view?utm_content=DAGGFCE0ajA&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a>
+
         <footer>
             <p>&copy; 2024 NBA - New York Knicks </p>
           </footer>
