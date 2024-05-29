@@ -11,27 +11,21 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
         header{
-            color: black;
-            padding: 5px;
-        }
-        h1{
-            color: #E31837;
+            color: rgb(255, 255, 255);
         }
         h2{
             color: #002B5C;
         }
         b {
             font-size: 1em;
-        }
-        .analise{
-            padding: 15px;
+            color: #002B5C;
         }
         footer{
             text-align: center;
             width: 100%;
         }
         hr{
-            color: black;
+            color: rgb(255, 255, 255);
         }
         h1{
             text-align: right;
@@ -39,12 +33,18 @@
             padding: 5px;
         }
         body{
-            padding: 15px;
             font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(255, 254, 254);
             
         }
-        p {
+        section {
+            padding: 15px;
+        }
+        h2{
             padding: 5px;
+        }
+        p {
+            padding: 15px;
             font-size: medium;
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -56,21 +56,72 @@
         navbar-brand{
             width: 150px;
         }
+
+        navbar-brand{
+            width: 150px;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
         }
         th, td {
-            border: 1px solid #002B5C;
+            border: 1px solid #ccc;
             padding: 8px;
             text-align: left;
         }
         th {
-            background-color: #002B5C;
+            background-color: #E31837;
             color: white;
         }
         tr:nth-child(even) {
-            background-color: #ccc;
+            background-color: #f2f2f2;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        input[type="text"] {
+            margin-left: 5px;
+        }
+        input[type="submit"] {
+            display: block;
+            margin: 20px auto 0;
+            background-color: #E31837;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #E31837;
+        }
+        .bg-light {
+            background: rgb(227,24,55);
+            background: linear-gradient(90deg, rgba(227,24,55,1) 27%, rgba(0,43,92,1) 50%, rgba(255,255,255,1) 100%);
+        
+        }
+        .logo{
+            width: 5em;
+            height: 5em;
+        }
+        .texto-lista{
+            padding: 15px;
+        }
+        .formulario {
+            max-width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #d0e0ff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .logo{
             width: 5em;
@@ -87,123 +138,305 @@
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .banner {
+        width: 100%;
+        height: auto;
+        padding: 25px;
+    }
 
     </style>
 </head>
 <body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
+        <h1 style="color: #fff;">Teams</h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">All Star Games</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Arenas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Times</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Jogadores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+</header>
+<br>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-           <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
-            <h1><b>Teams</b> <i class="fa-solid fa-wand-magic-sparkles" style="color: #265cba;"></i></h1>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">All Star Games</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Arenas</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Times</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Jogadores</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contato</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+        <h1><b>Washington Wizards</b></h1>
+        <img src="https://cdn.nba.com/teams/uploads/sites/1610612764/2022/06/wiz-primary.svg" alt="Washington Wizardss">
     </header>
-    <hr>
-    <section>
-        <div>
-            <img src="https://cdn.nba.com/teams/uploads/sites/1610612764/2022/06/wiz-primary.svg">
-            <br>
-            <h1><b>Washington Wizards</b></h1>
-            <br>
-            <p>
-                <h2><b>História:</b></h2>
-                Os Washington Wizards são uma equipe profissional de basquete sediada em Washington, D.C. Eles competem na National Basketball Association (NBA) como membro da Conferência Leste da NBA. A história da equipe remonta à sua fundação em 1961 como o Chicago Packers, fazendo parte da expansão da NBA naquele ano. No entanto, a equipe mudou de nome várias vezes ao longo dos anos.<br>
-                Em 1963, a equipe mudou seu nome para Chicago Zephyrs e, em 1964, mudou-se para Baltimore, Maryland, tornando-se o Baltimore Bullets. Em 1973, os Bullets mudaram-se para a capital dos Estados Unidos, Washington, D.C., e adotaram o nome Washington Bullets. Durante esse período, a equipe desfrutou de sucesso, ganhando o campeonato da NBA em 1978.<br>
-                Em 1997, devido a preocupações com a violência armada e a associação do nome "Bullets" com a violência, a equipe mudou seu nome para Washington Wizards. Desde então, os Wizards têm tido altos e baixos, mas continuam a ser uma presença na NBA, competindo na Conferência Leste e jogando seus jogos em casa na Capital One Arena, localizada no coração de Washington, D.C.<br>
-                <br>
-                <b>Arena:</b> A arena dos Washington Wizards é a <a href="#s"> Capital One Arena</a> ,  localizada no centro de Washington, D.C. <br>
-                A capacidade da arena varia dependendo do evento, mas para jogos de basquete da NBA, a capacidade é de cerca de 20.356 espectadores.<br>
-                <hr>
-                <img src="https://static.wikia.nocookie.net/mascots/images/5/58/Washington_Wizards_-_G-Wiz.png/revision/latest?cb=20190703001601" alt="Mascote">
-                <h2><b>Cores e Mascote:</b></h2>
-                <p>As cores principais dos Washington Wizards são Vermelho, Azul e Branco.<br>
-                    <br>
-                    O mascote dos Washington Wizards é chamado de <b>"G. Wiz"</b>. G. Wiz é um mago antropomórfico, vestido com roupas de mago típicas, incluindo um chapéu pontudo e uma capa. <br> Ele foi introduzido como mascote da equipe durante a temporada de 1997-1998, após a mudança de nome da equipe de Bullets para Wizards.<br>
-                    A história por trás do mascote é que ele é um mago poderoso que representa o espírito mágico e a energia da equipe. O nome "G. Wiz" é um jogo de palavras com a frase "gee whiz", uma expressão de surpresa ou admiração, e também uma abreviação de "Wizard"<br>
-                    Desde sua introdução, G. Wiz tornou-se uma parte integrante das apresentações durante os jogos em casa dos Wizards, entretendo os fãs com acrobacias, danças e interações divertidas.<br> Ele também participa de eventos comunitários e ações de caridade em nome da equipe. G. Wiz é uma figura querida entre os fãs dos Wizards e é reconhecido como um dos mascotes mais populares da NBA.<br>
 
-                </p>
-        </div>
-    </section>
-    <hr>
     <section>
-        <div>
-            <h2><b>Momentos Notáveis:</b></h2>
+        <h2><b>História</b></h2>
+        <p>
+            Os Washington Wizards são uma equipe profissional de basquete sediada em Washington, D.C. Eles competem na National Basketball Association (NBA) como membro da Conferência Leste da NBA. A história da equipe remonta à sua fundação em 1961 como o Chicago Packers, fazendo parte da expansão da NBA naquele ano. No entanto, a equipe mudou de nome várias vezes ao longo dos anos.
+            <br>
+            Em 1963, a equipe mudou seu nome para Chicago Zephyrs e, em 1964, mudou-se para Baltimore, Maryland, tornando-se o Baltimore Bullets. Em 1973, os Bullets mudaram-se para a capital dos Estados Unidos, Washington, D.C., e adotaram o nome Washington Bullets. Durante esse período, a equipe desfrutou de sucesso, ganhando o campeonato da NBA em 1978.Em 1997, devido a preocupações com a violência armada e a associação do nome "Bullets" com a violência, a equipe mudou seu nome para Washington Wizards. Desde então, os Wizards têm tido altos e baixos, mas continuam a ser uma presença na NBA, competindo na Conferência Leste e jogando seus jogos em casa na Capital One Arena, localizada no coração de Washington, D.C.
+                <br>
+                <h2><b>Arena</b></h2>
+                A arena dos Washington Wizards é a <a href="#">Capital One Arena</a> , localizada no centro de Washington, D.C.
+                A capacidade da arena varia dependendo do evento, mas para jogos de basquete da NBA, a capacidade é de cerca de 20.356 espectadores.
+            </p>
+            <hr>
+            <img src="https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_xy_center%2Cq_auto:good%2Cw_1200%2Cx_3739%2Cy_1135/MjAyODkyNTU4NTUwOTY3MzA4/usatsi_19836101.jpg" alt="mascote">
+            <h2><b>Cores e Mascote</b></h2>
             <p>
-            <li><b>Campeonato da NBA em 1978:</b> Os Wizards, então conhecidos como Washington Bullets, conquistaram o título da NBA em 1978, derrotando o Seattle SuperSonics na final. Foi o único título de campeonato da franquia até hoje.</li>
-            <li><b>Era Gilbert Arenas:</b> Durante os anos 2000, Gilbert Arenas emergiu como uma estrela para os Wizards. Ele liderou a equipe para várias participações nos playoffs e teve várias performances memoráveis, incluindo marcar 60 pontos em um único jogo em 2006.</li>
-            <li><b>Regresso de Michael Jordan:</b> Em 2001, Michael Jordan, um dos maiores jogadores da história do basquete, voltou à NBA como jogador e presidente de operações de basquete dos Wizards. Embora sua passagem como jogador tenha sido curta, ela trouxe grande excitação e interesse à equipe.</li>
-            <li><b>Era John Wall e Bradley Beal:</b>Nos últimos anos, os Wizards foram liderados por John Wall e Bradley Beal. A dupla formou uma das melhores duplas de base da liga e levou os Wizards a vários playoffs, incluindo uma aparição nas semifinais da Conferência Leste em 2017.</li>
-            <li><b>Mudança para Washington, D.C.: </b> A mudança da equipe de Baltimore para Washington, D.C., em 1973, marcou um novo capítulo na história da franquia e a conectou mais intimamente com a capital dos Estados Unidos.</li>
+                As cores principais dos Washington Wizards são <b style="color: red;">Vermelho</b> , <b style="color: blue;">Azul</b> e <b style="color: #ccc;">Branco</b>.
+                <br>
+                O mascote dos Washington Wizards é chamado de  <b>"G. Wiz"</b>. G. Wiz é um mago antropomórfico, vestido com roupas de mago típicas, incluindo um chapéu pontudo e uma capa.
+                A história por trás do mascote é que ele é um mago poderoso que representa o espírito mágico e a energia da equipe. O nome "G. Wiz" é um jogo de palavras com a frase "gee whiz", uma expressão de surpresa ou admiração, e também uma abreviação de "Wizard"
+                Desde sua introdução, G. Wiz tornou-se uma parte integrante das apresentações durante os jogos em casa dos Wizards, entretendo os fãs com acrobacias, danças e interações divertidas.
+                Ele também participa de eventos comunitários e ações de caridade em nome da equipe. G. Wiz é uma figura querida entre os fãs dos Wizards e é reconhecido como um dos mascotes mais populares da NBA.
             </p>
         </div>
+  
         <div>
-            <h2><b>Rivalidades:</b></h2>
-            <p>
-               <a href="#">Boston Celtics:</a>Esta é uma rivalidade histórica, destacada por vários confrontos emocionantes nos playoffs ao longo dos anos. Ambas as equipes competem na mesma divisão e têm uma história rica na NBA, o que adiciona combustível ao fogo dessa rivalidade. <br>
-               <a href="#">Philadelphia 76ers:</a> Outra rivalidade da divisão, os confrontos entre os Wizards e os 76ers são sempre intensos. Essas equipes têm competido ferozmente ao longo dos anos, especialmente quando estão lutando por posições nos playoffs ou pela supremacia na divisão.<br>
-               <a href="#">Cleveland Cavaliers: </a> Embora não seja tão intensa quanto as rivalidades mencionadas anteriormente, os confrontos entre os Wizards e os Cavaliers geralmente são emocionantes. Ambas as equipes têm tido altos e baixos ao longo dos anos e competem na mesma conferência, o que contribui para uma rivalidade natural.<br>
-            </p>
+            <h2><b>Momentos Notáveis</b></h2>
+                <li><b>Campeonato da NBA em 1978:</b> Os Wizards, então conhecidos como Washington Bullets, conquistaram o título da NBA em 1978, derrotando o Seattle SuperSonics na final. Foi o único título de campeonato da franquia até hoje.</li>
+                <li><b>Era Gilbert Arenas:</b> Durante os anos 2000, Gilbert Arenas emergiu como uma estrela para os Wizards. Ele liderou a equipe para várias participações nos playoffs e teve várias performances memoráveis, incluindo marcar 60 pontos em um único jogo em 2006.</li>
+                <li><b>Regresso de Michael Jordan:</b> Em 2001, Michael Jordan, um dos maiores jogadores da história do basquete, voltou à NBA como jogador e presidente de operações de basquete dos Wizards. Embora sua passagem como jogador tenha sido curta, ela trouxe grande excitação e interesse à equipe.</li>
+                <li><b>Era John Wall e Bradley Beal:</b> Nos últimos anos, os Wizards foram liderados por John Wall e Bradley Beal. A dupla formou uma das melhores duplas de base da liga e levou os Wizards a vários playoffs, incluindo uma aparição nas semifinais da Conferência Leste em 2017.</li>
+                <li><b>Mudança para Washington, D.C :</b> A mudança da equipe de Baltimore para Washington, D.C., em 1973, marcou um novo capítulo na história da franquia e a conectou mais intimamente com a capital dos Estados Unidos.</li>
+        <hr>
+
+        <h2><b>Rivalidades</b></h2>
+            <li><a href="#"> Boston Celtics:</a> Esta é uma rivalidade histórica, destacada por vários confrontos emocionantes nos playoffs ao longo dos anos. Ambas as equipes competem na mesma divisão e têm uma história rica na NBA, o que adiciona combustível ao fogo dessa rivalidade.</li>
+            <li><a href="#"> Philadelphia 76ers: </a> Outra rivalidade da divisão, os confrontos entre os Wizards e os 76ers são sempre intensos. Essas equipes têm competido ferozmente ao longo dos anos, especialmente quando estão lutando por posições nos playoffs ou pela supremacia na divisão.</li>
+            <li><a href="#"> Cleveland Cavaliers: </a> Embora não seja tão intensa quanto as rivalidades mencionadas anteriormente, os confrontos entre os Wizards e os Cavaliers geralmente são emocionantes. Ambas as equipes têm tido altos e baixos ao longo dos anos e competem na mesma conferência, o que contribui para uma rivalidade natural.</li>
         </div>
     </section>
-    <div class="container">
-        <h1><b>Washington Wizards Core Players</b></h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Position</th>
-                    <th>Number</th>
-                    <th>Height</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>James Harden</td>
-                    <td>Guard</td>
-                    <td>13</td>
-                    <td>6'5"</td>
-                </tr>
-                <tr>
-                    <td>John Wall</td>
-                    <td>Guard</td>
-                    <td>1</td>
-                    <td>6'4"</td>
-                </tr>
-                <tr>
-                    <td>Christian Wood</td>
-                    <td>Forward-Center</td>
-                    <td>35</td>
-                    <td>6'10"</td>
-                </tr>
-                
-            </tbody>
-        </table>
+<div class="container">
+    <h1><b>Washington Wizards Core Players</b></h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Posição</th>
+                <th>Número</th>
+                <th>Altura</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Deni Avdija</td>
+                <td>Ala</td>
+                <td>8</td>
+                <td>2.06 m</td>
+            </tr>
+            <tr>
+                <td>Marvin Bagley III</td>
+                <td>Ala-Pivô</td>
+                <td>35</td>
+                <td>2.08 m</td>
+            </tr>
+            <tr>
+                <td>Patrick Baldwin Jr.</td>
+                <td>Ala</td>
+                <td>7</td>
+                <td>2.06 m</td>
+            </tr>
+            <tr>
+                <td>Jules Bernard</td>
+                <td>Guarda</td>
+                <td>14</td>
+                <td>1.98 m</td>
+            </tr>
+            <tr>
+                <td>Jared Butler</td>
+                <td>Ala-Armador</td>
+                <td>4</td>
+                <td>1.91 m</td>
+            </tr>
+            <tr>
+                <td>Justin Champagnie</td>
+                <td>Ala</td>
+                <td>99</td>
+                <td>1.98 m</td>
+            </tr>
+            <tr>
+                <td>Bilal Coulibaly</td>
+                <td>Ala-Armador</td>
+                <td>0</td>
+                <td>2.03 m</td>
+            </tr>
+            <tr>
+                <td>Johnny Davis</td>
+                <td>Guarda</td>
+                <td>1</td>
+                <td>1.93 m</td>
+            </tr>
+            <tr>
+                <td>Anthony Gill</td>
+                <td>Ala-Pivô</td>
+                <td>16</td>
+                <td>2.03 m</td>
+            </tr>
+            <tr>
+                <td>Richaun Holmes</td>
+                <td>Ala</td>
+                <td>22</td>
+                <td>2.06 m</td>
+            </tr>
+            <tr>
+                <td>Tyus Jones</td>
+                <td>Armador</td>
+                <td>5</td>
+                <td>1.85 m</td>
+            </tr>
+            <tr>
+                <td>Corey Kispert</td>
+                <td>Ala</td>
+                <td>24</td>
+                <td>1.98 m</td>
+            </tr>
+            <tr>
+                <td>Kyle Kuzma</td>
+                <td>Ala</td>
+                <td>33</td>
+                <td>2.06 m</td>
+            </tr>
+            <tr>
+                <td>Eugene Omoruyi</td>
+                <td>Ala</td>
+                <td>97</td>
+                <td>1.98 m</td>
+            </tr>
+            <tr>
+                <td>Jordan Poole</td>
+                <td>Ala-Armador</td>
+                <td>13</td>
+                <td>1.93 m</td>
+            </tr>
+            <tr>
+                <td>Landry Shamet</td>
+                <td>Ala-Armador</td>
+                <td>20</td>
+                <td>1.93 m</td>
+            </tr>
+            <tr>
+                <td>Tristan Vukcevic</td>
+                <td>-</td>
+                <td>00</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table>
     </div>
-        <footer>
-            <p>&copy; 2024 NBA - Washington Wizards </p>
-          </footer>
+    
+    <div class="formulario">
+        <h2><b>Formulário de Perguntas sobre o Washington Wizards</b></h2>
+        <form id="wizards-form">
+            <div class="form-group">
+                <label>Qual é o seu jogador favorito atual do Washington Wizards?</label>
+                <br>
+                <div>
+                    <label for="player-bradley-beal">Bradley Beal</label>
+                    <input type="radio" id="player-bradley-beal" name="favorite-player" value="Bradley Beal">
+                </div>
+                <div>
+                    <label for="player-russell-westbrook">Russell Westbrook</label>
+                    <input type="radio" id="player-russell-westbrook" name="favorite-player" value="Russell Westbrook">
+                </div>
+                <div>
+                    <label for="player-spencer-dinwiddie">Spencer Dinwiddie</label>
+                    <input type="radio" id="player-spencer-dinwiddie" name="favorite-player" value="Spencer Dinwiddie">
+                </div>
+                <div>
+                    <label for="player-other">Outro:</label>
+                    <input type="text" id="other-player" name="other-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Quem você considera o maior jogador da história do Washington Wizards?</label>
+                <br>
+                <div>
+                    <label for="greatest-player-wes-unseld">Wes Unseld</label>
+                    <input type="radio" id="greatest-player-wes-unseld" name="greatest-player" value="Wes Unseld">
+                </div>
+                <div>
+                    <label for="greatest-player-elvin-hayes">Elvin Hayes</label>
+                    <input type="radio" id="greatest-player-elvin-hayes" name="greatest-player" value="Elvin Hayes">
+                </div>
+                <div>
+                    <label for="greatest-player-john-wall">John Wall</label>
+                    <input type="radio" id="greatest-player-john-wall" name="greatest-player" value="John Wall">
+                </div>
+                <div>
+                    <label for="greatest-player-other">Outro:</label>
+                    <input type="text" id="other-greatest-player" name="other-greatest-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Qual é a sua expectativa para a próxima temporada da NBA?</label>
+                <br>
+                <div>
+                    <label for="next-season-expectation-championship">Vencer o campeonato</label>
+                    <input type="radio" id="next-season-expectation-championship" name="next-season-expectation" value="Vencer o campeonato">
+                </div>
+                <div>
+                    <label for="next-season-expectation-playoffs">Chegar aos playoffs</label>
+                    <input type="radio" id="next-season-expectation-playoffs" name="next-season-expectation" value="Chegar aos playoffs">
+                </div>
+                <div>
+                    <label for="next-season-expectation-development">Desenvolvimento dos jogadores</label>
+                    <input type="radio" id="next-season-expectation-development" name="next-season-expectation" value="Desenvolvimento dos jogadores">
+                </div>
+                <div>
+                    <label for="next-season-expectation-other">Outro:</label>
+                    <input type="text" id="other-next-season-expectation" name="other-next-season-expectation" placeholder="Digite a expectativa">
+                </div>
+                <br>
+                <div>
+                    <label for="next-season-expectation-question">Quais áreas você acredita que o Washington Wizards precisa melhorar para ter sucesso na próxima temporada?</label>
+                    <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+                </div>
+                <br>
+                <div>
+                    <label for="next-season-expectation-question">Como você avalia as contratações feitas pelo Washington Wizards nesta offseason?</label>
+                    <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+                </div>
+                <br>
+                <div>
+                    <label for="next-season-expectation-question">Qual é a sua opinião sobre o treinador atual do Washington Wizards, e o que você gostaria de ver diferente na abordagem técnica da equipe?</label>
+                    <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+                </div>
+            </div>
+            <input type="submit" value="Enviar Respostas">
+        </form>
+    </div>
+
+
+    <div style="position: relative; width: 100%; height: 0; padding-top: 50.0000%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGGo0iZyuc&#x2F;3SxhwPnZBBHYubmpnz8Hwg&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGGo0iZyuc&#x2F;3SxhwPnZBBHYubmpnz8Hwg&#x2F;view?utm_content=DAGGo0iZyuc&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a>
+
+          <footer>
+              <p>&copy; 2024 NBA - Washington Wizards </p>
+            </footer>
+</body>
