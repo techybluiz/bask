@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-BR"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Phoenix Suns </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        header{
+            color: rgb(255, 255, 255);
+        }
+        h2{
+            color: #1D1160;
+        }
+        b {
+            font-size: 1em;
+            color: #1D1160;
+        }
+        footer{
+            text-align: center;
+            width: 100%;
+        }
+        hr{
+            color: rgb(255, 255, 255);
+        }
+        h1{
+            text-align: right;
+            text-align: center;
+            padding: 5px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(255, 254, 254);
+            
+        }
+        section {
+            padding: 15px;
+        }
+        h2{
+            padding: 5px;
+        }
+        p {
+            padding: 15px;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        img{
+            width:360px;
+            float: right;
+            margin-right: 30px;
+        }
+        navbar-brand{
+            width: 150px;
+        }
+
+        navbar-brand{
+            width: 150px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #E56020;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        input[type="text"] {
+            margin-left: 5px;
+        }
+        input[type="submit"] {
+            display: block;
+            margin: 20px auto 0;
+            background-color: #575757;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #575757;
+        }
+        .bg-light {
+            background: rgb(29,17,96);
+            background: linear-gradient(90deg, rgba(29,17,96,1) 31%, rgba(229,96,32,1) 72%);
+        
+        }
+        .logo{
+            width: 5em;
+            height: 5em;
+        }
+        .texto-lista{
+            padding: 15px;
+        }
+        .formulario {
+            max-width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #a99fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .logo{
+            width: 5em;
+            height: 4em;
+        }
+        .texto-lista{
+            padding: 15px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .banner {
+        width: 100%;
+        height: auto;
+        padding: 25px;
+    }
+
+    </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
+        <h1 style="color: #fff;">Teams</h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">All Star Games</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Arenas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Times</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Jogadores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+</header>
+<br>
+    <header>
+        <h1><b>Phoenix Suns</b></h1>
+        <img src="https://cdn.nba.com/teams/uploads/sites/1610612756/2022/08/suns-logo.svg" alt="Phoenix suns">
+    </header>
+
+    <section>
+        <h2><b>História</b></h2>
+        <p>
+            O Phoenix Suns é uma equipe profissional de basquete sediada em Phoenix, Arizona, que compete na National Basketball Association (NBA). A equipe foi fundada em 1968, quando a NBA concedeu uma franquia à cidade de Phoenix. O nome "Suns" foi escolhido em um concurso realizado pela população local, refletindo o clima quente e ensolarado do estado do Arizona.
+            <br>
+            No início, os Suns tiveram um desempenho instável, como é comum para muitas equipes de expansão. No entanto, em sua segunda temporada (1969-1970), eles surpreenderam a liga ao alcançar os playoffs sob a liderança do treinador Butch van Breda Kolff e do astro Connie Hawkins. Desde então, os Suns tiveram altos e baixos, mas ao longo dos anos, a equipe produziu grandes jogadores e momentos memoráveis.
+                <br>
+                <h2><b>Arena</b></h2>
+                A arena principal do Phoenix Suns é o <a href="#">Footprint Center</a> , localizado em Chicago, Illinois, nos Estados Unidos. É uma das arenas mais icônicas da NBA e também é usada pelo time de hóquei no gelo Chicago Blackhawks da NHL.
+                Para jogos de basquete da NBA, a capacidade é de aproximadamente 20.917 espectadores.
+            </p>
+            <hr>
+            <img src="https://mascothalloffame.com/wp-content/uploads/2019/04/The-Gorilla-e1679258236392.jpg" alt="mascote">
+            <h2><b>Cores e Mascote</b></h2>
+            <p>
+                O mascote do Phoenix Suns é chamado de <b>"The Gorilla"</b>. O Gorila foi introduzido como mascote oficial dos Suns em 1980. A ideia surgiu quando um funcionário da equipe, Henry Rojas, decidiu usar um traje de gorila em um jogo para entreter os fãs durante um intervalo. A reação foi extremamente positiva, e o personagem rapidamente se tornou uma parte querida das atividades durante os jogos.
+                le é frequentemente visto fazendo enterradas incríveis em um mini aro de basquete ou interagindo de maneiras engraçadas com os jogadores, a equipe técnica e os fãs.
+                Ao longo dos anos, o Gorila se tornou um símbolo icônico da equipe e é reconhecido em toda a NBA como um dos mascotes mais populares e reconhecíveis. 
+            </p>
+        </div>
+  
+        <div>
+            <h2><b>Momentos Notáveis</b></h2>
+                <li><b>1976 NBA Finals:</b> Os Suns alcançaram as finais da NBA pela primeira vez em 1976, enfrentando o Boston Celtics. Esta série final foi notável pelo Jogo 5, que se tornou lendário por sua prorrogação tripla. Embora os Suns tenham perdido a série, o desempenho notável nesta série final solidificou a equipe como uma força na liga.</li>
+                <li><b>Charles Barkley era (meados dos anos 90):</b> Durante a era de Charles Barkley como jogador dos Suns na década de 1990, a equipe teve um grande sucesso. Em 1993, os Suns alcançaram as finais da NBA, perdendo para o Chicago Bulls de Michael Jordan. No entanto, Barkley foi uma força dominante na liga durante esse tempo, ganhando o prêmio de MVP da temporada regular em 1993.</li>
+                <li><b>Seven Seconds or Less era (meados dos anos 2000):</b> Sob a orientação do treinador Mike D'Antoni e liderados por Steve Nash, Amar'e Stoudemire e Shawn Marion, os Suns adotaram uma abordagem de jogo rápido e emocionante conhecida como "Seven Seconds or Less". Esta era viu os Suns como uma das equipes mais emocionantes e competitivas da liga, embora não tenham conseguido conquistar um título.</li>
+                <li><b>2010 Western Conference Finals:</b> Em 2010, os Suns alcançaram as finais da Conferência Oeste sob o comando de Steve Nash e Amar'e Stoudemire. Eles enfrentaram o Los Angeles Lakers em uma série emocionante que foi decidida no Jogo 6. Embora os Suns tenham perdido essa série, sua corrida até as finais da conferência foi notável.</li>
+                <li><b>2021 NBA Finals:</b> Após anos de reconstrução, os Suns voltaram a ser uma potência na NBA em 2021. Liderados por Devin Booker, Chris Paul e Deandre Ayton, os Suns alcançaram as finais da NBA pela terceira vez em sua história. Embora tenham perdido para o Milwaukee Bucks, sua jornada até as finais reacendeu o entusiasmo dos fãs e demonstrou o potencial da equipe para o futuro.</li>
+        <hr>
+
+        <h2><b>Rivalidades</b></h2>
+            <li><a href="#"> Los Angeles Lakers:</a> Esta é uma rivalidade clássica que se desenvolveu principalmente durante os anos 80 e 90. Os confrontos entre os Suns e os Lakers foram intensos e muitas vezes aconteceram nos playoffs, adicionando ainda mais fogo à rivalidade. Ambas as equipes tiveram momentos de sucesso durante essas décadas, o que aumentou a rivalidade.</li>
+            <li><a href="#"> San Antonio Spurs:</a> Durante os anos 2000, os Suns e os Spurs tiveram uma rivalidade bastante intensa, especialmente nos playoffs. As equipes se enfrentaram várias vezes em séries de playoffs altamente competitivas, muitas vezes com confrontos acirrados e jogos emocionantes.</li>
+            <li><a href="#"> Portland Trail Blazers:</a> Os confrontos entre os Suns e os Trail Blazers também criaram uma rivalidade ao longo dos anos, especialmente durante os anos 90. Ambas as equipes eram fortes competidoras na Conferência Oeste e frequentemente se enfrentavam em jogos importantes durante a temporada regular e nos playoffs.</li>
+        </div>
+    </section>
+<div class="container">
+    <h1><b>Phoenix Suns Core Players</b></h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Posição</th>
+                <th>Número</th>
+                <th>Altura</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Grayson Allen</td>
+                <td>Armador</td>
+                <td>8</td>
+                <td>1.93 m</td>
+            </tr>
+            <tr>
+                <td>Udoka Azubuike</td>
+                <td>Pivô</td>
+                <td>27</td>
+                <td>2.11 m</td>
+            </tr>
+            <tr>
+                <td>Bradley Beal</td>
+                <td>Armador</td>
+                <td>3</td>
+                <td>1.93 m</td>
+            </tr>
+            <tr>
+                <td>Bol Bol</td>
+                <td>Pivô</td>
+                <td>11</td>
+                <td>2.21 m</td>
+            </tr>
+            <tr>
+                <td>Devin Booker</td>
+                <td>Armador</td>
+                <td>1</td>
+                <td>1.98 m</td>
+            </tr>
+            <tr>
+                <td>Kevin Durant</td>
+                <td>Ala-Pivô</td>
+                <td>35</td>
+                <td>2.11 m</td>
+            </tr>
+            <tr>
+                <td>Drew Eubanks</td>
+                <td>Ala-Pivô</td>
+                <td>14</td>
+                <td>2.08 m</td>
+            </tr>
+            <tr>
+                <td>Eric Gordon</td>
+                <td>Armador</td>
+                <td>23</td>
+                <td>1.91 m</td>
+            </tr>
+            <tr>
+                <td>Damion Lee</td>
+                <td>Armador</td>
+                <td>10</td>
+                <td>1.98 m</td>
+            </tr>
+            <tr>
+                <td>Saben Lee</td>
+                <td>Guarda</td>
+                <td>38</td>
+                <td>1.88 m</td>
+            </tr>
+            <tr>
+                <td>Nassir Little</td>
+                <td>Ala</td>
+                <td>25</td>
+                <td>1.98 m</td>
+            </tr>
+            <tr>
+                <td>Jusuf Nurkic</td>
+                <td>Pivô</td>
+                <td>20</td>
+                <td>2.13 m</td>
+            </tr>
+            <tr>
+                <td>Royce O'Neale</td>
+                <td>Ala-Pivô</td>
+                <td>00</td>
+                <td>1.98 m</td>
+            </tr>
+            <tr>
+                <td>Josh Okogie</td>
+                <td>Ala</td>
+                <td>2</td>
+                <td>1.93 m</td>
+            </tr>
+            <tr>
+                <td>David Roddy</td>
+                <td>Ala</td>
+                <td>21</td>
+                <td>1.93 m</td>
+            </tr>
+            <tr>
+                <td>Isaiah Thomas</td>
+                <td>Guarda</td>
+                <td>4</td>
+                <td>1.75 m</td>
+            </tr>
+            <tr>
+                <td>Ish Wainright</td>
+                <td>Ala</td>
+                <td>12</td>
+                <td>1.96 m</td>
+            </tr>
+            <tr>
+                <td>Thaddeus Young</td>
+                <td>Ala</td>
+                <td>30</td>
+                <td>2,03 m</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    
+    <div class="formulario">
+        <h2><b>Formulário de Perguntas sobre o Phoenix Suns</b></h2>
+        <form id="suns-form">
+            <div class="form-group">
+                <label>Qual é o seu jogador favorito atual do Phoenix Suns?</label>
+                <br>
+                <div>
+                    <label for="player-devin-booker">Devin Booker</label>
+                    <input type="radio" id="player-devin-booker" name="favorite-player" value="Devin Booker">
+                </div>
+                <div>
+                    <label for="player-kevin-durant">Kevin Durant</label>
+                    <input type="radio" id="player-kevin-durant" name="favorite-player" value="Kevin Durant">
+                </div>
+                <div>
+                    <label for="player-deandre-ayton">Deandre Ayton</label>
+                    <input type="radio" id="player-deandre-ayton" name="favorite-player" value="Deandre Ayton">
+                </div>
+                <div>
+                    <label for="player-bradley-beal">Bradley Beal</label>
+                    <input type="radio" id="player-bradley-beal" name="favorite-player" value="Bradley Beal">
+                </div>
+                <div>
+                    <label for="player-other">Outro:</label>
+                    <input type="text" id="other-player" name="other-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Quem você considera o maior jogador da história do Phoenix Suns?</label>
+                <br>
+                <div>
+                    <label for="greatest-player-steve-nash">Steve Nash</label>
+                    <input type="radio" id="greatest-player-steve-nash" name="greatest-player" value="Steve Nash">
+                </div>
+                <div>
+                    <label for="greatest-player-charles-barkley">Charles Barkley</label>
+                    <input type="radio" id="greatest-player-charles-barkley" name="greatest-player" value="Charles Barkley">
+                </div>
+                <div>
+                    <label for="greatest-player-kevin-johnson">Kevin Johnson</label>
+                    <input type="radio" id="greatest-player-kevin-johnson" name="greatest-player" value="Kevin Johnson">
+                </div>
+                <div>
+                    <label for="greatest-player-shawn-marion">Shawn Marion</label>
+                    <input type="radio" id="greatest-player-shawn-marion" name="greatest-player" value="Shawn Marion">
+                </div>
+                <div>
+                    <label for="greatest-player-other">Outro:</label>
+                    <input type="text" id="other-greatest-player" name="other-greatest-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Qual é a sua expectativa para a próxima temporada da NBA para o Phoenix Suns?</label>
+                <br>
+                <div>
+                    <label for="next-season-expectation-championship">Vencer o campeonato</label>
+                    <input type="radio" id="next-season-expectation-championship" name="next-season-expectation" value="Vencer o campeonato">
+                </div>
+                <div>
+                    <label for="next-season-expectation-playoffs">Chegar aos playoffs</label>
+                    <input type="radio" id="next-season-expectation-playoffs" name="next-season-expectation" value="Chegar aos playoffs">
+                </div>
+                <div>
+                    <label for="next-season-expectation-development">Desenvolvimento dos jogadores</label>
+                    <input type="radio" id="next-season-expectation-development" name="next-season-expectation" value="Desenvolvimento dos jogadores">
+                </div>
+                <div>
+                    <label for="next-season-expectation-other">Outro:</label>
+                    <input type="text" id="other-next-season-expectation" name="other-next-season-expectation" placeholder="Digite a expectativa">
+                </div>
+            </div>
+            <div>
+                <label for="next-season-expectation-question">Quais áreas você acredita que o Phoenix Suns precisa melhorar para ter sucesso na próxima temporada?</label>
+                <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+            </div>
+    
+            <div>
+                <label for="next-season-expectation-question">Como você avalia as contratações feitas pelo Phoenix Suns nesta offseason?</label>
+                <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+            </div>
+    
+            <div>
+                <label for="next-season-expectation-question">Qual é a sua opinião sobre o treinador atual do Phoenix Suns, e o que você gostaria de ver diferente na abordagem técnica da equipe?</label>
+                <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+            </div>
+            <input type="submit" value="Enviar Respostas">
+        </form>
+    </div>
+    <div style="position: relative; width: 100%; height: 0; padding-top: 50.0000%;
+    padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+    border-radius: 8px; will-change: transform;">
+     <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+       src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGGFLRI7Eo&#x2F;5EjGLY2m-Ha0Fx-G-Y7Ytg&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+     </iframe>
+   </div>
+   <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGGFLRI7Eo&#x2F;5EjGLY2m-Ha0Fx-G-Y7Ytg&#x2F;view?utm_content=DAGGFLRI7Eo&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a> 
+
+          <footer>
+              <p>&copy; 2024 NBA - Phoenix Suns </p>
+            </footer>
+</body>

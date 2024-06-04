@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Página Inicial - NBA</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #000000;
+        }
+        
+        header {
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        
+        nav ul li a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+        
+        section {
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        footer {
+            background-color: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        h2 {
+            color: #800080;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropbtn {
+            background-color: #007bff; /* Azul da NBA */
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #007bff; /* Azul da NBA */
+            color: white;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+            <a href="file:///C:/Users/Bianca/pasta_teste/paginainicial.html">Página Inicial</a>
+            <a href="file:///C:/Users/Bianca/pasta_teste/players.html">Jogadores</a>
+            <a href="file:///C:/Users/Bianca/pasta_teste/arenas.html">Arenas</a>
+        </div>
+    </div>
+    
+    <header>
+        <h1> Página Inicial - NBA</h1>
+    </header>
+    <b><p style="text-align: center"> <i>Aqui você encontra tudo sobre a NBA</i></p></b>
+    <nav>
+        <ul>
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#agenda">Agenda de Jogos</a></li>
+            <li><a href="#analises">Análises e Opiniões</a></li>
+            <!-- Adicione mais itens de navegação conforme necessário -->
+        </ul>
+    </nav>
+    <section id="historia">
+        <h2>História NBA</h2>
+        <p>Fundada por <a James Naismith ></a> em 6 de junho de 1946 em Nova York como Basketball Association of America (BAA), os primeiros anos da NBA foram repletos de desafios, incluindo a competição com a National Basketball League (NBL), que se fundiu em 1949. Formando a NBA que conhecemos hoje. </p>
+            <p>A fusão ajudou a solidificar o status do basquete profissional nos Estados Unidos, atraindo times e talentos de ambas as ligas e estabelecendo as bases para o crescimento global e a popularidade do esporte. O torneio contava originalmente com 11 equipes, mas devido à monotonia da competição o número foi reduzido para apenas oito equipes em 1954.</p>
+            <p>Para mudar esta situação, a NBA alterou algumas regras e criou um relógio de 24 segundos, obrigando as equipas a rematar antes do final desse tempo.</p>
+             
+            <p>Outra medida da agremiação é a proibição dos goleiros, que impedem os jogadores de tirar a bola da cesta.</p>
+            
+            <p>Com essas mudanças, o jogo fica mais rápido e divertido, aumentando o interesse dos fãs.</p>
+    </section>
+    <section id="agenda">
+        <h2>Agenda de Jogos</h2>
+        <!-- Insira a agenda de jogos aqui -->
+    </section>
+    <section id="analises">
+        <h2>Análises e Opiniões</h2>
+        <section id="opinioes">
+            <h2>Deixe sua Opinião</h2>
+            <form action="enviar_opiniao.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="opiniao">Sua Opinião:</label><br>
+                <textarea id="opiniao" name="opiniao" rows="4" cols="50" required></textarea><br><br>
+                
+                <input type="submit" value="Enviar Opinião">
+            </form>
+        </section>
+        
+    </section>
+    <!-- Adicione mais seções conforme necessário -->
+    <footer>
+        <p>&copy; 2024 Página Inicial da NBA</p>
+    </footer>
+</body>
+</html>
