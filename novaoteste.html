@@ -5,38 +5,112 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Pagina Inicial - NBA</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <script>alert('Site demonstrativo, apenas para estudos')</script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <style>
+    
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
     header{
-        color: black;
-        padding: 5px;
-    }
-    .analise{
-        padding: 15px;
-    }
-    footer{
-        text-align: center;
+        color: rgb(255, 255, 255);
+        position: fixed;
+        top: 0;
+        z-index: 1000;
         width: 100%;
     }
-    hr{
-        color: black;
+    section {
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+    h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+        padding: 15px;
+    }
+    
+    h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    form {
+        width: 100%;
+        max-width: 600px;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    input[type="text"], input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        margin-bottom: 5px;
+        padding: 12px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background 1s;
     }
     h1{
+      color: #E13F32;
         text-align: center;
         padding: 5px;
     }
     body{
-        padding: 5px;
-        font-family: Arial, Helvetica, sans-serif;
+      margin-top: 80px;
+        font-family: 'Archivo Black', sans-serif;
+        background-color: rgb(240, 240, 240);
+    }
+    .bg-light{
+      background-color: rgb(240, 240, 240);
     }
     p {
         padding: 5px;
         font-size: medium;
-        font-family: Arial, Helvetica, sans-serif;
+
+    }
+    section{
+      padding: 15px;
+    }
+    button {
+      color: white;
+      background: #0057B8;
+      transition: background 1s;
+    }
+    
+    button:hover,
+    button:focus {
+      background: #E13F32;
+    }
+    
+    .analise{
+      padding: 15px;
+  }
+  .photo{
+    width:360px;
+    float: right;
+    margin-right: 30px;
+  }
+      footer{
+        text-align: center;
+        width: 100%;
     }
   </style>
 </head>
@@ -72,16 +146,15 @@
         </div>
       </nav>
 </header>
-<hr>
-<a href="https://www.nba.com/">Pagina Oficial</a>
+<br>
+<a href="https://www.nba.com/"> <i class="fa-solid fa-arrow-right"> </i> Pagina Oficial</a>
 <div class="container">
   <h1 style="color: rgb(155, 31, 31);">Informações Importantes</h1>
-  
   <br>
   <p>Bem-vindo(a) ao meu site dedicado ao universo da NBA!! <br>
     Este é um espaço criado com o intuito inicial apenas para estudo e compartilhar informações verídicas sobre a National Basketball Association. Meu interesse pelo basquete e pela dinâmica do esporte me inspiraram a criar este espaço, onde você encontrará uma variedade de conteúdos relacionados ao universo da NBA. <br>
 
-    É importante ressaltar que todas as informações contidas neste site são verdadeiras e foram cuidadosamente pesquisadas para garantir precisão e confiabilidade. Meu compromisso é fornecer um ambiente educacional e informativo para os amantes do basquete, desde os fãs mais ávidos até aqueles que estão apenas começando a explorar esse mundo emocionante.<br>
+    É importante ressaltar que todas as informações contidas neste site são verdadeiras e foram cuidadosamente pesquisadas para garantir precisão e confiabilidade<br>
     
     O tema da NBA foi escolhido por ser mais do que apenas um tópico de interesse - é um hobby pessoal.<br>
     
@@ -89,38 +162,61 @@
     
     Gostaria muito de ouvir sua opinião sobre o que achou do site! Por favor, sinta-se à vontade para deixar seus comentários, ideias de melhorias ou críticas construtivas na aba de opiniões, que se encontra no final da página.<br>
     <br>
-    </p>
+  </p>
 </div>
-
 <hr>
 <section>
-    <div id="Sobre">
-        <h2>História da NBA</h2>
-        <br>
+    <div>
+        <h2><b>História da NBA</b></h2>
         <p>
             A NBA teve suas raízes nos Estados Unidos e foi formada a partir da fusão de duas ligas anteriores, a Basketball Association of America (BAA) e a National Basketball League (NBL), em 1949. <br> 
-
-            <b>Criação do Nome:</b> Quando a BAA e a NBL se fundiram em 1949, formando a NBA, o nome "National Basketball Association" foi escolhido para representar uma liga unificada que abrangeria todo o país. A ideia por trás do nome era criar uma organização que representasse o basquete profissional em nível nacional, refletindo a ambição de tornar o esporte mais popular e competitivo em todo os Estados Unidos.<br>
-
+            <br>
+            <b>Criação do Nome:</b> Quando a BAA e a NBL se fundiram em 1949, formando a NBA, o nome <u><b>"National Basketball Association"</b></u>  foi escolhido para representar uma liga unificada que abrangeria todo o país. A ideia por trás do nome era criar uma organização que representasse o basquete profissional em nível nacional, refletindo a ambição de tornar o esporte mais popular e competitivo em todo os Estados Unidos.<br>
+          <br>
             <b>Os Primeiros Times:</b> Os primeiros times da NBA incluíam muitas das equipes que haviam competido na BAA e na NBL. Alguns dos primeiros times incluíam o Boston Celtics, o New York Knicks, o Philadelphia Warriors (agora conhecido como Golden State Warriors), o Minneapolis Lakers (agora conhecido como Los Angeles Lakers), o Rochester Royals (agora conhecido como Sacramento Kings), entre outros.<br>
-
+            <br>
             <b>Fundadores e Pioneiros:</b> Vários indivíduos desempenharam papéis fundamentais na formação da NBA. Maurice Podoloff, o presidente da BAA, desempenhou um papel central na fusão das duas ligas para formar a NBA. Outros nomes importantes incluem Walter A. Brown, proprietário do Boston Celtics, e Ned Irish, fundador do New York Knicks, que ajudaram a moldar os rumos da liga em seus primeiros anos.<br>
-
+            <br>
             <b>País de Origem:</b> A NBA é uma liga americana, originada nos Estados Unidos. Embora tenha expandido sua presença internacional ao longo dos anos, com jogadores e fãs em todo o mundo, sua fundação e sua base operacional sempre foram nos Estados Unidos.<br>
-
+            <br>
             <b>Fusão:</b> Em 1949, a BAA e a NBL se fundiram para formar a National Basketball Association (NBA). A fusão foi uma tentativa de consolidar o basquete profissional nos Estados Unidos e criar uma liga nacional mais forte e coesa.<br>
-            
+            <br>
             <b>Expansão e Consolidação:</b> Nas décadas seguintes, a NBA passou por um período de expansão e consolidação. Mais times foram adicionados à liga, e a NBA gradualmente se tornou a principal organização para o basquete profissional nos Estados Unidos.<br>
-
+            <br>
             <b>Expansão Internacional:</b> Nas décadas mais recentes, a NBA expandiu sua presença para além das fronteiras dos Estados Unidos, tornando-se uma liga verdadeiramente internacional. A NBA agora tem fãs, jogadores e equipes em todo o mundo, solidificando seu status como uma das principais ligas esportivas globais.<br>
         </p>
     </div>
-</section>
-<section>
+  <hr>
     <div>
-        <h2></h2>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZr9UZ4ZFlE4xhdwDwcJiS7G7YlRAk0V2TqQJt8-9enn2CXgGlvz-JLcge49YlSNaIJRQ&usqp=CAU" class="photo" alt="">
+      <h2><b>Maurice Podoloff</b></h2>
+      <p>Maurice Podoloff foi uma figura proeminente no mundo do basquete nos Estados Unidos. Ele é mais conhecido por ser o primeiro presidente da National Basketball Association (NBA), servindo de 1946 até 1963.<br>
+        <br>
+      <b>Nascimento:</b> Nascido em 18 de agosto de 1890, em Elizabethgrad, Império Russo (atual Kropyvnytskyi, Ucrânia), Podoloff emigrou para os Estados Unidos com sua família quando era criança. Depois de se formar na Universidade de Yale em 1913, ele trabalhou em vários cargos executivos, incluindo vice-presidente da Eastern Cold Storage Company em Nova York.<br>
+      <br>
+      <b>Carreira:</b> A carreira de Podoloff na NBA começou quando ele foi eleito presidente da Basketball Association of America (BAA) em 1946, a precursora da NBA. Ele desempenhou um papel fundamental na fusão bem-sucedida da BAA com a National Basketball League (NBL) em 1949, formando assim a NBA.<br>
+      <br>
+      Durante seu tempo como presidente da NBA, Podoloff ajudou a estabelecer muitas das bases da liga moderna, incluindo a implementação do Draft da NBA e o estabelecimento do primeiro contrato de televisão da liga. Ele também foi fundamental na expansão da liga, com equipes sendo adicionadas em cidades importantes em todo o país.<br>
+      <br>
+      Além de seu papel na NBA, Podoloff também foi presidente da American Hockey League (AHL) de 1952 a 1956 e foi introduzido no Basketball Hall of Fame em 1974.<br>
+      <br>
+      <b>Notas:</b> Podoloff faleceu em 24 de novembro de 1985, mas seu legado vive através da NBA e de suas contribuições para o esporte do basquete nos Estados Unidos.<br>
+      </p>
     </div>
-</section>
+<hr>
+<div>
+  <h2><b>Basketball Association of America</b></h2>
+      <p>
+        A Basketball Association of America (BAA) surgiu em 6 de junho de 1946, como uma iniciativa para criar uma liga profissional de basquete nos Estados Unidos. A ideia por trás da formação da BAA foi capitalizar o crescente interesse público no basquete pós-Segunda Guerra Mundial. A liga foi fundada por um grupo de proprietários de arenas e equipes de basquete, liderados por <b>Maurice Podoloff</b>, que se tornaria o primeiro presidente da BAA.
+      <br>
+        A BAA começou com 11 equipes: <a href="#"> Boston Celtics</a>, <a href="#"> Chicago Stags</a>, <a href="#"> Cleveland Rebels</a>, <a href="#"> Detroit Falcons</a>, <a href="#"> New York Knickerbockers (Knicks)</a>, <a href="#"> Philadelphia Warriors</a>, <a href="#"> Pittsburgh Ironmen</a>, <a href="#"> Providence Steamrollers</a>, <a href="#"> St. Louis Bombers</a>, <a href="#"> Toronto Huskies</a> e <a href="#"> Washington Capitols</a>.
+      <br>
+        A BAA teve um impacto significativo no desenvolvimento do basquete profissional nos Estados Unidos. Ela introduziu várias inovações, como uma temporada regular mais longa, jogos televisionados e uma ênfase em talentos individuais para atrair mais espectadores.
+
+        Em 1949, a BAA se fundiu com a National Basketball League (NBL) para formar a National Basketball Association (NBA), expandindo e fortalecendo ainda mais o cenário do basquete profissional nos Estados Unidos.
+      </p>
+</div>
+  </section>
 <section id="analises">
     <h2>Análises e Opiniões <i class="fa-solid fa-comments"></i> </h2>
     <section id="opinioes">
@@ -134,7 +230,7 @@
             
             <label for="opiniao">Sua Opinião:</label><br>
             <textarea id="opiniao" name="opiniao" rows="4" cols="50" required></textarea><br><br>
-            <input type="submit" value="Enviar Opinião">
+            <button>Enviar opinião</button>
         </form>
     </section>
 </section>
