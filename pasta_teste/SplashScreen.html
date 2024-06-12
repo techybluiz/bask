@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Pagina Inicial - NBA</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script>alert('Site demonstrativo, apenas para estudos')</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    h2 {
+    top: 50%;
+    left: 100px; /* Define a distância do texto em relação ao lado esquerdo da tela */
+    transform: translateY(-50%);
+    font-family: 'Arial Black', sans-serif; /* Fonte bastão */
+    font-size: 24px;
+    color: #ffffff; /* Cor do texto */
+    z-index: 9999; /
+    }
+    input[type="senha"], input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        margin-bottom: 5px;
+        padding: 12px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background 1s;
+    }
+    button {
+        color: white;
+        background: #0057B8;
+        transition: background 1s;
+      }
+      
+      button:hover,
+      button:focus {
+        background: #E13F32;
+      }
+
+  </style>
+</head>
+<body background="https://images.unsplash.com/photo-1519861531473-9200262188bf?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <img style="width: 10%;" src="https://cdn.nba.com/logos/leagues/L/logo-nba.svg" alt="">
+    <h2>Bem vindo ao mundo virtual do basquete!</h2>
+    <br>
+    <h2>Aqui voce encontra tudo sobre a National Basketball Association.</h2>
+
+    <div>
+        <h3>Faça login</h3>
+        <form action="logininicial.php" method="post">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="senha">Senha</label><br>
+            <textarea id="Senha" name="opiniao" rows="4" cols="50" required></textarea><br><br>
+            <button>Fazer Login</button>
+        </form>
+    </div>
+</body>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Pagina Inicial - NBA</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script>alert('Site demonstrativo, apenas para estudos')</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+        .carousel-inner{
+            width: 100%;
+            height: 400px;
+            padding: 0px;
+        }
+        body{
+            padding: 15px;
+        }
+        h1{
+            color: black;
+            text-align: center;
+            padding: 5px;
+        }
+        header{
+            color: rgb(255, 255, 255);
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+            width: 30%;
+        }
+
+        section {
+            margin-left: 60px;
+            margin-right: 60px;
+            padding: 20px;
+          
+          }
+          
+          .linkshome {
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+          }
+          
+          .linkshome h4 {
+            text-align: center;
+          }
+          
+          .czr-link-mask {
+            margin: 2rem;
+          }
+          .czr-link-mask .box {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            position: relative;
+          }
+          .box {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: relative;
+          }
+          .czr-link-mask .box::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 50%;
+            box-shadow: inset 0 0 0 20px #fff;
+            z-index: 2;
+            transition: box-shadow 300ms;
+            cursor: pointer;
+          }
+          .czr-link-mask a:hover .box::after{
+            box-shadow: inset 0 0 0 0px #fff;
+          }
+          .czr-link-mask .box img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid white;
+            box-sizing: border-box;
+          
+          }
+          .box img {
+            width: 100%;
+            height: auto;
+          }
+          .d-block{
+            width: 50%;
+          }
+          .secao4 {
+            margin: 0;
+            font-family: Helvetica, sans-serif;
+        }
+        
+        .secao4-div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .secao4-div-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: calc(100% / 3 - 60px);
+            margin: 10px;
+            padding: 20px;
+            box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            background-color: white;
+            transition: all 0.5s ease;
+        }
+        
+        .secao4-div-card:hover {
+            transform: scale(1.1);
+            z-index: 1;
+        }
+        
+        .secao4-div-card img {
+            width: 97%;
+            height: 250px;
+        }
+        
+        .secao4-div-card h3 {
+            margin-bottom: 0px;
+        }
+        
+        @media (max-width: 768px) {
+            .secao4-div-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+  
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img class="navbar-brand" src="data:image/png;base64,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"></a>
+            <h2>Arenas</h2>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">All Star Games</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Arenas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Times</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Jogadores</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contato</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="https://www.tdgarden.com/assets/img/default_slideshow-1600x600-7d0781f96b.jpg" alt="First slide">
+            <div class="carousel-caption">
+            </div>
+        </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://www.saifulbouquet.com/wp-content/uploads/2020/04/featured-Oracle-Arena.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            
+            <img class="d-block w-100" src="https://www.hispanosnba.com/imagenes/estadios/united-center.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Proximo</span>
+        </a>
+      </div>
+    <br>
+      <div>
+        <h1>Arenas</h1>
+        <p>As arenas da NBA representam mais do que simplesmente locais onde os jogos de basquete acontecem. Elas são ícones culturais e econômicos em suas comunidades, oferecendo uma experiência única para os fãs e contribuindo significativamente para a identidade local. Esses espaços são onde a magia do esporte se desenrola, onde as rivalidades são intensificadas e onde momentos memoráveis são criados. Além de servirem como palcos para os jogos emocionantes da NBA, as arenas também desempenham um papel vital na geração de receita para as equipes, através da venda de ingressos, patrocínios e outros meios. Elas se tornam pontos de encontro para os fãs, oferecendo não apenas entretenimento, mas também uma conexão emocional com a equipe e a comunidade. Ao mesmo tempo, as arenas têm um impacto econômico significativo, impulsionando o desenvolvimento local, atraindo turistas e criando empregos. Assim, as arenas da NBA são muito mais do que simples estruturas físicas; elas são o coração pulsante de uma cultura esportiva vibrante e um símbolo de orgulho para as cidades e fãs em todo o mundo.</p>
+        <p>Aqui você vai encontrar tudo sobre as maiores arenas da liga NBA!</p>
+      </div>
+
+      <section class="secao4" id="sobre">
+        <div class="secao4-div">
+     
+            <div class="secao4-div-card">
+                <img decoding="async" src="https://blog.ticketmaster.com/wp-content/uploads/msg-1024x768.jpg" alt="Madison Square Garden">
+                <h3>Madison Square Garden</h3>
+                <p> Conhecida como a "Mecca do Basquete"</p>
+            </div>
+    
+           
+            <div class="secao4-div-card">
+                <img decoding="async" src="https://frontofficesports.com/wp-content/uploads/2022/11/Crypto_Refresh_Summer_2022-e1667297475651.jpg" alt="Staples Center">
+                <h3>Staples Center</h3>
+                <p>Casa dos Los Angeles Lakers e Los Angeles Clippers</p>
+            </div>
+    
+            
+            <div class="secao4-div-card" onclick="mostrarTexto()">
+                <img decoding="async" src="https://ontapsportsnet.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MjAxODY0MzM5ODkwNjQ0NTg1/chicago-bulls-red-court-nba-in-season-tournament.jpg" alt="United Center">
+                <h3>United Center</h3>
+                <p id="texto" style="display:none;">Texto a ser exibido</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        function mostrarTexto(id) {
+          var texto = document.getElementById(id);
+          if (texto.style.display === "none") {
+            texto.style.display = "block";
+          } else {
+            texto.style.display = "none";
+          }
+        }
+        </script>
+      <section>
+        <div class="linkshome">
+          <div class="czr-link-mask">
+            <a href="portfolio.html">
+              <div class="box">
+                <img src="https://www.statefarmarena.com/assets/img/Box-Office-State-Farm-Arena-Exterior-219b0b6c07.jpeg">
+              </div>
+              <h4>Atlanta Hawks</h4>
+            </a>
+          </div>
+          <div class="czr-link-mask">
+            <a href="portfolio.html">
+              <div class="box">
+                <img src="https://www.statefarmarena.com/assets/img/Box-Office-State-Farm-Arena-Exterior-219b0b6c07.jpeg">
+              </div>
+              <h4>Boston Celtics</h4>
+            </a>
+          </div>
+          <div class="czr-link-mask">
+            <a href="portfolio.html">
+              <div class="box">
+                <img src="https://www.statefarmarena.com/assets/img/Box-Office-State-Farm-Arena-Exterior-219b0b6c07.jpeg">
+              </div>
+              <h4>Brooklyn Nets</h4>
+            </a>
+          </div>
+          <div class="czr-link-mask">
+            <a href="portfolio.html">
+              <div class="box">
+                <img src="https://www.statefarmarena.com/assets/img/Box-Office-State-Farm-Arena-Exterior-219b0b6c07.jpeg">
+              </div>
+              <h4>Charlotte Hornets</h4>
+            </a>
+          </div>
+          <div class="czr-link-mask">
+            <a href="portfolio.html">
+              <div class="box">
+                <img src="https://www.statefarmarena.com/assets/img/Box-Office-State-Farm-Arena-Exterior-219b0b6c07.jpeg">
+              </div>
+              <h4>Contato</h4>
+            </a>
+          </div>
+          <div class="czr-link-mask">
+            <a href="portfolio.html">
+              <div class="box">
+                <img src="https://www.statefarmarena.com/assets/img/Box-Office-State-Farm-Arena-Exterior-219b0b6c07.jpeg">
+              </div>
+              <h4>Contato</h4>
+            </a>
+          </div>
+          <div class="czr-link-mask">
+            <a href="portfolio.html">
+              <div class="box">
+                <img src="https://www.statefarmarena.com/assets/img/Box-Office-State-Farm-Arena-Exterior-219b0b6c07.jpeg">
+              </div>
+              <h4>Contato</h4>
+            </a>
+          </div>
+          <div class="czr-link-mask">
+            <a href="portfolio.html">
+              <div class="box">
+                <img src="https://www.statefarmarena.com/assets/img/Box-Office-State-Farm-Arena-Exterior-219b0b6c07.jpeg">
+              </div>
+              <h4>Contato</h4>
+            </a>
+          </div>
+          <div class="czr-link-mask">
+            <a href="portfolio.html">
+              <div class="box">
+                <img src="https://www.statefarmarena.com/assets/img/Box-Office-State-Farm-Arena-Exterior-219b0b6c07.jpeg">
+              </div>
+              <h4>Contato</h4>
+            </a>
+          </div>
+          <div class="czr-link-mask">
+            <a href="portfolio.html">
+              <div class="box">
+                <img src="https://www.statefarmarena.com/assets/img/Box-Office-State-Farm-Arena-Exterior-219b0b6c07.jpeg">
+              </div>
+              <h4>Contato</h4>
+            </a>
+          </div>
+          <div class="czr-link-mask">
+            <a href="portfolio.html">
+              <div class="box">
+                <img src="https://www.statefarmarena.com/assets/img/Box-Office-State-Farm-Arena-Exterior-219b0b6c07.jpeg">
+              </div>
+              <h4>Contato</h4>
+            </a>
+          </div>
+          <div class="czr-link-mask">
+            <a href="portfolio.html">
+              <div class="box">
+                <img src="https://www.statefarmarena.com/assets/img/Box-Office-State-Farm-Arena-Exterior-219b0b6c07.jpeg">
+              </div>
+              <h4>Contato</h4>
+            </a>
+          </div>
+          <div class="czr-link-mask">
+            <a href="portfolio.html">
+              <div class="box">
+                <img src="https://www.statefarmarena.com/assets/img/Box-Office-State-Farm-Arena-Exterior-219b0b6c07.jpeg">
+              </div>
+              <h4>Contato</h4>
+            </a>
+          </div>
+          <div class="czr-link-mask">
+            <a href="portfolio.html">
+              <div class="box">
+                <img src="https://www.statefarmarena.com/assets/img/Box-Office-State-Farm-Arena-Exterior-219b0b6c07.jpeg">
+              </div>
+              <h4>Contato</h4>
+            </a>
+          </div>
+        </div>
+      
+      </section>
+</body>

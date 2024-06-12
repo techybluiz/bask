@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> All Star Games - NBA</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    table {
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid #00142b;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #5339b3;
+        color: white;
+    }
+    body{
+        margin-top: 80px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: aliceblue;
+        background: rgb(1,60,119);
+        background: linear-gradient(90deg, rgba(1,60,119,1) 0%, rgba(46,46,97,1) 52%, rgba(25,25,112,1) 100%);
+    }
+        .star {
+        color: gold;}
+
+    h1 {
+        color: rgb(255, 187, 0);
+        text-align: center;
+        border: 2px;
+    }
+    footer{
+        text-align: center;
+    }
+    section {
+        padding: 0px;
+    }
+    p{
+        padding: 15px;
+    }
+    header{
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+      width: 100%;
+    }
+    a {
+      padding: 15px;
+    }
+    .body{
+        padding: 15px;
+    }
+    .secao4 {
+        margin: 0;
+        font-family: Helvetica, sans-serif;
+    }
+    
+    .secao4-div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .secao4-div-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(100% / 3 - 60px);
+        margin: 10px;
+        padding: 20px;
+        box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        background-color: white;
+        transition: all 0.5s ease;
+    }
+    
+    .secao4-div-card:hover {
+        transform: scale(1.1);
+        z-index: 1;
+    }
+    
+    .secao4-div-card img {
+        width: 97%;
+        height: 250px;
+    }
+    
+    .secao4-div-card h3 {
+        margin-bottom: 0px;
+    }
+    
+    @media (max-width: 768px) {
+        .secao4-div-card {
+            width: 100%;
+        }
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img class="navbar-brand" src="data:image/png;base64,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"></a>
+            <h1 style="color: rgb(255, 187, 0);"> <span class="star">&#9733;&#9733;&#9733;</span></h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">All Star Games</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Arenas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Times</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Jogadores</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contato</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <hr>
+        <div class="body" id="body">
+            <h1>All Star Games</h1>
+            <p>O NBA All-Star Game é um evento anual de exibição de basquete que reúne os melhores jogadores da National Basketball Association (NBA). Faz parte do NBA All-Star Weekend, um fim de semana de festividades que inclui vários eventos e competições.</p>
+
+            <h2>Fundação</h2>
+            <p>O All-Star Game, conhecido como Jogo das Estrelas, é um evento icônico no calendário esportivo norte-americano, realizado anualmente pelas principais ligas esportivas dos Estados Unidos, como a NBA (National Basketball Association), MLB (Major League Baseball), NHL (National Hockey League) e NFL (National Football League). A ideia por trás do All-Star Game é reunir os melhores jogadores da liga em um único evento, proporcionando um espetáculo de entretenimento e celebrando as habilidades individuais dos atletas.
+                A origem do All-Star Game remonta à década de 1930, especificamente no beisebol. Em 1933, Arch Ward, um editor de esportes do jornal Chicago Tribune, teve a ideia de criar um jogo que reunisse os melhores jogadores da MLB como parte da Feira Mundial de Chicago. O evento, inicialmente planejado como uma celebração única, acabou sendo um sucesso estrondoso, atraindo uma enorme atenção do público e da mídia. Assim, o All-Star Game da MLB se tornou um evento anual, estabelecendo o modelo que outras ligas seguiriam.
+                O sucesso do All-Star Game de beisebol inspirou outras ligas a adotarem a ideia. A NBA realizou seu primeiro All-Star Game em 1951, na cidade de Boston. Este evento, que aconteceu no Boston Garden, foi uma resposta ao crescente interesse do público pelo basquete profissional e buscou promover a liga e seus jogadores. Desde então, o All-Star Game da NBA evoluiu, incorporando não apenas o jogo principal, mas também uma série de competições adicionais, como o Concurso de Enterradas e o Concurso de Três Pontos, tornando-se um fim de semana inteiro de festividades.
+                No hóquei, a NHL começou a realizar seu All-Star Game em 1947. Inicialmente, o jogo tinha um propósito beneficente, arrecadando fundos para jogadores aposentados e necessitados. Com o tempo, assim como nas outras ligas, o evento se transformou em uma grande celebração do esporte, destacando as habilidades dos melhores jogadores da liga.
+                A NFL, por sua vez, tem uma abordagem um pouco diferente com seu Pro Bowl. O primeiro Pro Bowl foi realizado em 1951 e, ao contrário dos outros All-Star Games, é jogado no final da temporada regular, muitas vezes uma semana antes do Super Bowl. Este evento tem a particularidade de ser mais leve em termos de competitividade, focando mais no entretenimento e na segurança dos jogadores, dado o alto risco de lesões no futebol americano.
+                Em cada uma dessas ligas, a seleção dos jogadores para o All-Star Game é feita através de uma combinação de votação pública, escolhas dos treinadores e, em alguns casos, decisões de comissões específicas. Esta participação ativa dos fãs no processo de seleção contribui para o engajamento e a popularidade do evento.
+            </p>
+        </div>
+
+            <div class="body" id="body"> 
+                <h2>Data e Local</h2>
+                <p>Geralmente realizado em fevereiro, O local do All-Star Game muda a cada ano, com cidades de todo os Estados Unidos tendo a oportunidade de sediar o evento. Isso permite que diferentes comunidades tenham a chance de experimentar a emoção do All-Star Game de perto.</p>
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Campeonato</th>
+                                <th>Local</th>
+                                <th>Data</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>NBA All-Star Game 2024</td>
+                                <td>18 de fevereiro de 2024</td>
+                                <td>Gainbridge Fieldhouse, Indianápolis, Indiana</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>MLB All-Star Game 2024</td>
+                                <td>16 de julho de 2024</td>
+                                <td>Globe Life Field, Arlington, Texas</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>NHL All-Star Game 2024</td>
+                                <td>3 de fevereiro de 2024</td>
+                                <td>Scotiabank Arena, Toronto, Ontário, Canadá</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>NFL Pro Bowl 2024</td>
+                                <td> 4 de fevereiro de 2024</td>
+                                <td>Orlando, FL</td>
+                            </tr>
+                        </tbody>
+                    </div>
+            </div>
+            <hr>
+            <div class="body" id="body">
+                <h2>Seleção dos Jogadores</h2>
+                <p>A seleção dos jogadores para os All-Star Games varia de acordo com cada liga, mas geralmente envolve uma combinação de votação popular, escolha de treinadores, e em alguns casos, decisões de comissões específicas.</p>
+                <h3>NBA All-Star Game</h3>
+                <ul>
+                    <li>Votação Popular: Os fãs desempenham um papel significativo na seleção dos jogadores. Eles votam para escolher os titulares (cinco jogadores de cada conferência: dois armadores e três jogadores de frontcourt).</li>
+                    <li>Escolha dos Treinadores: Os treinadores das equipes da NBA escolhem os reservas, que incluem sete jogadores de cada conferência (dois armadores, três jogadores de frontcourt e dois jogadores de qualquer posição). Os treinadores não podem votar em seus próprios jogadores.</li>
+                    <li>Capitães e Draft: Os dois jogadores mais votados (um de cada conferência) são nomeados capitães e escolhem suas equipes de um pool de titulares e reservas, independentemente da conferência.</li>
+                </ul>
+            </div>
+
+            <div class="body" id="body">
+                <h3>Momentos Memoráveis</h3>
+                <ul>
+                    <li><h4>O Desempenho de Wilt Chamberlain em 1962</h4>
+                        <p>Wilt Chamberlain estabeleceu um recorde ao marcar 42 pontos no All-Star Game de 1962, realizado no Los Angeles Memorial Sports Arena. Esse recorde permaneceu imbatível por mais de cinco décadas, até ser superado por Anthony Davis em 2017.</p></li>
+                    
+                    <h4>O Jogo das Estrelas de 1980 - Homenagem a Magic Johnson</h4>
+                    <p>Magic Johnson foi homenageado no All-Star Game de 1992 após seu anúncio chocante de que era portador do HIV. Ele não apenas participou do jogo, mas também teve uma performance brilhante, culminando em um arremesso de três pontos no final do jogo que selou a vitória da Conferência Oeste. Sua atuação garantiu-lhe o prêmio de MVP, e o momento foi um marco significativo na história do basquete e na conscientização sobre o HIV.</p>
+
+                    <h4>O Concurso de Enterradas de 1988 - Michael Jordan vs. Dominique Wilkins</h4>
+                    <p>Embora não faça parte do jogo em si, o Concurso de Enterradas de 1988 é um dos momentos mais icônicos do fim de semana do All-Star. Michael Jordan e Dominique Wilkins protagonizaram um duelo épico que culminou com Jordan vencendo em sua cidade natal, Chicago, após uma impressionante enterrada partindo da linha do lance livre.</p>
+
+                    <h4>O All-Star Game de 2003 - Despedida de Michael Jordan</h4>
+                    <p>O All-Star Game de 2003 foi marcado pela despedida de Michael Jordan. Em seu último All-Star Game, Jordan quase garantiu a vitória para o Leste com um arremesso icônico na prorrogação, mas a Conferência Oeste acabou vencendo após duas prorrogações. Mesmo assim, a partida foi uma celebração da carreira lendária de Jordan.</p>
+
+                    <h4>O Desempenho de Kobe Bryant em 2011</h4>
+                    <p>Kobe Bryant teve várias atuações memoráveis no All-Star Game, mas a de 2011 foi especial. Jogando em Los Angeles, sua cidade natal, Bryant marcou 37 pontos e pegou 14 rebotes, levando a Conferência Oeste à vitória e conquistando seu quarto prêmio de MVP do All-Star Game, empatando com Bob Pettit pelo maior número de MVPs no All-Star Game.</p>
+            </ul>
+            </div>
+
+            <section class="secao4" id="sobre">
+                <div class="secao4-div">
+             
+                    <div class="secao4-div-card">
+                        <img decoding="async" src="https://thesportsdrop.com/wp-content/uploads/2022/02/Jordan-Kobe-All-Star.jpg" alt="imagem do card 1 html e css">
+                        <h3>Card 1</h3>
+                        <p>Descrição do card 1.</p>
+                    </div>
+            
+                   
+                    <div class="secao4-div-card">
+                        <img decoding="async" src="https://s.yimg.com/ny/api/res/1.2/bY5hzoMukDfbwq_LD1Uxbg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04Nzg-/https://s.yimg.com/os/creatr-uploaded-images/2024-02/b99fb9c0-ced6-11ee-95fa-27bdf7fd824a" alt="imagem do card 2 html e css">
+                        <h3>Card 2</h3>
+                        <p>Descrição do card 2.</p>
+                    </div>
+            
+                    
+                    <div class="secao4-div-card">
+                        <img decoding="async" src="https://cdn.vox-cdn.com/thumbor/vWSW6STs-fwHp3NEJDl5erOV1fE=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/19724732/usa_today_14053911.jpg" alt="imagem do card 3 html e css">
+                        <h3>Card 3</h3>
+                        <p>Descrição do card 3.</p>
+                    </div>
+                </div>
+            </section>
+</body>

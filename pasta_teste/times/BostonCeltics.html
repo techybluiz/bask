@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-BR"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Boston Celtics </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        header{
+            color: rgb(255, 255, 255);
+        }
+        h2{
+            color: #007A33;
+        }
+        b {
+            font-size: 1em;
+            color: #007A33;
+        }
+        footer{
+            text-align: center;
+            width: 100%;
+        }
+        hr{
+            color: rgb(255, 255, 255);
+        }
+        h1{
+            text-align: right;
+            text-align: center;
+            padding: 5px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(234, 241, 235);
+            
+        }
+        section{
+            padding: 15px;
+        }
+        p {
+            padding: 5px;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        img{
+            width:360px;
+            float: right;
+            margin-right: 30px;
+        }
+        navbar-brand{
+            width: 150px;
+        }
+
+        navbar-brand{
+            width: 150px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #007A33;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        input[type="text"] {
+            margin-left: 5px;
+        }
+        input[type="submit"] {
+            display: block;
+            margin: 20px auto 0;
+            background-color: #026b0b;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #208801;
+        }
+        .bg-light {
+            background: rgb(0,122,51);
+            background: linear-gradient(90deg, rgba(0,122,51,1) 0%, rgba(255,255,255,1) 100%);
+        
+        }
+        .logo{
+            width: 5em;
+            height: 5em;
+        }
+        .texto-lista{
+            padding: 15px;
+        }
+        .formulario {
+            max-width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .logo{
+            width: 5em;
+            height: 4em;
+        }
+        .texto-lista{
+            padding: 15px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .banner {
+        width: 100%;
+        height: auto;
+        padding: 25px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
+            <h1>Teams <i class="fa-solid fa-seedling" style="color: #ffffff;"></i></h1>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">All Star Games</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Arenas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Times</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Jogadores</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contato</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <section>
+        <div>
+            <img src="https://cdn.nba.com/teams/uploads/sites/1610612738/2022/05/celtics_secondary.svg" alt="Oklahoma City Thunder">
+            <br>
+            <h1><b>Boston Celtics</b></h1>
+            <br>
+            <p>
+                <h2><b>História</b></h2>
+                Os <b>Boston Celtics</b> foram fundados em 1946 como parte da Basketball Association of America (BAA), que mais tarde se fundiu com a National Basketball League (NBL) para formar a NBA em 1949.<br> 
+                A equipe foi fundada por <b> Walter A. Brown</b>, um executivo de Boston Garden, e inicialmente era propriedade de Brown e dos irmãos Walter e Lou Pieri.
+                <br>
+                Nos primeiros anos da equipe, os Celtics não conseguiram encontrar muito sucesso em termos de campeonatos, mas eram competitivos na liga. Durante esse tempo, eles tiveram jogadores notáveis como <a href="#">Bob Cousy</a>, <a href="#"></a>Tommy Heinsohn e Bill Sharman.
+                <br>
+                <br>
+                <h2><b>Arena</b></h2>
+                <p>A arena do time é o <a href="#">TD Garden</a>. O TD Garden está localizado no coração de Boston, Massachusetts, no bairro de West End. A capacidade da arena é de 19.580. </p>
+                <hr>
+                <img src="https://pbs.twimg.com/media/E-XpgWRWEBUXT0s.jpg" alt="Mascote Lucky the Leprechaun">
+                <p>
+                    <h2><b>Cores e Mascote</b></h2>
+                    O mascote dos Boston Celtics, chamado <b>Lucky the Leprechaun</b>, é uma figura icônica na equipe e uma parte essencial da experiência dos fãs nos jogos em casa
+                    Lucky the Leprechaun foi introduzido como mascote dos Celtics em 1968. Ele foi concebido como uma representação lúdica e alegre da cultura irlandesa, uma 
+                    homenagem ao legado da cidade de Boston e à forte identidade irlandesa da região.<br>
+                    O leprechaun é uma figura lendária da mitologia irlandesa, frequentemente retratada como um pequeno duende vestido com roupas verdes, chapéu de trevo e um sorriso travesso.
+                    Na cultura popular, os leprechauns são associados à sorte e à boa fortuna, o que faz de Lucky o mascote perfeito para os Celtics.
+                    Além de aparecer nos jogos dos Celtics, Lucky também participa de uma variedade de eventos da comunidade, escolas e atividades de caridade em nome da equipe. Ele é um embaixador divertido e 
+                    carismático para os Celtics, ajudando a promover o espírito esportivo e a união da comunidade.
+                </p>
+
+        </div>
+    </section>
+<hr>
+<section>
+    <h2><b>Momentos Notáveis</b></h2>
+    <p>
+        <li><b>11 Campeonatos em 13 Temporadas (1957-1969):</b> Durante a era de Bill Russell e sob o comando do lendário treinador Red Auerbach, os Celtics dominaram a NBA, conquistando um total de 11 campeonatos em 13 temporadas, um feito sem precedentes na história do esporte.</li>
+        <li><b>Confrontos Épicos com os Lakers:</b> Os confrontos entre os Celtics e os Los Angeles Lakers são lendários na história da NBA. As finais da NBA entre essas duas equipes, especialmente nas décadas de 1960 e 1980, produziram alguns dos momentos mais emocionantes do basquete.</li>
+        <li><b>A Era de Larry Bird:</b> Larry Bird, um dos maiores jogadores da história da NBA, liderou os Celtics durante os anos 1980. Durante sua carreira, os Celtics ganharam três campeonatos (1981, 1984 e 1986) e Bird conquistou três prêmios de MVP da NBA</li>
+        <li><b>Reggie Lewis e a Tragédia:</b> Em 1993, o jogador All-Star Reggie Lewis, uma promessa brilhante dos Celtics, faleceu inesperadamente de uma parada cardíaca durante uma partida de basquete. Sua morte prematura chocou a comunidade do basquete e deixou um legado duradouro nos Celtics.</li>
+        <li><b>O Renascimento com Paul Pierce:</b> Na década de 2000, os Celtics passaram por um renascimento sob a liderança de Paul Pierce, Kevin Garnett e Ray Allen. Em 2008, eles conquistaram o campeonato da NBA, derrotando os Lakers em uma série emocionante nas finais.</li>
+        <li><b>Fim do Jejum de Títulos em 2008:</b> Após uma espera de 22 anos desde seu último título em 1986, os Celtics finalmente conquistaram o campeonato da NBA em 2008. Eles derrotaram os Lakers em seis jogos para conquistar seu 17º título.</li>
+        <li><b>A Ascensão de Jayson Tatum e Jaylen Brown:</b> Nos últimos anos, os Celtics têm contado com a ascensão de jovens estrelas como Jayson Tatum e Jaylen Brown. Sua evolução como jogadores tem sido um ponto brilhante para a equipe e oferece esperança para o futuro dos Celtics.</li>
+    </p>
+<hr>
+    <h2><b>Rivalidades</b></h2>
+    <p>
+        <li><a href="#">Los Angeles Lakers:</a> A rivalidade Celtics-Lakers é uma das mais famosas e históricas na história da NBA. Ela se desenvolveu ao longo de múltiplas finais da NBA, com os Celtics e os Lakers frequentemente competindo pelo título. Os confrontos entre essas duas equipes sempre geram grande interesse e emoção entre os fãs.</li>
+        <li><a href="#">Philadelphia 76ers:</a> Os Celtics têm uma rivalidade significativa com os 76ers, que remonta aos anos 1960, quando ambos os times eram potências da NBA. As batalhas entre essas equipes, muitas vezes na pós-temporada, têm sido intensas ao longo dos anos.</li>
+        <li><a href="#">New York Knicks:</a> Os Celtics e os Knicks têm uma rivalidade histórica, especialmente devido à proximidade geográfica entre Boston e Nova York. Os confrontos entre essas equipes sempre foram acirrados, tanto na temporada regular quanto nos playoffs.</li>
+        <li><a href="#">Detroit Pistons:</a> Embora talvez não seja tão proeminente quanto as rivalidades com os Lakers ou os 76ers, os Celtics e os Pistons tiveram uma rivalidade significativa ao longo dos anos, especialmente durante os anos 1980 e 2000, quando ambas as equipes eram forças na Conferência Leste.</li>
+    </p>
+</section>
+
+    <div class="container">
+        <h1><b>Boston Celtics Core Players</b></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Posição</th>
+                    <th>Número</th>
+                    <th>Altura</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Oshae Brissett</td>
+                    <td>Ala</td>
+                    <td>12</td>
+                    <td>2,01 m</td>
+                </tr>
+                <tr>
+                    <td>Jaylen Brown</td>
+                    <td>Ala-Armador</td>
+                    <td>7</td>
+                    <td>1,98 m</td>
+                </tr>
+                <tr>
+                    <td>Sam Hauser</td>
+                    <td>Ala-Pivô</td>
+                    <td>35</td>
+                    <td>2,08 m</td>
+                </tr>
+                <tr>
+                    <td>Jrue Holiday</td>
+                    <td>Armador</td>
+                    <td>11</td>
+                    <td>1,93 m</td>
+                </tr>
+                <tr>
+                    <td>Al Horford</td>
+                    <td>Pivô</td>
+                    <td>42</td>
+                    <td>2,06 m</td>
+                </tr>
+                <tr>
+                    <td>Luke Kornet</td>
+                    <td>Pivô</td>
+                    <td>40</td>
+                    <td>2,18 m</td>
+                </tr>
+                <tr>
+                    <td>Svi Mykhailiuk</td>
+                    <td>Ala-Armador</td>
+                    <td>14</td>
+                    <td>2,01 m</td>
+                </tr>
+                <tr>
+                    <td>Drew Peterson</td>
+                    <td>Ala-Pivô</td>
+                    <td>33</td>
+                    <td>2,01 m</td>
+                </tr>
+                <tr>
+                    <td>Kristaps Porzingis</td>
+                    <td>Pivô</td>
+                    <td>6</td>
+                    <td>2,21 m</td>
+                </tr>
+                <tr>
+                    <td>Payton Pritchard</td>
+                    <td>Armador</td>
+                    <td>11</td>
+                    <td>1,88 m</td>
+                </tr>
+                <tr>
+                    <td>Neemias Queta</td>
+                    <td>Pivô</td>
+                    <td>23</td>
+                    <td>2,13 m</td>
+                </tr>
+                <tr>
+                    <td>Jaden Springer</td>
+                    <td>Ala-Armador</td>
+                    <td>8</td>
+                    <td>1,93 m</td>
+                </tr>
+                <tr>
+                    <td>Jayson Tatum</td>
+                    <td>Ala</td>
+                    <td>0</td>
+                    <td>2,03 m</td>
+                </tr>
+                <tr>
+                    <td>Xavier Tillman</td>
+                    <td>Ala-Pivô</td>
+                    <td>2</td>
+                    <td>2,01 m</td>
+                </tr>
+                <tr>
+                    <td>Jordan Walsh</td>
+                    <td>Ala-Pivô</td>
+                    <td>27</td>
+                    <td>1,98 m</td>
+                </tr>
+                <tr>
+                    <td>Derrick White</td>
+                    <td>Armador</td>
+                    <td>9</td>
+                    <td>1,93 m</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="formulario">
+        <h2><b>Formulário de Perguntas sobre o Boston Celtics</b></h2>
+        <form id="celtics-form">
+            <div class="form-group">
+                <label>Qual é o seu jogador favorito atual do Boston Celtics?</label>
+                <br>
+                <div>
+                    <label for="player-jayson-tatum">Jayson Tatum</label>
+                    <input type="radio" id="player-jayson-tatum" name="favorite-player" value="Jayson Tatum">
+                    
+                </div>
+                <div>
+                    <label for="player-jaylen-brown">Jaylen Brown</label>
+                    <input type="radio" id="player-jaylen-brown" name="favorite-player" value="Jaylen Brown">
+                    
+                </div>
+                <div>
+                    <label for="player-marcus-smart">Marcus Smart</label>
+                    <input type="radio" id="player-marcus-smart" name="favorite-player" value="Marcus Smart">
+                    
+                </div>
+                <div>
+                    
+                    <label for="player-other">Outro:</label>
+                    <input type="text" id="other-player" name="other-player" placeholder="Digite o nome">
+                    
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Quem você considera o maior jogador da história do Boston Celtics?</label>
+                <br>
+                <div>
+                    <label for="greatest-player-bill-russell">Bill Russell</label>
+                    <input type="radio" id="greatest-player-bill-russell" name="greatest-player" value="Bill Russell">    
+                </div>
+                <div>   
+                    <label for="greatest-player-larry-bird">Larry Bird</label>
+                    <input type="radio" id="greatest-player-larry-bird" name="greatest-player" value="Larry Bird">
+                </div>
+                <div>
+                    <br>
+                    <label for="greatest-player-paul-pierce">Paul Pierce</label>
+                    <input type="radio" id="greatest-player-paul-pierce" name="greatest-player" value="Paul Pierce">
+                </div>
+                <div>
+                    <br>
+                    <label for="greatest-player-other">Outro:</label>
+                    <input type="text" id="other-greatest-player" name="other-greatest-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Qual é a sua expectativa para a próxima temporada da NBA?</label>
+                <br>
+                <div>
+                    <label for="next-season-expectation-championship">Vencer o campeonato</label>
+                    <input type="radio" id="next-season-expectation-championship" name="next-season-expectation" value="Vencer o campeonato">
+                    
+                </div>
+                <div>
+                    <label for="next-season-expectation-playoffs">Chegar aos playoffs</label>
+                    <input type="radio" id="next-season-expectation-playoffs" name="next-season-expectation" value="Chegar aos playoffs">
+                    
+                </div>
+                <div>
+                    <label for="next-season-expectation-development">Desenvolvimento dos jogadores</label>
+                    <input type="radio" id="next-season-expectation-development" name="next-season-expectation" value="Desenvolvimento dos jogadores">
+                    
+                </div>
+                <div>
+                    <label for="next-season-expectation-other">Outro:</label>
+                    <input type="text" id="other-next-season-expectation" name="other-next-season-expectation" placeholder="Digite a expectativa">
+                </div>
+            </div>
+            <input type="submit" value="Enviar Respostas">
+        </form>
+    </div>
+
+    <div style="position: relative; width: 100%; height: 0; padding-top: 56.2225%;
+    padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+    border-radius: 8px; will-change: transform;">
+     <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+       src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGGDMvo9Qs&#x2F;qcTYcjC-MqQP4zQcXg2ZCg&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+     </iframe>
+   </div>
+   <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGGDMvo9Qs&#x2F;qcTYcjC-MqQP4zQcXg2ZCg&#x2F;view?utm_content=DAGGDMvo9Qs&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a> 
+
+        <footer>
+            <p>&copy; 2024 NBA - Boston Celtics </p>
+        </footer>
+</body>
