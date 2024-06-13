@@ -146,6 +146,57 @@
         height: auto;
         padding: 25px;
     }
+    .carousel-inner{
+        width: 100%;
+        height: 400px;
+        padding: 0px;
+    }
+    .linkshome {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .secao4 {
+        margin: 0;
+        font-family: Helvetica, sans-serif;
+    }
+    
+    .secao4-div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .secao4-div-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(100% / 3 - 60px);
+        margin: 10px;
+        padding: 20px;
+        box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        background-color: white;
+        transition: all 0.5s ease;
+    }
+    
+    .secao4-div-card:hover {
+        transform: scale(1.1);
+        z-index: 1;
+    }
+    
+    .secao4-div-card img {
+        width: 97%;
+        height: 250px;
+    }
+    
+    .secao4-div-card h3 {
+        margin-bottom: 0px;
+    }
+
 
     </style>
 </head>
@@ -181,6 +232,49 @@
         </div>
       </nav>
 </header>
+
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Historia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="CoreseMascote">Cores e Mascote</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="momentosnotaveis">Momentos Notáveis</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Rivalidades">Rivalidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="CorePlayers">Core Players</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Quiz">Quiz</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Jogadores</a></li>
+                  <li><a class="dropdown-item" href="#">Titulos</a></li>
+                  <li><a class="dropdown-item" href="#">Temporada atual</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
 <br>
     <header>
         <h1><b>Milwaukee Bucks</b></h1>
@@ -190,12 +284,17 @@
     <section>
         <h2><b>História</b></h2>
         <p>
-            Em 1968, a NBA decidiu expandir a liga, e Milwaukee foi escolhida como uma das novas cidades para receber uma franquia. O empresário Wesley Pavalon e o advogado Marvin Fishman lideraram a iniciativa para trazer um time para a cidade.
+            A franquia foi fundada em 1968 por Wesley Pavalon e Marvin Fishman, entre outros investidores. A NBA concedeu a cidade de Milwaukee uma equipe de expansão devido ao interesse crescente no basquete na região e ao sucesso da equipe local da NBA, o Milwaukee Hawks, que se mudou para St. Louis em 1955.
             <br>
             A equipe realizou um concurso para escolher o nome da nova franquia. "Bucks," que faz referência ao cervo, um símbolo comum em Wisconsin devido à popularidade da caça, foi o nome vencedor. Outros nomes considerados foram "Robins" e "Skunks."
                 <br>
-                Na temporada inaugural de 1968-1969, os Bucks, como acontece com muitas equipes novas, tiveram dificuldades, terminando com um recorde de 27 vitórias e 55 derrotas. No entanto, esse primeiro ano ajudou a estabelecer a equipe e construir uma base de fãs leal.
+                Os Bucks começaram a jogar oficialmente na temporada 1968-1969 da NBA. Em sua primeira temporada, os Bucks selecionaram Kareem Abdul-Jabbar (na época, Lew Alcindor) como a primeira escolha geral no draft da NBA. Sob a liderança de Abdul-Jabbar e com o treinador Larry Costello, os Bucks tiveram um início impressionante e alcançaram as finais da NBA em sua terceira temporada, em 1971. Eles perderam para o New York Knicks na série final.
                 <br>
+                Nos anos seguintes, os Bucks continuaram a ser uma equipe competitiva, mas não conseguiram repetir o sucesso inicial. No entanto, em 1974, os Bucks conquistaram seu primeiro título de divisão. Eles alcançaram as finais da NBA novamente em 1974, mas foram derrotados pelo Boston Celtics.
+                <br>
+                Ao longo dos anos, os Bucks tiveram altos e baixos, passando por mudanças de propriedade e períodos de reconstrução. Eles tiveram várias estrelas ao longo de sua história, incluindo Oscar Robertson, Sidney Moncrief e Ray Allen, entre outros.
+                <br>
+                Em 2014, a equipe foi comprada por um grupo liderado por Marc Lasry e Wesley Edens. Desde então, os Bucks passaram por um renascimento, construindo uma equipe em torno de estrelas como Giannis Antetokounmpo e alcançando sucesso nos playoffs novamente, incluindo uma vitória no campeonato da NBA em 2021, conquistando seu segundo título da liga.
                 <h2><b>Arena</b></h2>
                 A arena do Milwaukee Bucks é o <a href="#">Fiserv Forum</a> , que está localizada em Milwaukee, Wisconsin. 
                 A capacidade do Fiserv Forum é de aproximadamente 17.500 espectadores para jogos de basquete.
@@ -223,12 +322,43 @@
                 <li><b>Campeonato da NBA em 2021:</b> O título de 2021 foi um momento histórico para os Bucks, encerrando um jejum de 50 anos sem títulos e solidificando Giannis Antetokounmpo como uma lenda da franquia.</li>
         <hr>
 
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w730/f_auto/primary/hvphvn76nbgad9a2j1sv" alt="First slide">
+                <div class="carousel-caption">
+                </div>
+            </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="https://static01.nyt.com/images/2023/02/16/multimedia/16nba-luka-doncic-03-zvhg/16nba-luka-doncic-03-zvhg-superJumbo.jpg?quality=75&auto=webp" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                
+                <img class="d-block w-100" src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2024/05/31/250716438-dallas-mavericks-final-nba.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Proximo</span>
+            </a>
+          </div>
+          <br>
         <h2><b>Rivalidades</b></h2>
             <li><a href="#"> Chicago Bulls:</a> A rivalidade com o Chicago Bulls é uma das mais antigas e acirradas dos Bucks. Ambas as equipes estão na Divisão Central e têm competido ferozmente ao longo dos anos, especialmente durante os anos 80 e 90.</li>
             <li><a href="#"> Boston Celtics:</a> Os Bucks têm uma rivalidade histórica com o Boston Celtics, que remonta aos anos 70 e 80. Ambas as equipes tiveram grandes confrontos nos playoffs, gerando uma rivalidade intensa.</li>
             <li><a href="#"> Philadelphia 76ers:</a> A rivalidade com os Philadelphia 76ers também é significativa, especialmente durante os anos em que ambos os times estavam competindo no auge da Conferência Leste. Os confrontos nos playoffs aumentaram a intensidade dessa rivalidade.</li>
         </div>
     </section>
+   
 <div class="container">
     <h1><b>Milwaukee Bucks Core Players</b></h1>
     <table>
@@ -352,6 +482,33 @@
         </tbody>
     </table>
     </div>
+
+    <section class="secao4" id="sobre">
+        <h2>Jogadores notaveis da historia do Milwaukee Bucks </h2>
+        <div class="secao4-div">
+            <div class="secao4-div-card">
+                <img decoding="async" src="https://cdn.nba.com/headshots/nba/latest/1040x760/76003.png" alt="Kareem Abdul-Jabbar">
+                <br>
+                <h3>Kareem Abdul-Jabbar</h3>
+                <p>Antes de sua mudança para Los Angeles Lakers, Kareem Abdul-Jabbar passou seis temporadas impressionantes com os Milwaukee Bucks. Durante esse tempo, ele ganhou o prêmio de MVP da NBA três vezes (1971, 1972, 1974) e liderou os Bucks para seu único título da NBA em 1971. </p>
+            </div>
+           
+            <div class="secao4-div-card">
+                <img decoding="async" src="https://cdn.nba.com/headshots/nba/latest/1040x760/600015.png" alt="Oscar Robertson">
+                <br>
+                <h3>Oscar Robertson</h3>
+                <p>Robertson foi uma lenda do basquete e jogou parte de sua carreira com os Bucks. Ele chegou à equipe em 1970, após uma troca com o Cincinnati Royals. Com sua habilidade versátil, Robertson foi uma peça fundamental na equipe dos Bucks que ganhou o título da NBA em 1971. Ele foi nomeado para o All-Star Game em todas as três temporadas em que jogou pelos Bucks e continuou a ser uma influência significativa no jogo após sua aposentadoria.</p>
+            </div>
+    
+            <div class="secao4-div-card">
+                <img decoding="async" src="https://cdn.nba.com/headshots/nba/latest/1040x760/203507.png" alt="Giannis Antetokounmpo">
+                <br>
+                <h3>Giannis Antetokounmpo</h3>
+                <p>Giannis, também conhecido como "Greek Freak", emergiu como uma das estrelas mais brilhantes da NBA durante sua passagem com os Milwaukee Bucks. Ele foi selecionado pelo Bucks no Draft de 2013 e desde então se tornou um dos jogadores mais dominantes da liga. Antetokounmpo ganhou o prêmio de MVP da NBA duas vezes (2019, 2020), liderando os Bucks em várias categorias estatísticas.</p>
+            </div>
+        </div>
+    </section>
+
     
     <div class="formulario">
         <h2><b>Formulário de Perguntas sobre o Milwaukee Bucks</b></h2>
@@ -440,4 +597,5 @@
               <p>&copy; 2024 NBA - Milwaukee Bucks </p>
             </footer>
 </body>
+
     
