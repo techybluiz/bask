@@ -134,14 +134,65 @@
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-    .form-group {
-        margin-bottom: 20px;
-    }
-    .banner {
-        width: 100%;
-        height: auto;
-        padding: 25px;
-    }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .banner {
+            width: 100%;
+            height: auto;
+            padding: 25px;
+        }
+        .carousel-inner{
+            width: 100%;
+            height: 400px;
+            padding: 0px;
+        }
+        .linkshome {
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .secao4 {
+            margin: 0;
+            font-family: Helvetica, sans-serif;
+        }
+        
+        .secao4-div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .secao4-div-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: calc(100% / 3 - 60px);
+            margin: 10px;
+            padding: 20px;
+            box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            background-color: white;
+            transition: all 0.5s ease;
+        }
+        
+        .secao4-div-card:hover {
+            transform: scale(1.1);
+            z-index: 1;
+        }
+        
+        .secao4-div-card img {
+            width: 97%;
+            height: 250px;
+        }
+        
+        .secao4-div-card h3 {
+            margin-bottom: 0px;
+        }
+
 </style>
 </head>
 <body>
@@ -173,6 +224,48 @@
                   <a class="nav-link" href="#">Contato</a>
                 </li>
               </ul>
+            </div>
+          </nav>
+    </header>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+        
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Historia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="CoreseMascote">Cores e Mascote</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="momentosnotaveis">Momentos Notáveis</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Rivalidades">Rivalidades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="CorePlayers">Core Players</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Quiz">Quiz</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Menu
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Jogadores</a></li>
+                      <li><a class="dropdown-item" href="#">Titulos</a></li>
+                      <li><a class="dropdown-item" href="#">Temporada atual</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
           </nav>
     </header>
@@ -215,6 +308,37 @@
         <li><b>Dirk Nowitzki - MVP e Hall da Fama:</b> Dirk Nowitzki foi uma figura central nos momentos notáveis dos Mavericks. Ele foi nomeado MVP da temporada regular em 2007 e se tornou um dos maiores jogadores da história da NBA. Sua indução ao Hall da Fama do Basquete é um testemunho de sua contribuição para os Mavericks e para o basquete em geral.</li>
         <li><b>Playoffs Contínuos e Competitividade:</b> Os Mavericks estabeleceram uma cultura de consistência nos playoffs ao longo dos anos, frequentemente competindo em séries de playoffs emocionantes e sendo uma presença regular na pós-temporada.</li>
     </p>
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w730/f_auto/primary/hvphvn76nbgad9a2j1sv" alt="First slide">
+            <div class="carousel-caption">
+            </div>
+        </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://static01.nyt.com/images/2023/02/16/multimedia/16nba-luka-doncic-03-zvhg/16nba-luka-doncic-03-zvhg-superJumbo.jpg?quality=75&auto=webp" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            
+            <img class="d-block w-100" src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2024/05/31/250716438-dallas-mavericks-final-nba.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Proximo</span>
+        </a>
+      </div>
+
 <hr>
     <h2><b>Rivalidades</b></h2>
     <p>
@@ -348,6 +472,31 @@
             </tbody>
         </table>
     </div>
+    <section class="secao4" id="sobre">
+        <h2>Jogadores notaveis da historia do Dallas </h2>
+        <div class="secao4-div">
+            <div class="secao4-div-card">
+                <img decoding="async" src="https://cdn.nba.com/headshots/nba/latest/1040x760/1717.png" alt="imagem do card 1 html e css">
+                <br>
+                <h3>Dirk Nowitzki</h3>
+                <p>Dirk é indiscutivelmente o maior jogador da história dos Mavericks. Ele jogou toda a sua carreira de 21 temporadas na NBA com o Dallas Mavericks, liderando a equipe para o seu único título da NBA em 2011 e ganhando o prêmio de MVP das Finais.</p>
+            </div>
+           
+            <div class="secao4-div-card">
+                <img decoding="async" src="https://cdn.nba.com/headshots/nba/latest/1040x760/fallback.png" alt="imagem do card 2 html e css">
+                <br>
+                <h3>Jason Kidd</h3>
+                <p>Embora Kidd tenha jogado em várias equipes ao longo de sua carreira, ele é mais conhecido por seu tempo com o Dallas Mavericks. Ele teve duas passagens pelos Mavericks, com destaque para sua contribuição na condução da equipe às finais da NBA em 2006 e 2011, embora tenha perdido ambas as vezes.</p>
+            </div>
+    
+            <div class="secao4-div-card">
+                <img decoding="async" src="https://cdn.nba.com/headshots/nba/latest/1040x760/fallback.png" alt="imagem do card 3 html e css">
+                <br>
+                <h3>Rolando Blackman</h3>
+                <p>Blackman foi uma parte fundamental dos primeiros anos dos Mavericks na NBA. Ele jogou 11 temporadas com os Mavericks, de 1981 a 1992, e foi selecionado para quatro All-Star Games durante seu tempo em Dallas. </p>
+            </div>
+        </div>
+    </section>
     <div class="formulario">
         <h2><b>Formulário de Perguntas sobre o Dallas Mavericks</b></h2>
         <form id="mavericks-form">
