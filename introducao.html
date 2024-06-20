@@ -11,38 +11,65 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 20px;
-}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #424242;
+            margin: 0;
+            padding: 30px;
+            padding-left: 60px;
+        }
+        h1{
+            color: white;
+            text-align: center;
+            display: inline-block;
+            margin-bottom: 2rem;
+            line-height: 130%;
+            letter-spacing: -.02em;
+        }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(6, 4fr); 
-    gap: 15px; 
-}
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr); 
+            gap: 15px; 
+        }
+        
+        .grid-item {
+            width: 100px; 
+            height: 100px; 
+            background-color: #e0e0e0; 
+            border-radius: 50%; 
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .grid-item img {
+            max-width: 100%; 
+            max-height: 100%; 
+            border-radius: 50%; 
+            object-fit: cover; 
+        }
 
-.grid-item {
-    background-color: #e0e0e0; 
-    border-radius: 50%; 
-    overflow: hidden;
-}
-
-.grid-item img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 50%; 
-}
-
+        .grid-item .caption {
+            position: absolute;
+            bottom: -25px; /* Ajuste para posicionar a legenda abaixo do círculo */
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            color: #333;
+        }
+        
     </style>
 </head>
 <body>
+    <h1>Antes conte pra gente qual é o seu time favorito?</h1>
+
+    <br>
   <div class="grid-container">
     
       <div class="grid-item"><img src="https://cdn.nba.com/teams/uploads/sites/1610612737/2023/01/atl_hawks_primary_icon.svg" alt="Atlanta Hawks"></div>
+      <div class="caption">Atlanta Hawks</div>
       <div class="grid-item"><img src="https://cdn.nba.com/teams/uploads/sites/1610612738/2022/05/celtics_secondary.svg" alt="Boston Celtics"></div>
       <div class="grid-item"><img src="https://cdn.nba.com/teams/uploads/sites/1610612751/2023/04/bkn-no-bleed.svg" alt="Brooklyn Nets"></div>
       <div class="grid-item"><img src="https://cdn.nba.com/teams/uploads/sites/1610612766/2022/04/hornets_logo2.svg" alt="Charlotte Hornets"></div>
