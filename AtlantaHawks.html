@@ -138,6 +138,83 @@
             height: auto;
             padding: 25px;
         }
+        .secao4 {
+            margin: 0;
+            font-family: Helvetica, sans-serif;
+        }
+        
+        .secao4-div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            padding: 5px;
+            text-align: center;
+        }
+        
+        .secao4-div-card {
+            flex: 0 0 calc(33% - 40px); 
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            background-color: white;
+            transition: all 0.5s ease;
+        }
+        
+        .secao4-div-card:hover {
+            transform: scale(1.1);
+            z-index: 1;
+        }
+        
+        .secao4-div-card img {
+            width: 100%;
+            height: 250px;
+        }
+        
+        .secao4-div-card h3 {
+            margin-bottom: 0px;
+        }
+        .card-back {
+            background-color: #2ecc71;
+            transform: rotateY(180deg); 
+            object-fit: cover;
+            transform-style: preserve-3d; 
+            transition: transform 0.5s;
+          }
+
+
+          .scene {
+            width: 210px;
+            height: 140px;
+            position: relative;
+            perspective: 1000px;
+          }
+          
+          .carousel {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transform-style: preserve-3d;
+            transform: translateZ(-288px) rotateY(-160deg);
+          }
+          
+          .carousel__cell {
+            position: absolute;
+            width: 190px;
+            height: 120px;
+            left: 10px;
+            top: 10px;
+          } 
+
+          .carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(288px); }
+          .carousel__cell:nth-child(2) { transform: rotateY( 40deg)translateZ(288px); }
+          .carousel__cell:nth-child(3) { transform: rotateY( 80deg)translateZ(288px); }
+          .carousel__cell:nth-child(4) { transform: rotateY(120deg)translateZ(288px); }
+          .carousel__cell:nth-child(5) { transform: rotateY(160deg)translateZ(288px); }
+          .carousel__cell:nth-child(6) { transform: rotateY(200deg)translateZ(288px); }
+          .carousel__cell:nth-child(7) { transform: rotateY(240deg)translateZ(288px); }
+          .carousel__cell:nth-child(8) { transform: rotateY(280deg)translateZ(288px); }
+          .carousel__cell:nth-child(9) { transform: rotateY(320deg)translateZ(288px); }
 
     </style>
 </head>
@@ -152,7 +229,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home</a>
+                  <a class="nav-link" href="http://localhost/pasta_teste/novaoteste.html">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">All Star Games</a>
@@ -180,20 +257,23 @@
       <h1><b>Atlanta Hawks</b></h1>
         <h2><b>História</b></h2>
         <p>
+            
             Atlanta Hawks na NBA remonta ao ano de 1946, quando a equipe foi fundada em Moline, Illinois, como Tri-Cities Blackhawks. Naquela época, eles eram membros da National Basketball League (NBL), que mais tarde se tornou parte da NBA após a fusão em 1949.
-            O nome "Blackhawks" foi inspirado na unidade de combate do exército americano, a 86ª Divisão de Infantaria, que era conhecida como "Blackhawk Division", em homenagem a um chefe indígena Sauk chamado Black Hawk.
-            Em 1951, a equipe mudou-se para Milwaukee, Wisconsin, e se tornou conhecida como Milwaukee Hawks. Em 1955, a equipe foi transferida novamente, desta vez para St. Louis, Missouri, onde ganhou o nome St. Louis Hawks.
-            Durante os anos de St. Louis, os Hawks tiveram um período de sucesso notável. Eles ganharam seu único campeonato da NBA em 1958, liderados por lendas como Bob Pettit e Cliff Hagan.
+            O nome "Blackhawks" foi inspirado na unidade de combate do exército americano, a 86ª Divisão de Infantaria, que era conhecida como <B>"Blackhawk Division"</B>, em homenagem a um chefe indígena Sauk chamado Black Hawk.
+            Em 1951, a equipe mudou-se para Milwaukee, Wisconsin, e se tornou conhecida como <B>Milwaukee Hawks</B>. Em 1955, a equipe foi transferida novamente, desta vez para St. Louis, Missouri, onde ganhou o nome <b>St. Louis Hawks</b>.
+            Durante os anos de St. Louis, os Hawks tiveram um período de sucesso notável. Eles ganharam seu único campeonato da NBA em 1958, liderados por lendas como <a href="#">Bob Pettit</a> e <a href="#">Cliff Hagan</a>.
             Em 1968, os Hawks mudaram-se novamente, desta vez para Atlanta, Georgia, onde permanecem até hoje. Desde então, os Hawks tiveram altos e baixos, mas têm sido consistentemente competitivos na liga. Eles chegaram às finais da Conferência Leste várias vezes, mas ainda estão buscando o segundo título da NBA.
             Ao longo de sua história, os Hawks tiveram muitos jogadores e treinadores notáveis, contribuindo para a rica história da equipe na NBA.
             <br>
-            <h2><b>Arena</b></h2> A arena principal dos Atlanta Hawks é o<a href="#">State Farm Arena</a>. Localizada no centro de Atlanta, Geórgia, é usada não apenas pelos Hawks, mas também por outras equipes esportivas e para vários eventos de entretenimento.<br>
+            <h2><b>Arena</b></h2> A arena principal dos Atlanta Hawks é o <a href="#">State Farm Arena</a>. Localizada no centro de Atlanta, Geórgia, é usada não apenas pelos Hawks, mas também por outras equipes esportivas e para vários eventos de entretenimento.<br>
             Sua capacidade é de aproximadamente 17.500 espectadores.
             <br>
         </p>
         <hr>
         <img src="https://cdn.nba.com/teams/uploads/sites/1610612737/2023/06/harry_2223_3.jpg" alt="">
         <h2><b>Cores e Mascote</b></h2>
+        As cores do time são Vermelho e Branco.
+        <br>
         O mascote dos Atlanta Hawks é o <b>"Harry the Hawk"</b>. Ele é um falcão antropomórfico, conhecido por seu entusiasmo, energia e espírito de equipe.
         A história de Harry the Hawk remonta ao início dos anos 1980, quando os Hawks estavam estabelecendo sua identidade em Atlanta. Na época, os Hawks queriam criar um mascote que representasse a agressividade e a tenacidade da equipe.
         <br>
@@ -225,6 +305,34 @@
         </p>
     </div>
 
+    <section class="secao4" id="sobre">
+        <div class="secao4-div">
+     
+            <div class="secao4-div-card">
+                <img decoding="async" src="data:image/png;base64,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" alt="Madison Square Garden">
+                <h3>Boston Celtics</h3>
+                <p> Conhecida como a "Mecca do Basquete" , Square Garden é o lar do New York Knicks</p>
+                <div class="card-face card-back">
+                    <h2><b>State Farm Arena</b></h2>
+                    <p>Com sede em Atlanta, Geórgia, os Hawks são uma equipe competitiva com uma história de sucesso na NBA. Eles jogam na State Farm Arena.</p>
+                </div>
+            </div>
+    
+           
+            <div class="secao4-div-card">
+                <img decoding="async" src="https://cdn.nba.com/davinci/images/team-matchups/nba/latest/web/orl-atl/1200x628.png" alt="Staples Center">
+                <h3>Orlando Magic</h3>
+                <p>Casa dos Los Angeles Lakers e Los Angeles Clippers</p>
+            </div>
+    
+            
+            <div class="secao4-div-card" onclick="mostrarTexto()">
+                <img decoding="async" src="https://cdn.nba.com/davinci/images/team-matchups/nba/latest/web/atl-nyk/1200x628.png" alt="United Center">
+                <h3>New York Knicks</h3>
+                <p>O United Center é o lar do Chicago Bulls</p>
+            </div>
+        </div>
+    </section>
 
     <br>
 <hr>
@@ -414,6 +522,34 @@
   </iframe>
 </div>
 <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGF9vfP24Q&#x2F;AfEmlpKdzWbJQZG5KcBVVw&#x2F;view?utm_content=DAGF9vfP24Q&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a> 
+
+
+
+
+
+
+<div class="scene">
+    <div class="carousel">
+      <div class="carousel__cell">1</div>
+      <div class="carousel__cell">2</div>
+      <div class="carousel__cell">3</div>
+      <div class="carousel__cell">4</div>
+      <div class="carousel__cell">5</div>
+      <div class="carousel__cell">6</div>
+      <div class="carousel__cell">7</div>
+      <div class="carousel__cell">8</div>
+      <div class="carousel__cell">9</div>
+    </div>
+    
+  </div>
+  <script>
+    var tz = Math.round( ( cellSize / 2 ) /
+Math.tan( ( ( Math.PI * 2 ) / numberOfCells ) / 2 ) );
+// or simplified to
+var tz = Math.round( ( cellSize / 2 ) /  Math.tan( Math.PI / numberOfCells ) );
+</script>
+
+
 
         <footer>
             <p>&copy; 2024 NBA - Atlanta Hawks </p>
