@@ -1,241 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Pagina Inicial - NBA</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <script>alert('Site demonstrativo, apenas para estudos')</script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <style>
-    
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
-    header{
-        color: rgb(255, 255, 255);
-        position: fixed;
-        top: 0;
-        z-index: 1000;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pagina Inicial - NBA </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+      .splashbaner {
         width: 100%;
-    }
-    section {
-      padding: 20px;
-      background-color: #f9f9f9;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      margin-bottom: 20px;
-    }
-    h2 {
-        font-size: 24px;
-        margin-bottom: 15px;
-        padding: 15px;
-    }
-    
-    h3 {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-    
-    form {
-        width: 100%;
-        max-width: 600px;
-    }
-    
-    label {
-        display: block;
-        margin-bottom: 5px;
-    }
-    
-    input[type="text"], input[type="email"],
-    textarea {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 15px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
-    
-    input[type="submit"] {
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        margin-bottom: 5px;
-        padding: 12px 20px;
-        cursor: pointer;
-        border-radius: 5px;
-        transition: background 1s;
-    }
-    h1{
-      color: #E13F32;
-        text-align: center;
-        padding: 5px;
-    }
-    body{
-      margin-top: 80px;
-        font-family: 'Archivo Black', sans-serif;
-        background-color: rgb(240, 240, 240);
-    }
-    .bg-light{
-      background-color: rgb(240, 240, 240);
-    }
-    p {
-        padding: 5px;
-        font-size: medium;
-
-    }
-    section{
-      padding: 15px;
-    }
-    button {
-      color: white;
-      background: #0057B8;
-      transition: background 1s;
-    }
-    
-    button:hover,
-    button:focus {
-      background: #E13F32;
-    }
-    
-    .analise{
-      padding: 15px;
+        height: auto;
+      }
+      .introducao {
+        padding: 35px;
+        padding-top: 5px;
+        align-items: center;
+      }
+      
+      body{
+        font-family: "Space Mono", monospace;
+        color:rgb(0, 0, 0) ;
+      }
+      h1{
+        color: #E13F32;
+          text-align: center;
+          padding: 5px;
+      }
+  p {
+      padding: 5px;
+      font-size: medium;
   }
-  .photo{
-    width:360px;
-    float: right;
-    margin-right: 30px;
+    footer{
+      text-align: center;
+      width: 100%;
   }
-      footer{
-        text-align: center;
-        width: 100%;
-    }
-  </style>
+
+    </style>
 </head>
-<body>
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <img class="navbar-brand" src="data:image/png;base64,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"></a>
-        <h1>Página Inicial</h1>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">All Star Games</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Arenas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Times</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Jogadores</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contato</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-</header>
-<br>
-<a href="https://www.nba.com/"> <i class="fa-solid fa-arrow-right"> </i> Pagina Oficial</a>
-<div class="container">
-  <h1 style="color: rgb(155, 31, 31);">Informações Importantes</h1>
-  <br>
-  <p>Bem-vindo(a) ao meu site dedicado ao universo da NBA!! <br>
-    Este é um espaço criado com o intuito inicial apenas para estudo e compartilhar informações verídicas sobre a National Basketball Association. Meu interesse pelo basquete e pela dinâmica do esporte me inspiraram a criar este espaço, onde você encontrará uma variedade de conteúdos relacionados ao universo da NBA. <br>
-
-    É importante ressaltar que todas as informações contidas neste site são verdadeiras e foram cuidadosamente pesquisadas para garantir precisão e confiabilidade<br>
-    
-    O tema da NBA foi escolhido por ser mais do que apenas um tópico de interesse - é um hobby pessoal.<br>
-    
-    Este site é uma tentativa inicial e está sujeito a alterações futuras, à medida que buscos aprimorar a experiência do usuário e expandir o conteúdo.<br>
-    
-    Gostaria muito de ouvir sua opinião sobre o que achou do site! Por favor, sinta-se à vontade para deixar seus comentários, ideias de melhorias ou críticas construtivas na aba de opiniões, que se encontra no final da página.<br>
+  <body>
+ <img  class="splashbaner"  src="https://i.ibb.co/0DjQNxb/Onde-a-paix-o-pelo-basquete-ganha-vida.png" alt="Onde-a-paix-o-pelo-basquete-ganha-vida" border="0"></a><br /><a target='_blank' href='https://pt-br.imgbb.com/'></a><br />
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <img class="logo" src="data:image/png;base64,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"></a>
+          <h1 style="color: rgb(10, 10, 10);">Pagina Inicial</h1>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">All Star Games</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Arenas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Times</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Jogadores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+  </header>
+  <div>
+    <h1>Informações importantes</h1>
     <br>
-  </p>
-</div>
-<hr>
-<section>
-    <div>
-        <h2><b>História da NBA</b></h2>
-        <p>
-            A NBA teve suas raízes nos Estados Unidos e foi formada a partir da fusão de duas ligas anteriores, a Basketball Association of America (BAA) e a National Basketball League (NBL), em 1949. <br> 
-            <br>
-            <b>Criação do Nome:</b> Quando a BAA e a NBL se fundiram em 1949, formando a NBA, o nome <u><b>"National Basketball Association"</b></u>  foi escolhido para representar uma liga unificada que abrangeria todo o país. A ideia por trás do nome era criar uma organização que representasse o basquete profissional em nível nacional, refletindo a ambição de tornar o esporte mais popular e competitivo em todo os Estados Unidos.<br>
-          <br>
-            <b>Os Primeiros Times:</b> Os primeiros times da NBA incluíam muitas das equipes que haviam competido na BAA e na NBL. Alguns dos primeiros times incluíam o Boston Celtics, o New York Knicks, o Philadelphia Warriors (agora conhecido como Golden State Warriors), o Minneapolis Lakers (agora conhecido como Los Angeles Lakers), o Rochester Royals (agora conhecido como Sacramento Kings), entre outros.<br>
-            <br>
-            <b>Fundadores e Pioneiros:</b> Vários indivíduos desempenharam papéis fundamentais na formação da NBA. Maurice Podoloff, o presidente da BAA, desempenhou um papel central na fusão das duas ligas para formar a NBA. Outros nomes importantes incluem Walter A. Brown, proprietário do Boston Celtics, e Ned Irish, fundador do New York Knicks, que ajudaram a moldar os rumos da liga em seus primeiros anos.<br>
-            <br>
-            <b>País de Origem:</b> A NBA é uma liga americana, originada nos Estados Unidos. Embora tenha expandido sua presença internacional ao longo dos anos, com jogadores e fãs em todo o mundo, sua fundação e sua base operacional sempre foram nos Estados Unidos.<br>
-            <br>
-            <b>Fusão:</b> Em 1949, a BAA e a NBL se fundiram para formar a National Basketball Association (NBA). A fusão foi uma tentativa de consolidar o basquete profissional nos Estados Unidos e criar uma liga nacional mais forte e coesa.<br>
-            <br>
-            <b>Expansão e Consolidação:</b> Nas décadas seguintes, a NBA passou por um período de expansão e consolidação. Mais times foram adicionados à liga, e a NBA gradualmente se tornou a principal organização para o basquete profissional nos Estados Unidos.<br>
-            <br>
-            <b>Expansão Internacional:</b> Nas décadas mais recentes, a NBA expandiu sua presença para além das fronteiras dos Estados Unidos, tornando-se uma liga verdadeiramente internacional. A NBA agora tem fãs, jogadores e equipes em todo o mundo, solidificando seu status como uma das principais ligas esportivas globais.<br>
-        </p>
-    </div>
-  <hr>
-    <div>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZr9UZ4ZFlE4xhdwDwcJiS7G7YlRAk0V2TqQJt8-9enn2CXgGlvz-JLcge49YlSNaIJRQ&usqp=CAU" class="photo" alt="">
-      <h2><b>Maurice Podoloff</b></h2>
-      <p>Maurice Podoloff foi uma figura proeminente no mundo do basquete nos Estados Unidos. Ele é mais conhecido por ser o primeiro presidente da National Basketball Association (NBA), servindo de 1946 até 1963.<br>
-        <br>
-      <b>Nascimento:</b> Nascido em 18 de agosto de 1890, em Elizabethgrad, Império Russo (atual Kropyvnytskyi, Ucrânia), Podoloff emigrou para os Estados Unidos com sua família quando era criança. Depois de se formar na Universidade de Yale em 1913, ele trabalhou em vários cargos executivos, incluindo vice-presidente da Eastern Cold Storage Company em Nova York.<br>
-      <br>
-      <b>Carreira:</b> A carreira de Podoloff na NBA começou quando ele foi eleito presidente da Basketball Association of America (BAA) em 1946, a precursora da NBA. Ele desempenhou um papel fundamental na fusão bem-sucedida da BAA com a National Basketball League (NBL) em 1949, formando assim a NBA.<br>
-      <br>
-      Durante seu tempo como presidente da NBA, Podoloff ajudou a estabelecer muitas das bases da liga moderna, incluindo a implementação do Draft da NBA e o estabelecimento do primeiro contrato de televisão da liga. Ele também foi fundamental na expansão da liga, com equipes sendo adicionadas em cidades importantes em todo o país.<br>
-      <br>
-      Além de seu papel na NBA, Podoloff também foi presidente da American Hockey League (AHL) de 1952 a 1956 e foi introduzido no Basketball Hall of Fame em 1974.<br>
-      <br>
-      <b>Notas:</b> Podoloff faleceu em 24 de novembro de 1985, mas seu legado vive através da NBA e de suas contribuições para o esporte do basquete nos Estados Unidos.<br>
-      </p>
-    </div>
-<hr>
-<div>
-  <h2><b>Basketball Association of America</b></h2>
-      <p>
-        A Basketball Association of America (BAA) surgiu em 6 de junho de 1946, como uma iniciativa para criar uma liga profissional de basquete nos Estados Unidos. A ideia por trás da formação da BAA foi capitalizar o crescente interesse público no basquete pós-Segunda Guerra Mundial. A liga foi fundada por um grupo de proprietários de arenas e equipes de basquete, liderados por <b>Maurice Podoloff</b>, que se tornaria o primeiro presidente da BAA.
-      <br>
-        A BAA começou com 11 equipes: <a href="#"> Boston Celtics</a>, <a href="#"> Chicago Stags</a>, <a href="#"> Cleveland Rebels</a>, <a href="#"> Detroit Falcons</a>, <a href="#"> New York Knickerbockers (Knicks)</a>, <a href="#"> Philadelphia Warriors</a>, <a href="#"> Pittsburgh Ironmen</a>, <a href="#"> Providence Steamrollers</a>, <a href="#"> St. Louis Bombers</a>, <a href="#"> Toronto Huskies</a> e <a href="#"> Washington Capitols</a>.
-      <br>
-        A BAA teve um impacto significativo no desenvolvimento do basquete profissional nos Estados Unidos. Ela introduziu várias inovações, como uma temporada regular mais longa, jogos televisionados e uma ênfase em talentos individuais para atrair mais espectadores.
+    <P class="introducao">
+        Bem-vindo(a) ao meu site dedicado ao universo da NBA!!<br>
+        Este é um espaço criado com o intuito inicial apenas para estudo e compartilhar informações verídicas sobre a National Basketball Association. Meu interesse pelo basquete e pela dinâmica do esporte me inspiraram a criar este espaço, onde você encontrará uma variedade de conteúdos relacionados ao universo da NBA.<br>
+        
+        É importante ressaltar que todas as informações contidas neste site são verdadeiras e foram cuidadosamente pesquisadas para garantir precisão e confiabilidade<br>
+        
+        O tema da NBA foi escolhido por ser mais do que apenas um tópico de interesse - é um hobby pessoal.<br>
+        
+        Este site é uma tentativa inicial e está sujeito a alterações futuras, à medida que buscos aprimorar a experiência do usuário e expandir o conteúdo.<br>
+        
+        Gostaria muito de ouvir sua opinião sobre o que achou do site! Por favor, sinta-se à vontade para deixar seus comentários, ideias de melhorias ou críticas construtivas na aba de opiniões, que se encontra no final da página.<br>
+    </P>
+  </div>
 
-        Em 1949, a BAA se fundiu com a National Basketball League (NBL) para formar a National Basketball Association (NBA), expandindo e fortalecendo ainda mais o cenário do basquete profissional nos Estados Unidos.
-      </p>
-</div>
-  </section>
-<section id="analises">
-    <h2>Análises e Opiniões <i class="fa-solid fa-comments"></i> </h2>
-    <section id="opinioes">
-        <h3>Deixe sua Opinião</h3>
-        <form action="salvaOpinioes.php" method="post">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required><br><br>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-            
-            <label for="opiniao">Sua Opinião:</label><br>
-            <textarea id="opiniao" name="opiniao" rows="4" cols="50" required></textarea><br><br>
-            <button>Enviar opinião</button>
-        </form>
-    </section>
-</section>
-<footer>
-    <p>&copy; 2024 Pagina Inicial</p>
-  </footer>
-</body>
+
+  <template>
+    <Card style="width: 25rem; overflow: hidden">
+        <template #header>
+            <img alt="user header" src="https://primefaces.org/cdn/primevue/images/usercard.png" />
+        </template>
+        <template #title>Advanced Card</template>
+        <template #subtitle>Card subtitle</template>
+        <template #content>
+            <p class="m-0">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque
+                quas!
+            </p>
+        </template>
+        <template #footer>
+            <div class="flex gap-4 mt-1">
+                <Button label="Cancel" severity="secondary" outlined class="w-full" />
+                <Button label="Save" class="w-full" />
+            </div>
+        </template>
+    </Card>
+</template>
+
+<script setup>
+</script>
+
+
+  </body>
 </html>
