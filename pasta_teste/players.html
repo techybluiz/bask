@@ -1,12 +1,250 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-</html>
-<head> 
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Jogadores - NBA</title>
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Jogadores - NBA </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dosis:wght@200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://localhost/pasta_teste/paginainicial.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script> import Card from 'primevue/card'; </script>
+    <style>
+        .info {
+            padding: 25px;
+            background-color: white;
+        }
+        .playerbaner {
+            width: 100%;
+        }
+        .toggle-mode{
+            width: 70px;
+            height: 70px;
+            cursor: pointer;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+          }
+          .dark-mode {
+            background-color: #333; /* exemplo de fundo escuro */
+            color: #fff; /* exemplo de texto claro */
+        }
+        img {
+            vertical-align: middle;
+            border-style: none;
+        }
+    </style>
+
+
 <body>
-    <h2>Pagina dos Jogadores</h2>
+    <img class="playerbaner" src="https://i.ibb.co/qxYLmXS/banerjogadores.png" alt="">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img class="logo" src="data:image/png;base64,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"></a>
+            <h1 class="titulo">Jogadores</h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="http://localhost/pasta_teste/AllStarGames.html">All Star Games</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Arenas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Times</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Jogadores</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contato</a>
+                </li>
+              </ul>
+              <button id="toggle-mode"><i class="fa-solid fa-toggle-on"></i></button>
+            </div>
+          </nav>
+    </header>
+
+    <script>
+      const toggleButton = document.getElementById('toggle-mode');
+      toggleButton.addEventListener('click', function() {
+          document.body.classList.toggle('dark-mode');
+      });
+      
+    </script>
+
+   <div class="info">
+    <table class="table table-sm">
+        <thead>
+          <tr>
+            <th scope="col">Camisa</th>
+            <th scope="col">Jogador</th>
+            <th scope="col">Time</th>
+            <th scope="col">Pais</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td><a href="#">Precious Achiuwa</a></td>
+            <td><a href="#">NYK</a></td>
+            <td>Nigeria</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Steve Adams</td>
+            <td>HOU</td>
+            <td>Nova Zelândia</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td><a href="#">Bam Adebayo</a></td>
+            <td><a href="#">MIA</a></td>
+            <td>Estados Unidos</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td><a href="#">Ochai Agbaji</a></td>
+            <td>TOR</td>
+            <td>Estados Unidos</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td><a href="#">Santi Aldama</a></td>
+            <td>MEM</td>
+            <td>Espanha</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td>NICKEIL ALEXANDER-WALKER</td>
+            <td>NYK</td>
+            <td>Canadá</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td>Grayson Allen</td>
+            <td>NYK</td>
+            <td>Estados Unidos</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td>Jarrett Allen</td>
+            <td>NYK</td>
+            <td>Estados Unidos</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td>Jose Alvarado</td>
+            <td>NYK</td>
+            <td>Estados Unidos</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td><a href="#">Kyle Anderson</a></td>
+            <td>NYK</td>
+            <td>Estados Unidos</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td><a href="#">Giannis Antetokounmpo</a></td>
+            <td><a href="#">MIL</a></td>
+            <td>Grécia</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td><a href="#">Thanasis Antetokounmpo</a></td>
+            <td><a href="#">MIL</a></td>
+            <td>Grécia</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td><a href="#">Cole Anthony</a></td>
+            <td><a href="#">ORL</a></td>
+            <td>Estados Unidos</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td><a href="#">OG Anunoby</a></td>
+            <td><a href="#">NYK</a></td>
+            <td>Reino Unido</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td><a href="#">Deni Avdija</a></td>
+            <td><a href="#">WAS</a></td>
+            <td>Israel</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td><a href="#">Deandre Ayton</a></td>
+            <td><a href="#">POR</a></td>
+            <td>Bahamas</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td><a href="#">Udoka Azubuike</a></td>
+            <td><a href="#">ORL</a></td>
+            <td>Estados Unidos</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td><a href="#">Cole Anthony</a></td>
+            <td><a href="#">ORL</a></td>
+            <td>Estados Unidos</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td><a href="#">Ibou Badji</a></td>
+            <td><a href="#">POR</a></td>
+            <td>Senegal</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td><a href="#">Marvin Bagley III</a></td>
+            <td><a href="#">WAS</a></td>
+            <td>Estados Unidos</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td><a href="#">Amari Bailey</a></td>
+            <td><a href="#">CHA</a></td>
+            <td>Estados Unidos</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td><a href="#">Patrick Baldwin Jr.</a></td>
+            <td><a href="#">WAS</td>
+            <td>Estados Unidos</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td><a href="#">LaMelo Bail</a></td>
+            <td><a href="#">CHA</a></td>
+            <td>Estados Unidos</td>
+          </tr>
+        </tbody>
+      </table>
+   </div>
 </body>
-</html>
+
+
+
+
+
+
+
+
+
