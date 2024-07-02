@@ -12,8 +12,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <style>
     body{
-        margin-top: 80px;
-        padding: 15px;
         font-family: Arial, Helvetica, sans-serif;
         color: aliceblue;
         background: rgb(1,60,119);
@@ -22,7 +20,14 @@
         .star {
         color: gold;}
 
+.TESTE{
+  font-family: Plusjakartasans, sans-serif;
+  line-height: 72px;
+  float: left;
+}
+
     h1 {
+      font-family: "Roboto Mono", monospace;
         color: rgb(255, 187, 0);
         text-align: center;
         border: 2px;
@@ -34,20 +39,65 @@
         padding: 0px;
     }
     p{
-        padding: 15px;
+      margin: 20px;
+      padding: 25px;
+      font-size: 20px;
     }
     header{
-      position: fixed;
       top: 0;
-      z-index: 1000;
       width: 100%;
     }
-    a {
-      padding: 15px;
+    .baner {
+      width: 100%;
+      height: auto;
     }
+    footer {
+      background-color: #1d1d1d;
+      color: #fff;
+      padding: 30px 0;
+      font-size: 14px;
+      text-align: center;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+  }
+  /* Estilos para a seção de links no footer */
+  footer ul {
+      list-style: none;
+      padding: 0;
+  }
+  footer ul li {
+      display: inline-block;
+      margin: 0 10px;
+  }
+  footer ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+  }
+  footer ul li a:hover {
+      color: #5f00cc;
+  }
+
+  footer .social-icons a {
+      color: #fff;
+      font-size: 20px;
+      margin: 0 10px;
+      text-decoration: none;
+      transition: color 0.2s ease;
+  }
+  footer .social-icons a:hover {
+      color: #4a2fc4;
+  }
+  footer p {
+      margin-top: 20px;
+      font-size: 12px;
+  }
+
   </style>
 </head>
 <body>
+  <img src="https://i.ibb.co/tH9Z1Mh/stargamesbaner.png" class="baner" alt="">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <img class="navbar-brand" src="data:image/png;base64,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"></a>
@@ -64,13 +114,13 @@
                   <a class="nav-link" href="#">All Star Games</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Arenas</a>
+                  <a class="nav-link" href="http://localhost/pasta_teste/arenas.html">Arenas</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Times</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Jogadores</a>
+                  <a class="nav-link" href="http://localhost/pasta_teste/players.html">Jogadores</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Contato</a>
@@ -80,11 +130,12 @@
           </nav>
     </header>
     <hr>
-    <a href="https://www.nba.com/"> <i class="fa-solid fa-arrow-right"> </i> Pagina Oficial</a> <i class="fa-solid fa-star fa-fade" style="color: #e3be3b;"></i>
-
+<h1>Star games! Aqui você encontra apenas os melhores</h1>
+<br>
     <section>
         <div>
-            <h1>All Star Games</h1>
+            <h1><b>All Star Games</b></h1>
+            <br>
             <p>
                 O All-Star Game da NBA é um dos eventos mais aguardados e emocionantes do calendário esportivo. Aqui está tudo o que você precisa saber, desde sua história fascinante até detalhes interessantes sobre este evento único: <br>
             <ul>
@@ -115,7 +166,7 @@
     </div>
   </section>
 
-    ChatGPT
+ 
     O All-Star Game da NBA é um evento anual que reúne os melhores jogadores da liga em uma partida de basquete de exibição. O jogo é parte do fim de semana do All-Star da NBA, que inclui uma série de eventos, como o Desafio das Estrelas (Rising Stars Challenge), o Concurso de Habilidades (Skills Challenge), o Concurso de Três Pontos (Three-Point Contest), o Concurso de Enterradas (Slam Dunk Contest) e o próprio All-Star Game.
     
     O All-Star Game é tradicionalmente realizado no domingo à noite durante o fim de semana do All-Star, e os jogadores são selecionados através de uma combinação de votos dos fãs, votos dos jogadores e votos da imprensa. Os jogadores mais votados de cada conferência são nomeados capitães de equipe e têm a oportunidade de escolher os jogadores para suas equipes durante o Draft do All-Star Game.
@@ -125,7 +176,34 @@
     Além de proporcionar entretenimento aos fãs, o All-Star Game também serve como uma homenagem aos jogadores mais talentosos da liga e como uma oportunidade para eles interagirem e se divertirem juntos.
 
     <footer>
-        <p>&copy; 2024 All Star Games</p>
-      </footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                  <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Times</a></li>
+                      <li><a href="http://localhost/pasta_teste/players.html">Jogadores</a></li>
+                      <li><a href="http://localhost/pasta_teste/arenas.html">Arenas</a></li>
+                      <li><a href="#">Contato</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-6">
+                  <div class="social-icons">
+                      <a href="https://github.com/techybluiz"><i class="fa-brands fa-github"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="https://www.linkedin.com/in/bianca-santos-71227a19b/"><i class="fa-brands fa-linkedin"></i></a>
+                      <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-12">
+                  <p>&copy; 2024 Todos os direitos reservados. Desenvolvido por Bianca Luiz.</p>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-fIS28fKNuSy82olZu2UNUbzJrjKk4cOeY0PnN/3kq5CkTX9aW1Kgq3M08iIKG/mnEw5rwS8QqH0a1ED6N5O4Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>>
 </body>
 </html>
