@@ -36,7 +36,7 @@
   }
     header{
       width: 100%;
-      height: 70px;
+      height: 60px;
       position: relative;
       z-index: 1;
     }
@@ -70,9 +70,9 @@
     }
     .contanier{
       font-family: 'DM Sans', sans-serif;
-    color: #ffffff;
-    font-size: 1em;
-    line-height: 1.4em;
+        color: #ffffff;
+        font-size: 1em;
+        line-height: 1.4em;
     }
     .section-hero {
       position: relative;
@@ -86,6 +86,49 @@
       display: inline-block;
       
     }
+    footer {
+      background-color: #1d1d1d;
+      color: #fff;
+      padding: 30px 0;
+      font-size: 14px;
+      text-align: center;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+  }
+  /* Estilos para a seção de links no footer */
+  footer ul {
+      list-style: none;
+      padding: 0;
+  }
+  footer ul li {
+      display: inline-block;
+      margin: 0 10px;
+  }
+  footer ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+  }
+  footer ul li a:hover {
+      color: #5f00cc;
+  }
+
+  footer .social-icons a {
+      color: #fff;
+      font-size: 20px;
+      margin: 0 10px;
+      text-decoration: none;
+      transition: color 0.2s ease;
+  }
+  footer .social-icons a:hover {
+      color: #4a2fc4;
+  }
+  footer p {
+      margin-top: 20px;
+      font-size: 12px;
+  }
+
   </style>
 </head>
 <body>
@@ -99,23 +142,45 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="http://localhost/pasta_teste/SplashScreen.html">Home</a>
-            </li>
             <li class="nav-item">
               <a class="nav-link" href="http://localhost/pasta_teste/introducao2.html">Start</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="http://localhost/pasta_teste/contato.html">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contato</a>
             </li>
           </ul>
         </div>
       </nav>
 </header>
-<img src="https://i.ibb.co/rdRNf0C/splashbaner.png" alt="">
+<img src="https://i.ibb.co/D8Vq4yy/splashbaner.png" alt="">
 
 <a href="http://localhost/pasta_teste/introducao2.html" class="botao">Vamos começar</a>
+<footer>
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6">
+              <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Times</a></li>
+                  <li><a href="#">Jogadores</a></li>
+                  <li><a href="http://localhost/pasta_teste/arenas.html">Arenas</a></li>
+                  <li><a href="#">Notícias</a></li>
+                  <li><a href="#">Contato</a></li>
+              </ul>
+          </div>
+          <div class="col-md-6">
+              <div class="social-icons">
+                  <a href="https://github.com/techybluiz"><i class="fa-brands fa-github"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/bianca-santos-71227a19b/"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXSnhDSBMsQXLsFNHlJrnVZsbhLNnBLzZNKgvVgRNCpXGcmGzVsCKBtzhlhHgsDJrCKMN"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12">
+              <p>&copy; 2024 Todos os direitos reservados. Desenvolvido por Bianca Luiz.</p>
+          </div>
+      </div>
+  </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-fIS28fKNuSy82olZu2UNUbzJrjKk4cOeY0PnN/3kq5CkTX9aW1Kgq3M08iIKG/mnEw5rwS8QqH0a1ED6N5O4Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
