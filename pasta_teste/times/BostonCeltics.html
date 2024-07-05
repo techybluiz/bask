@@ -6,62 +6,17 @@
     <title> Boston Celtics </title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/pasta_teste/teams.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
-        header{
-            color: rgb(255, 255, 255);
-        }
         h2{
             color: #007A33;
         }
         b {
             font-size: 1em;
             color: #007A33;
-        }
-        footer{
-            text-align: center;
-            width: 100%;
-        }
-        hr{
-            color: rgb(255, 255, 255);
-        }
-        h1{
-            text-align: right;
-            text-align: center;
-            padding: 5px;
-        }
-        body{
-            background: #141212;
-            font-family: Suisse, sans-serif;
-            color: #fff;
-            
-        }
-        section{
-            padding: 15px;
-        }
-        p {
-            padding: 5px;
-            font-size: medium;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        img{
-            width:360px;
-            float: right;
-            margin-right: 30px;
-        }
-        navbar-brand{
-            width: 100px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #ccc;
-            padding: 8px;
-            text-align: left;
         }
         th {
             background-color: #007A33;
@@ -101,72 +56,49 @@
             background-color: darkgray;
         
         }
-        .logo{
-            width: 5em;
-            height: 5em;
-        }
-        .texto-lista{
-            padding: 15px;
+        .bg-body-tertiary{
+            background: rgb(2, 153, 65);
+           }
+         
+        .title{
+            margin-top: 20px;
+            font-size: 70px;
+            font-weight: 700;
+            color: #0b4400;
+            font-family: 'open_sansregular';
+            letter-spacing: 5px;
+            margin-bottom: 20px;
+            background:#ffffff;
+            position: relative;
+            animation: motion 3s 1;
+        
         }
         .formulario {
-            max-width: 80%;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #9bc5a8;
+           
         }
-        .logo{
-            width: 5em;
-            height: 4em;
+        @keyframes motion{
+            0%{
+                color: #01570c;
+                margin-bottom: -42px;
+            }
+            30%{
+                letter-spacing: 30px;
+                margin-bottom: -42px;
+                }
+            85%{
+                letter-spacing: 5px;
+                margin-bottom: -42px;
+            }
         }
-        .texto-lista{
-            padding: 15px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-            .form-group {
-                margin-bottom: 20px;
-            }
-            .banner {
-                width: 100%;
-                height: auto;
-                padding: 25px;
-            }
-            .bg-body-tertiary{
-                background: rgb(255,255,255);
-                background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgb(2, 153, 65) 27%, rgba(0,122,51,1) 76%);
-            }
-            .nav-link, .dropdown-toggle
-            {
-                color: #fff;
-                font-size: 20px;
-                width: 100%;
-                height: 50px;
-            }
-            .card{
-                display: inline-block;
-                width: auto;
-                height: auto;
-                background-color: #f0f0f0;
-                margin: 10px;
-                padding: 20px;
-                border-radius: 5px;
-                transition: all 0.5s ease;
-            }
-
-            .card-img-top{
-                display: inline-block;
-            }
     </style>
-</head>
+
 <body>
+        <header class="box-texto">      
+          <h1 class="title">Bem vindo Celtics Fans!</h1>
+          <span class="descricao">Boston Celtics</span>
+        </header><br>
+        <br>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
            <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
@@ -178,19 +110,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home</a>
+                  <a class="nav-link" href="http://localhost/pasta_teste/PaginaInicial.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">All Star Games</a>
+                  <a class="nav-link" href="allstargames.html">All Star Games</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Arenas</a>
+                  <a class="nav-link" href="http://localhost/pasta_teste/arenas.html">Arenas</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Times</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Jogadores</a>
+                  <a class="nav-link" href="players.html">Jogadores</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Contato</a>
@@ -289,46 +221,18 @@
    
     </section>
 <hr>
-    <h2><b>Rivalidades</b></h2>
+    <div class="rivalidades">
+        <h2><b>Rivalidades</b></h2>
     <p>
         <li><a href="#">Los Angeles Lakers:</a> A rivalidade Celtics-Lakers é uma das mais famosas e históricas na história da NBA. Ela se desenvolveu ao longo de múltiplas finais da NBA, com os Celtics e os Lakers frequentemente competindo pelo título. Os confrontos entre essas duas equipes sempre geram grande interesse e emoção entre os fãs.</li>
         <li><a href="#">Philadelphia 76ers:</a> Os Celtics têm uma rivalidade significativa com os 76ers, que remonta aos anos 1960, quando ambos os times eram potências da NBA. As batalhas entre essas equipes, muitas vezes na pós-temporada, têm sido intensas ao longo dos anos.</li>
         <li><a href="#">New York Knicks:</a> Os Celtics e os Knicks têm uma rivalidade histórica, especialmente devido à proximidade geográfica entre Boston e Nova York. Os confrontos entre essas equipes sempre foram acirrados, tanto na temporada regular quanto nos playoffs.</li>
         <li><a href="#">Detroit Pistons:</a> Embora talvez não seja tão proeminente quanto as rivalidades com os Lakers ou os 76ers, os Celtics e os Pistons tiveram uma rivalidade significativa ao longo dos anos, especialmente durante os anos 1980 e 2000, quando ambas as equipes eram forças na Conferência Leste.</li>
     </p>
+    </div>
 
-    <section>
-        <div class="card" style="width: 18rem;">
-            <img src="https://s2-oglobo.glbimg.com/yiBMks1Y_aaKhaFoBcZ6WWOvZcA=/0x0:1976x1946/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2023/8/a/TkP4dKSZisn22Nxq5new/35937543-los-angeles-lakers-guard-kobe-bryant-24-drives-to-the-basket-as-boston-celtics-forward-kevi.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Celtics-Lakers</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="https://s2-oglobo.glbimg.com/yiBMks1Y_aaKhaFoBcZ6WWOvZcA=/0x0:1976x1946/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2023/8/a/TkP4dKSZisn22Nxq5new/35937543-los-angeles-lakers-guard-kobe-bryant-24-drives-to-the-basket-as-boston-celtics-forward-kevi.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Celtics-76ers</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="https://cdn.vox-cdn.com/thumbor/nUvnoUi1-VUva_CzQ-mNKLF1SkQ=/0x0:4387x2925/1200x800/filters:focal(1548x681:2248x1381)/cdn.vox-cdn.com/uploads/chorus_image/image/71911899/usa_today_19865510.0.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Celtics-Knicks</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="https://www.sites-de-apostas.net/wp-content/uploads/2024/01/boston-celtics-imago1037024945h.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Celtics-Pistons</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-    </section>
-
-    <div class="container">
+   
+    <div id="CorePlayers" class="container">
         <h1><b>Boston Celtics Core Players</b></h1>
         <table>
             <thead>
@@ -526,7 +430,34 @@
    </div>
    <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGGDMvo9Qs&#x2F;qcTYcjC-MqQP4zQcXg2ZCg&#x2F;view?utm_content=DAGGDMvo9Qs&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a> 
 
-        <footer>
-            <p>&copy; 2024 NBA - Boston Celtics </p>
-        </footer>
+   <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="times.html">Times</a></li>
+                    <li><a href="http://localhost/pasta_teste/players.html">Jogadores</a></li>
+                    <li><a href="#">Arenas</a></li>
+                    <li><a href="#">Notícias</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div class="social-icons">
+                    <a href="https://github.com/techybluiz"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p>&copy; 2024 Todos os direitos reservados. Desenvolvido por Bianca Luiz.</p>
+            </div>
+        </div>
+    </div>
+  </footer>
 </body>
