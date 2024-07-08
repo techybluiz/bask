@@ -6,71 +6,20 @@
     <title> Chicago Bulls </title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/pasta_teste/teams.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
-        header{
-            color: rgb(255, 255, 255);
-        }
-        h2{
+        h2,h1{
             color: #CE1141;
         }
         b {
             font-size: 1em;
             color: #CE1141;
         }
-        footer{
-            text-align: center;
-            width: 100%;
-        }
-        hr{
-            color: rgb(255, 255, 255);
-        }
-        h1{
-            text-align: right;
-            text-align: center;
-            padding: 5px;
-        }
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: rgb(255, 254, 254);
-            
-        }
-        section {
-            padding: 15px;
-        }
-        h2{
-            padding: 5px;
-        }
-        p {
-            padding: 15px;
-            font-size: medium;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        img{
-            width:360px;
-            float: right;
-            margin-right: 30px;
-        }
-        navbar-brand{
-            width: 150px;
-        }
-
-        navbar-brand{
-            width: 150px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #ccc;
-            padding: 8px;
-            text-align: left;
-        }
         th {
-            background-color: #5e5e5e;
+            background-color: #CE1141;
             color: white;
         }
         tr:nth-child(even) {
@@ -93,7 +42,7 @@
         input[type="submit"] {
             display: block;
             margin: 20px auto 0;
-            background-color: #575757;
+            background-color: #CE1141;
             color: #fff;
             border: none;
             padding: 10px 20px;
@@ -101,129 +50,183 @@
             border-radius: 5px;
         }
         input[type="submit"]:hover {
-            background-color: #575757;
+            background-color: #CE1141;
         }
         .bg-light {
-            background: rgb(31,31,31);
-background: linear-gradient(90deg, rgba(31,31,31,1) 12%, rgba(206,17,65,1) 72%);
+            background-color: darkgray;
         
         }
-        .logo{
-            width: 5em;
-            height: 5em;
-        }
-        .texto-lista{
-            padding: 15px;
+        .bg-body-tertiary{
+            background: #CE1141;
+           }
+         
+        .title{
+            margin-top: 20px;
+            font-size: 70px;
+            font-weight: 700;
+            color: #CE1141;
+            font-family: 'open_sansregular';
+            letter-spacing: 5px;
+            margin-bottom: 20px;
+            background:#ffffff;
+            position: relative;
+            animation: motion 3s 1;
         }
         .formulario {
-            max-width: 80%;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #ff9f9f;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #c2a8af;
+           
         }
-        .logo{
-            width: 5em;
-            height: 4em;
+        @keyframes motion{
+            0%{
+                color: #CE1141;
+                margin-bottom: -42px;
+            }
+            30%{
+                letter-spacing: 30px;
+                margin-bottom: -42px;
+                }
+            85%{
+                letter-spacing: 5px;
+                margin-bottom: -42px;
+            }
         }
-        .texto-lista{
-            padding: 15px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-    .form-group {
-        margin-bottom: 20px;
-    }
-    .banner {
-        width: 100%;
-        height: auto;
-        padding: 25px;
-    }
 
     </style>
 </head>
+
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-       <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
-        <h1><b>Teams</b></h1>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">All Star Games</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Arenas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Times</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Jogadores</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contato</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-</header>
-<br>
-    <header>
-        <h1><b>Chicago Bulls</b></h1>
-        <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/b/be/Chicago_Bulls.png/200px-Chicago_Bulls.png" alt="chicago bulls">
+    <header class="box-texto">      
+        <h1 class="title">Bem vindo bulls Fans!</h1>
+        <span class="descricao">Chicago Bulls</span>
+    </header><br>
+      <br>
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
+            <h1>Teams</h1>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="http://localhost/pasta_teste/PaginaInicial.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="http://localhost/pasta_teste/AllStarGames.html">All Star Games</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="http://localhost/pasta_teste/arenas.html">Arenas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Times</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="http://localhost/pasta_teste/players.html">Jogadores</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="http://localhost/pasta_teste/contato.html">Contato</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
     </header>
 
-    <section>
-        <h2><b>História</b></h2>
-        <p>Os Brooklyn Nets são uma equipe profissional de basquete sediada no Brooklyn, Nova York. Eles fazem parte da Divisão do Atlântico da Conferência Leste na NBA (National Basketball Association).
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+        
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" id="historia" href="#">Historia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="CoreseMascote">Cores e Mascote</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="momentosnotaveis">Momentos Notáveis</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Rivalidades">Rivalidades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="CorePlayers">Core Players</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Quiz">Quiz</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Boston Celtics
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Jogadores</a></li>
+                      <li><a class="dropdown-item" href="#">Titulos</a></li>
+                      <li><a class="dropdown-item" href="#">Temporada atual</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+<br>
+
+<section>
+    <div>
+        <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/b/be/Chicago_Bulls.png/200px-Chicago_Bulls.png" alt="chicago bulls">
+        <br>
+        <h1><b>Chicago Bulls</b></h1>
+        <br>
+        <p>
+            <h2 id="historia"><b>História</b></h2>
+            O <b>Chicago Bulls</b> é uma franquia de basquete da NBA, fundada em 1966. O time ganhou notoriedade principalmente na década de 1990, quando conquistou 
+            seis campeonatos da NBA entre 1991 e 1998, com uma equipe estrelada por Michael Jordan, Scottie Pippen e outros grandes jogadores. Sob a liderança
+            do técnico Phil Jackson, os Bulls se tornaram uma das equipes mais dominantes da história da NBA, com um estilo de jogo inovador e uma dinastia 
+            que marcou época. Além dos títulos, a equipe se destacou pelo seu impacto cultural global, transformando Jordan em um ícone do esporte e elevando
+            o basquete a um novo patamar de popularidade ao redor do mundo.
             <br>
-            A equipe foi fundada em 1967 como uma franquia inaugural da American Basketball Association (ABA) e originalmente jogava em Nova Jersey como os New Jersey Americans.<br>
-            Mudaram seu nome para New York Nets em 1968 e se mudaram para Long Island, Nova York, em 1969, e eventualmente para Nova Jersey em 1977, tornando-se os New Jersey Nets. Em 2012, mudaram-se para o Brooklyn e foram renomeados Brooklyn Nets.
-                <br>
-                <h2><b>Arena</b></h2>
-                A arena principal do Chicago Bulls é o <a href="#">United Center</a> , localizado em Chicago, Illinois, nos Estados Unidos. É uma das arenas mais icônicas da NBA e também é usada pelo time de hóquei no gelo Chicago Blackhawks da NHL.
-                Para jogos de basquete da NBA, a capacidade é de aproximadamente 20.917 espectadores.
-            </p>
-            <hr>
+            <br>
+            <h2><b>Arena</b></h2>
+                <p> arena principal do Chicago Bulls é o <a href="#">United Center</a> , localizado em Chicago, Illinois, nos Estados Unidos. É uma das arenas mais icônicas da NBA e também é usada pelo time de hóquei no gelo Chicago Blackhawks da NHL.Para jogos de basquete da NBA, a capacidade é de aproximadamente 20.917 espectadores.</p>
+                <hr>
             <img src="https://frankthetank.files.wordpress.com/2006/11/benny2_061024.jpg" alt="mascote">
-            <h2><b>Cores e Mascote</b></h2>
             <p>
+                <h2><b>Cores e Mascote</b></h2>
                 O mascote do Chicago Bulls é conhecido como <b>"Benny the Bull"</b>. Ele é um touro antropomórfico, caracterizado por suas cores vermelho, preto e branco, que são as cores tradicionais da equipe. Benny the Bull é um dos mascotes mais reconhecíveis e queridos na NBA e tem uma história interessante por trás de sua criação e evolução.
                 Benny the Bull fez sua estreia como mascote oficial do Chicago Bulls em 1969. Ele foi criado como uma representação divertida e carismática do espírito da equipe, destinada a entreter os fãs durante os jogos e eventos relacionados ao Bulls. O nome "Benny" foi escolhido como uma abreviação de "Bulls", tornando-se uma identidade icônica associada ao time.
                 Benny the Bull recebeu vários prêmios e reconhecimentos por sua atuação como mascote, incluindo múltiplos prêmios como "Melhor Mascote da NBA". Sua capacidade de entreter e cativar o público o tornou uma figura querida não apenas entre os fãs dos Bulls, mas também entre os fãs de esportes em geral.
             </p>
-        </div>
-  
-        <div>
-            <h2><b>Momentos Notáveis</b></h2>
-                <li><b>Era Michael Jordan (1984-1998):</b> Durante os anos 90, Michael Jordan liderou o Chicago Bulls a seis títulos da NBA, consolidando-se como um dos maiores jogadores de basquete de todos os tempos. Esse período inclui a famosa "trilogia" de títulos consecutivos de 1991 a 1993, seguidos por mais três títulos em 1996, 1997 e 1998.</li>
-                <li><b>Dynasty Bulls:</b> Além de Jordan, o Chicago Bulls contava com outros jogadores notáveis como Scottie Pippen, Dennis Rodman, Horace Grant e Toni Kukoc. Juntos, formaram uma das equipes mais dominantes da história da NBA.</li>
-                <li><b>O Tiro do Jordan:</b> O arremesso de Jordan para vencer o Jogo 6 das Finais da NBA de 1998 contra o Utah Jazz ficou conhecido como "The Shot". Esse momento icônico encapsula a habilidade de Jordan em momentos decisivos.</li>
-                <li><b>72-10 na Temporada Regular de 1995-1996:</b> Os Bulls de 1995-1996 estabeleceram um recorde impressionante na temporada regular da NBA, terminando com um recorde de 72 vitórias e apenas 10 derrotas. Esse recorde permanece como um dos melhores da história da liga.</li>
-                <li><b>Derrick Rose e o MVP de 2011:</b> Derrick Rose, jogador dos Bulls, foi nomeado MVP (Jogador Mais Valioso) da temporada 2010-2011 da NBA. Sua habilidade explosiva e liderança levaram os Bulls de volta ao destaque na liga.</li>
-        <hr>
+    </div>
+</section>
+<hr>
+<section>
+    <h2 id="momentosnotaveis"><b>Momentos Notáveis</b></h2>
+    <p>
+        <li><b>Era Michael Jordan (1984-1998):</b> Durante os anos 90, Michael Jordan liderou o Chicago Bulls a seis títulos da NBA, consolidando-se como um dos maiores jogadores de basquete de todos os tempos. Esse período inclui a famosa "trilogia" de títulos consecutivos de 1991 a 1993, seguidos por mais três títulos em 1996, 1997 e 1998.</li>
+        <li><b>Dynasty Bulls:</b> Além de Jordan, o Chicago Bulls contava com outros jogadores notáveis como Scottie Pippen, Dennis Rodman, Horace Grant e Toni Kukoc. Juntos, formaram uma das equipes mais dominantes da história da NBA.</li>
+        <li><b>O Tiro do Jordan:</b> O arremesso de Jordan para vencer o Jogo 6 das Finais da NBA de 1998 contra o Utah Jazz ficou conhecido como "The Shot". Esse momento icônico encapsula a habilidade de Jordan em momentos decisivos.</li>
+        <li><b>72-10 na Temporada Regular de 1995-1996:</b> Os Bulls de 1995-1996 estabeleceram um recorde impressionante na temporada regular da NBA, terminando com um recorde de 72 vitórias e apenas 10 derrotas. Esse recorde permanece como um dos melhores da história da liga.</li>
+        <li><b>Derrick Rose e o MVP de 2011:</b> Derrick Rose, jogador dos Bulls, foi nomeado MVP (Jogador Mais Valioso) da temporada 2010-2011 da NBA. Sua habilidade explosiva e liderança levaram os Bulls de volta ao destaque na liga.</li>
+    </p>
+</section>
 
+    <div class="rivalidades">
         <h2><b>Rivalidades</b></h2>
+        <p>
             <li><a href="#"> Detroit Pistons:</a> Durante os anos 1980 e início dos anos 1990, os Bulls e os Pistons tiveram uma rivalidade intensa, especialmente nos playoffs. Os Pistons, conhecidos como "Bad Boys", foram uma grande barreira para os Bulls no início da carreira de Michael Jordan, mas os Bulls eventualmente superaram os Pistons e se tornaram uma potência da NBA.</li>
             <li><a href="#"> New York Knicks:</a> Nos anos 1990, os Bulls e os Knicks tiveram uma rivalidade intensa, enfrentando-se repetidamente nos playoffs. Os jogos entre essas equipes eram fisicamente intensos e muito disputados, especialmente nas séries de playoffs.</li>
             <li><a href="#">Cleveland Cavaliers:</a> Durante os anos 1980 e 1990, os Bulls e os Cavaliers desenvolveram uma rivalidade considerável, especialmente nos playoffs. Os Cavaliers foram um adversário frequente dos Bulls nas séries de playoffs, com jogos memoráveis, incluindo o famoso "The Shot", de Michael Jordan, em 1989.</li>
-        </div>
-    </section>
-<div class="container">
+        </p>
+    </div>
+
+
+<div id="CorePlayers" class="container">
     <h1><b>Chicago Bulls Core Players</b></h1>
     <table>
         <thead>
@@ -424,7 +427,35 @@ background: linear-gradient(90deg, rgba(31,31,31,1) 12%, rgba(206,17,65,1) 72%);
      </iframe>
    </div>
    <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGGK-nzsXU&#x2F;TLMK2lg5o7ZTIfc2z2YRsw&#x2F;view?utm_content=DAGGK-nzsXU&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a>
-          <footer>
-              <p>&copy; 2024 NBA - Chicago Bulls </p>
-            </footer>
+   <footer>
+    <div class="footer">
+        <div class="row">
+            <div class="col-md-6">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="times.html">Times</a></li>
+                    <li><a href="http://localhost/pasta_teste/players.html">Jogadores</a></li>
+                    <li><a href="#">Arenas</a></li>
+                    <li><a href="#">Notícias</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div class="social-icons">
+                    <a href="https://github.com/techybluiz"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p>&copy; 2024 Todos os direitos reservados. Desenvolvido por Bianca Luiz.</p>
+            </div>
+        </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-fIS28fKNuSy82olZu2UNUbzJrjKk4cOeY0PnN/3kq5CkTX9aW1Kgq3M08iIKG/mnEw5rwS8QqH0a1ED6N5O4Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
