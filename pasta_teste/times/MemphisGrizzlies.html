@@ -6,83 +6,17 @@
     <title> Memphis Grizzlies </title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/pasta_teste/teams.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
-        header{
-            color: black;
-        }
-        hr{
-            color: black;
-        }
-        h1{
-            text-align: right;
-            text-align: center;
-            padding: 5px;
-            color: aliceblue;
-        }
-        h2, h3{
+        h2{
             color: #5D76A9;
         }
         b {
             font-size: 1em;
-        }
-        .analise{
-            padding: 15px;
-        }
-        footer{
-            text-align: center;
-            width: 100%;
-        }
-        body{
-            
-            color: rgb(0, 0, 0);
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #ccc;
-            
-        }
-        p {
-            padding: 5px;
-            font-size: medium;
-            font-family: Arial, Helvetica, sans-serif;
-            padding: 15px;
-        }
-        section{
-            padding: 10px;
-        }
-        img{
-            width:340px;
-            float: right;
-            margin-right: 30px;
-            padding: 15px;
-        }
-        .logo{
-            width: 5em;
-            height: 5em;
-        }
-        .texto-lista{
-            padding: 15px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        navbar-brand{
-            width: 150px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #ccc;
-            padding: 8px;
-            text-align: left;
+            color: #5D76A9;
         }
         th {
             background-color: #5D76A9;
@@ -90,6 +24,9 @@
         }
         tr:nth-child(even) {
             background-color: #f2f2f2;
+        }
+        form {
+            margin-top: 20px;
         }
         label {
             display: block;
@@ -100,12 +37,12 @@
             margin-right: 10px;
         }
         input[type="text"] {
-            margin-inline-start: 5px;
+            margin-left: 5px;
         }
         input[type="submit"] {
             display: block;
             margin: 20px auto 0;
-            background-color: #002D62;
+            background-color: #5D76A9;
             color: #fff;
             border: none;
             padding: 10px 20px;
@@ -113,262 +50,336 @@
             border-radius: 5px;
         }
         input[type="submit"]:hover {
-            background-color: #002D62;
-        }
-        .formulario {
-            max-width: 80%;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .form-group {
-            margin-bottom: 20px;
-        }
-        .banner {
-            width: 100%;
-            display: block;
-            margin: auto;
+            background-color: #aab5cc;
         }
         .bg-light {
-            background: rgb(186,195,201);
-            background: linear-gradient(90deg, rgba(186,195,201,1) 0%, rgba(93,118,169,1) 57%);
+            background-color: darkgray;
+        
         }
-        
-        
+        .bg-body-tertiary{
+            background: #5D76A9;
+           }
+         
+        .title{
+            margin-top: 20px;
+            font-size: 70px;
+            font-weight: 700;
+            color: #5D76A9;
+            font-family: 'open_sansregular';
+            letter-spacing: 5px;
+            margin-bottom: 20px;
+            background:#ffffff;
+            position: relative;
+            animation: motion 3s 1;
+        }
+        .formulario {
+            background-color: #bdc3d1;
+           
+        }
+        @keyframes motion{
+            0%{
+                color: #5D76A9;
+                margin-bottom: -42px;
+            }
+            30%{
+                letter-spacing: 30px;
+                margin-bottom: -42px;
+                }
+            85%{
+                letter-spacing: 5px;
+                margin-bottom: -42px;
+            }
+        }  
     </style>
 </head>
+
 <body>
-    <header>
+    <header class="box-texto">      
+        <h1 class="title">Bem vindo Grizzlies Fans!</h1>
+        <span class="descricao">Memphis Grizzlies</span>
+      </header><br>
+      <br>
+
+      <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
            <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
-            <h1>Teams </h1>
+            <h1>Teams</h1>        
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home</a>
+                  <a class="nav-link" href="http://localhost/pasta_teste/PaginaInicial.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">All Star Games</a>
+                  <a class="nav-link" href="http://localhost/pasta_teste/AllStarGames.html">All Star Games</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Arenas</a>
+                  <a class="nav-link" href="http://localhost/pasta_teste/arenas.html">Arenas</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Times</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Jogadores</a>
+                  <a class="nav-link" href="http://localhost/pasta_teste/players.html">Jogadores</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contato</a>
+                  <a class="nav-link" href="http://localhost/pasta_teste/contato.html">Contato</a>
                 </li>
               </ul>
             </div>
           </nav>
     </header>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+        
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" id="historia" href="#">Historia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="CoreseMascote">Cores e Mascote</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="momentosnotaveis">Momentos Notáveis</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Rivalidades">Rivalidades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="CorePlayers">Core Players</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Quiz">Quiz</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Memphis Grizzlies
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Jogadores</a></li>
+                      <li><a class="dropdown-item" href="#">Titulos</a></li>
+                      <li><a class="dropdown-item" href="#">Temporada atual</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    
+
     <section>
         <div>
-            <img src="https://cdn.nba.com/teams/uploads/sites/1610612763/2021/10/MG_icon_white.svg" alt="Memphis Grizzlies">
+            <img src="https://cdn.nba.com/logos/nba/1610612763/global/L/logo.svg" alt="Memphis Grizzlies">
             <br>
             <h1><b>Memphis Grizzlies</b></h1>
+            <br>
             <p>
-                <h3><b>História:</b></h3> Os Grizzlies foram originalmente fundados como uma franquia de expansão da NBA em 1995, juntamente com o Toronto Raptors, com o objetivo de expandir a presença da liga para o Canadá e o sul dos Estados Unidos. Inicialmente, a equipe estava baseada em Vancouver, Colúmbia Britânica, e era conhecida como Vancouver Grizzlies.<br>
+                <h2 id="historia"><b>História</b></h2>
+                Os Grizzlies foram originalmente fundados como uma franquia de expansão da NBA em 1995, juntamente com o Toronto Raptors, com o objetivo de expandir a presença da liga para o Canadá e o sul dos Estados Unidos. Inicialmente, a equipe estava baseada em Vancouver, Colúmbia Britânica, e era conhecida como Vancouver Grizzlies.<br>
                 A equipe lutou bastante durante seus anos em Vancouver, enfrentando dificuldades financeiras e um desempenho irregular em quadra. Apesar de contar com jogadores talentosos, os Grizzlies não conseguiram construir uma base de fãs sólida na cidade. Em 2001, houve especulações sobre a possível mudança da equipe para Memphis, que na época estava ávida por uma franquia de basquete profissional.<br>
                 <br>
-                <h3><b>Arena:</b></h3> O <a href="#">FedExForum</a> , localizado no centro de Memphis, serve como a casa do Memphis Grizzlies desde a temporada 2004-2005.<br>
+                <h2><b>Arena</b></h2>
+                O <a href="#">FedExForum</a> , localizado no centro de Memphis, serve como a casa do Memphis Grizzlies desde a temporada 2004-2005.<br>
+                <br>
                 <br>
                 <img src="https://cdn.nba.com/teams/uploads/sites/1610612763/2022/06/grizz_dunk.png" alt="mascote">
-                <h2><b>Cores e Mascote:</b></h2> As cores oficiais da equipe são azul, ouro e branco.<br>
-                Os uniformes variaram ao longo dos anos, mas geralmente incorporam essas cores de alguma forma.
-                O mascote do time é chamado de "Grizz", que é uma abreviação de "Grizzly Bear", em referência ao nome e ao símbolo da equipe. Grizz é um urso antropomórfico, ou seja, um urso com características humanas, que representa a força, energia e espírito competitivo do time.
-                O Grizz foi introduzido como mascote oficial dos Memphis Grizzlies em 1995, quando a equipe ainda estava sediada em Vancouver, no Canadá. Com a mudança da equipe para Memphis, Tennessee, em 2001, o mascote permaneceu como uma parte vital da identidade e cultura da equipe.
-                <br>
-                Grizz é conhecido por sua personalidade animada e travessa. Ele está sempre interagindo com os fãs durante os jogos e eventos da equipe, fazendo acrobacias e performances divertidas. Além disso, ele está envolvido em várias atividades comunitárias e de caridade, ajudando a promover o espírito esportivo e a solidariedade na comunidade de Memphis.
-                <br>
-                O mascote Grizz se tornou uma figura querida não apenas para os fãs dos Grizzlies, mas também para os residentes de Memphis, que o veem como um símbolo de orgulho local e um embaixador da equipe e da cidade. Sua presença enérgica e divertida adiciona uma dimensão especial à experiência dos fãs nos jogos e eventos dos Grizzlies.<br>
-                <b>Conferência e Divisão:</b> O Memphis Grizzlies é membro da Conferência Oeste da NBA e compete na Divisão Sudoeste.<br>
-            </p>
+                <p>
+                    <h2><b>Cores e Mascote</b></h2> 
+                    As cores oficiais da equipe são azul, ouro e branco.<br>
+                    Os uniformes variaram ao longo dos anos, mas geralmente incorporam essas cores de alguma forma.
+                    O mascote do time é chamado de "Grizz", que é uma abreviação de "Grizzly Bear", em referência ao nome e ao símbolo da equipe. Grizz é um urso antropomórfico, ou seja, um urso com características humanas, que representa a força, energia e espírito competitivo do time.
+                    O Grizz foi introduzido como mascote oficial dos Memphis Grizzlies em 1995, quando a equipe ainda estava sediada em Vancouver, no Canadá. Com a mudança da equipe para Memphis, Tennessee, em 2001, o mascote permaneceu como uma parte vital da identidade e cultura da equipe.
+                    <br>
+                    Grizz é conhecido por sua personalidade animada e travessa. Ele está sempre interagindo com os fãs durante os jogos e eventos da equipe, fazendo acrobacias e performances divertidas. Além disso, ele está envolvido em várias atividades comunitárias e de caridade, ajudando a promover o espírito esportivo e a solidariedade na comunidade de Memphis.
+                    <br>
+                    O mascote Grizz se tornou uma figura querida não apenas para os fãs dos Grizzlies, mas também para os residentes de Memphis, que o veem como um símbolo de orgulho local e um embaixador da equipe e da cidade. Sua presença enérgica e divertida adiciona uma dimensão especial à experiência dos fãs nos jogos e eventos dos Grizzlies.<br>
+                </p>
         </div>
     </section>
 <hr>
 <section>
-    <div>
-        <h2><b>Momentos Notáveis:</b></h2>
-        <p>
+        <h2 id="momentosnotaveis"><b>Momentos Notáveis</b></h2>
+    <p>
         <li><b>Primeira Mudança para Memphis (2001):</b> A mudança da equipe de Vancouver para Memphis foi um momento histórico para a franquia. Isso não só trouxe basquete profissional para Memphis, mas também marcou o início de uma nova era para os Grizzlies. </li>
         <li><b>Primeira Aparição nos Playoffs (2004):</b> Na temporada 2003-2004, os Grizzlies conquistaram sua primeira vaga nos playoffs desde a mudança para Memphis. Embora tenham sido eliminados na primeira rodada, essa conquista foi um marco importante para a equipe e para a cidade.</li>
         <li><b>Era Grit 'n' Grind:</b> Sob a liderança do treinador Lionel Hollins, os Grizzlies desenvolveram um estilo de jogo físico e defensivo conhecido como "Grit 'n' Grind" (Dureza e Resistência). Durante essa era, os Grizzlies se tornaram uma força respeitável na NBA, chegando às finais da Conferência Oeste em 2013.</li>
         <li><b>Seleção de Marc Gasol e Desenvolvimento de Talentos:</b> A seleção de Marc Gasol no draft de 2007 foi um momento crucial para os Grizzlies. Gasol se tornou uma peça fundamental na equipe e foi fundamental para o sucesso dos Grizzlies durante os anos seguintes. Além disso, os Grizzlies têm um histórico de desenvolvimento de talentos, como Mike Conley Jr., Zach Randolph, Tony Allen, entre outros.</li>
         <li><b>Vitória nos Playoffs contra os San Antonio Spurs (2011):</b>Nos playoffs de 2011, os Grizzlies conquistaram uma vitória histórica contra os San Antonio Spurs na primeira rodada, tornando-se apenas a quarta oitava colocada a derrotar uma equipe de primeiro lugar em uma série de sete jogos.</li>
-        </p>
-    </div>
+    </p>
+</section>
+
     <div>
-        <h2><b>Rivalidades:</b></h2>
+        <div class="rivalidades">
+            <h2><b>Rivalidades</b></h2>
         <p>
            <a href="#">Los Angeles Clippers:</a> Uma rivalidade surgiu entre os Grizzlies e os Clippers devido a uma série de confrontos intensos nos playoffs. Ambas as equipes têm competido na Conferência Oeste e se enfrentaram várias vezes em jogos importantes, aumentando a rivalidade entre elas. <br>
            <a href="#">San Antonio Spurs:</a> Durante a era "Grit 'n' Grind", os Grizzlies enfrentaram os Spurs em várias séries de playoffs, o que contribuiu para o desenvolvimento de uma rivalidade. Esses confrontos muitas vezes foram físicos e disputados, e as duas equipes compartilham uma história de competição na Conferência Oeste.<br>
            <a href="#">Oklahoma City Thunder: </a>Embora seja uma rivalidade mais recente, os confrontos entre os Grizzlies e o Thunder também se tornaram intensos ao longo dos anos. Ambas as equipes têm lutado pela posição na Conferência Oeste e se enfrentaram em jogos importantes nos playoffs, aumentando a rivalidade entre elas.
         </p>
     </div>
-</section>
-<div class="container">
+
+    <div id="CorePlayers" class="container">
     <h1>Memphis Grizzlies Core Players</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Posição</th>
-                <th>Número</th>
-                <th>Altura</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>James Harden</td>
-                <td>Armador</td>
-                <td>13</td>
-                <td>1,96 m</td>
-            </tr>
-            <tr>
-                <td>Santi Aldama</td>
-                <td>Ala</td>
-                <td>7</td>
-                <td>2,11 m</td>
-            </tr>
-            <tr>
-                <td>Timmy Allen</td>
-                <td>Ala</td>
-                <td>0</td>
-                <td>1,98</td>
-            </tr>
-            <tr>
-                <td>Desmond Bane</td>
-                <td>Armador</td>
-                <td>22</td>
-                <td>1,96 m</td>
-            </tr>
-            <tr>
-                <td>Brandon Clarke</td>
-                <td>Ala</td>
-                <td>15</td>
-                <td>2,03 m</td>
-            </tr>
-            <tr>
-                <td>Jordan Goodwin</td>
-                <td>Armador</td>
-                <td>0</td>
-                <td>1,91 m</td>
-            </tr>
-            <tr>
-                <td>GG Jackson</td>
-                <td>Ala</td>
-                <td>45</td>
-                <td>2,06 m</td>
-            </tr>
-            <tr>
-                <td>Jaren Jackson Jr.</td>
-                <td>Ala</td>
-                <td>13</td>
-                <td>2,11 m</td>
-            </tr>
-            <tr>
-                <td>DeJon Jarreau</td>
-                <td>Armador</td>
-                <td>33</td>
-                <td>1,96 m</td>
-            </tr>
-            <tr>
-                <td>Trey Jemison</td>
-                <td>Pivô</td>
-                <td>55</td>
-                <td>2,13 m</td>
-            </tr>
-            <tr>
-                <td>Luke Kennard</td>
-                <td>Armador</td>
-                <td>10</td>
-                <td>1,98 m</td>
-            </tr>
-            <tr>
-                <td>John Konchar</td>
-                <td>Armador</td>
-                <td>46</td>
-                <td>1,96 m</td>
-            </tr>
-            <tr>
-                <td>Jake LaRavia</td>
-                <td>Ala</td>
-                <td>3</td>
-                <td>2,06 m</td>
-            </tr>
-            <tr>
-                <td>Ja Morant</td>
-                <td>Armador</td>
-                <td>12</td>
-                <td>1,91 m</td>
-            </tr>
-            <tr>
-                <td>Scotty Pippen Jr.</td>
-                <td>Armador</td>
-                <td>2</td>
-                <td>1,85 m</td>
-            </tr>
-            <tr>
-                <td>Derrick Rose</td>
-                <td>Armador</td>
-                <td>23</td>
-                <td>1,88 m</td>
-            </tr>
-            <tr>
-                <td>Zavier Simpson</td>
-                <td>Armador</td>
-                <td>9</td>
-                <td>1,83 m</td>
-            </tr>
-            <tr>
-                <td>Marcus Smart</td>
-                <td>Armador</td>
-                <td>36</td>
-                <td>1,91 m</td>
-            </tr>
-            <tr>
-                <td>Lamar Stevens</td>
-                <td>Ala</td>
-                <td>24</td>
-                <td>2,03 m</td>
-            </tr>
-            <tr>
-                <td>Yuta Watanabe</td>
-                <td>Ala</td>
-                <td>18</td>
-                <td>2,06 m</td>
-            </tr>
-            <tr>
-                <td>Jack White</td>
-                <td>Ala</td>
-                <td></td>
-                <td>2,01 m</td>
-            </tr>
-            <tr>
-                <td>Ziaire Williams</td>
-                <td>Ala</td>
-                <td>8</td>
-                <td>2,03 m</td>
-            </tr>
-            <tr>
-                <td>Vince Williams Jr.</td>
-                <td>Ala</td>
-                <td>5</td>
-                <td>1,93 m</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Posição</th>
+                    <th>Número</th>
+                    <th>Altura</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>James Harden</td>
+                    <td>Armador</td>
+                    <td>13</td>
+                    <td>1,96 m</td>
+                </tr>
+                <tr>
+                    <td>Santi Aldama</td>
+                    <td>Ala</td>
+                    <td>7</td>
+                    <td>2,11 m</td>
+                </tr>
+                <tr>
+                    <td>Timmy Allen</td>
+                    <td>Ala</td>
+                    <td>0</td>
+                    <td>1,98</td>
+                </tr>
+                <tr>
+                    <td>Desmond Bane</td>
+                    <td>Armador</td>
+                    <td>22</td>
+                    <td>1,96 m</td>
+                </tr>
+                <tr>
+                    <td>Brandon Clarke</td>
+                    <td>Ala</td>
+                    <td>15</td>
+                    <td>2,03 m</td>
+                </tr>
+                <tr>
+                    <td>Jordan Goodwin</td>
+                    <td>Armador</td>
+                    <td>0</td>
+                    <td>1,91 m</td>
+                </tr>
+                <tr>
+                    <td>GG Jackson</td>
+                    <td>Ala</td>
+                    <td>45</td>
+                    <td>2,06 m</td>
+                </tr>
+                <tr>
+                    <td>Jaren Jackson Jr.</td>
+                    <td>Ala</td>
+                    <td>13</td>
+                    <td>2,11 m</td>
+                </tr>
+                <tr>
+                    <td>DeJon Jarreau</td>
+                    <td>Armador</td>
+                    <td>33</td>
+                    <td>1,96 m</td>
+                </tr>
+                <tr>
+                    <td>Trey Jemison</td>
+                    <td>Pivô</td>
+                    <td>55</td>
+                    <td>2,13 m</td>
+                </tr>
+                <tr>
+                    <td>Luke Kennard</td>
+                    <td>Armador</td>
+                    <td>10</td>
+                    <td>1,98 m</td>
+                </tr>
+                <tr>
+                    <td>John Konchar</td>
+                    <td>Armador</td>
+                    <td>46</td>
+                    <td>1,96 m</td>
+                </tr>
+                <tr>
+                    <td>Jake LaRavia</td>
+                    <td>Ala</td>
+                    <td>3</td>
+                    <td>2,06 m</td>
+                </tr>
+                <tr>
+                    <td>Ja Morant</td>
+                    <td>Armador</td>
+                    <td>12</td>
+                    <td>1,91 m</td>
+                </tr>
+                <tr>
+                    <td>Scotty Pippen Jr.</td>
+                    <td>Armador</td>
+                    <td>2</td>
+                    <td>1,85 m</td>
+                </tr>
+                <tr>
+                    <td>Derrick Rose</td>
+                    <td>Armador</td>
+                    <td>23</td>
+                    <td>1,88 m</td>
+                </tr>
+                <tr>
+                    <td>Zavier Simpson</td>
+                    <td>Armador</td>
+                    <td>9</td>
+                    <td>1,83 m</td>
+                </tr>
+                <tr>
+                    <td>Marcus Smart</td>
+                    <td>Armador</td>
+                    <td>36</td>
+                    <td>1,91 m</td>
+                </tr>
+                <tr>
+                    <td>Lamar Stevens</td>
+                    <td>Ala</td>
+                    <td>24</td>
+                    <td>2,03 m</td>
+                </tr>
+                <tr>
+                    <td>Yuta Watanabe</td>
+                    <td>Ala</td>
+                    <td>18</td>
+                    <td>2,06 m</td>
+                </tr>
+                <tr>
+                    <td>Jack White</td>
+                    <td>Ala</td>
+                    <td></td>
+                    <td>2,01 m</td>
+                </tr>
+                <tr>
+                    <td>Ziaire Williams</td>
+                    <td>Ala</td>
+                    <td>8</td>
+                    <td>2,03 m</td>
+                </tr>
+                <tr>
+                    <td>Vince Williams Jr.</td>
+                    <td>Ala</td>
+                    <td>5</td>
+                    <td>1,93 m</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 <div class="formulario">
     <h2><b>Formulário de Perguntas sobre o Memphis Grizzlies</b></h2>
     <form id="grizzlies-form">
@@ -435,10 +446,44 @@
         <input type="submit" value="Enviar Respostas">
     </form>
 </div>
-<div>
-    <img class="banner" src="https://s4.aconvert.com/convert/p3r68-cdx67/a2050-05ogf.jpg" alt="">
-</div>
 
-    <footer>
-        <p>&copy; 2024 NBA - Memphis Grizzlies </p>
-      </footer>
+<div style="position: relative; width: 100%; height: 0; padding-top: 56.2225%;
+padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+border-radius: 8px; will-change: transform;">
+ <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+   src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGGDMvo9Qs&#x2F;qcTYcjC-MqQP4zQcXg2ZCg&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+ </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGGDMvo9Qs&#x2F;qcTYcjC-MqQP4zQcXg2ZCg&#x2F;view?utm_content=DAGGDMvo9Qs&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a> 
+
+<footer>
+<div class="footer">
+    <div class="row">
+        <div class="col-md-6">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="times.html">Times</a></li>
+                <li><a href="http://localhost/pasta_teste/players.html">Jogadores</a></li>
+                <li><a href="#">Arenas</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <div class="social-icons">
+                <a href="https://github.com/techybluiz"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>&copy; 2024 Todos os direitos reservados. Desenvolvido por Bianca Luiz.</p>
+        </div>
+    </div>
+</div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-fIS28fKNuSy82olZu2UNUbzJrjKk4cOeY0PnN/3kq5CkTX9aW1Kgq3M08iIKG/mnEw5rwS8QqH0a1ED6N5O4Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
