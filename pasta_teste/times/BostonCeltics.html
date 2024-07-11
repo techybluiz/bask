@@ -11,6 +11,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
+        .navbar-expand-lg .navbar-nav {
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            color: white;
+        }
+        img {
+            float: right;
+            width: 300px;
+        }
+        h1{
+            text-align: center;
+        }
         h2{
             color: #007A33;
         }
@@ -57,29 +69,53 @@
         
         }
         .bg-body-tertiary{
-            background: rgb(2, 153, 65);
+            background: #007A33;
            }
-         
+           .box-texto{
+            text-align:center;
+            position: absolute;
+            top:0;
+            left:0;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            display: contents;
+            background: red;
+        
+        }
+        .cabecalho { width:100%; float:left; }
+        
+        .box-texto span{ display:block; }
+        
         .title{
-            margin-top: 20px;
-            font-size: 70px;
+            
+            font-size: 56px;
             font-weight: 700;
-            color: #0b4400;
+            color: #007A33;
             font-family: 'open_sansregular';
             letter-spacing: 5px;
             margin-bottom: 20px;
-            background:#ffffff;
+            background:#fff;
             position: relative;
             animation: motion 3s 1;
+        }
+        
+        .descricao{
+        
+            font-size:1.5em;
+            color: #868686;
+            font-family: 'open_sansregular';
+            letter-spacing: 26px;
+            transition:6s;
         
         }
-        .formulario {
-            background-color: #9bc5a8;
-           
+        .logo{
+            width: 6em;
+            padding-right: 30px;
         }
+        
         @keyframes motion{
             0%{
-                color: #01570c;
+                color: #00cf56;
                 margin-bottom: -42px;
             }
             30%{
@@ -92,7 +128,6 @@
             }
         }
     </style>
-
 <body>
         <header class="box-texto">      
           <h1 class="title">Bem vindo Celtics Fans!</h1>
@@ -203,7 +238,6 @@
                     Além de aparecer nos jogos dos Celtics, Lucky também participa de uma variedade de eventos da comunidade, escolas e atividades de caridade em nome da equipe. Ele é um embaixador divertido e 
                     carismático para os Celtics, ajudando a promover o espírito esportivo e a união da comunidade.
                 </p>
-
         </div>
     </section>
 <hr>
