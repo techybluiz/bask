@@ -11,6 +11,103 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #5e5e5e;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        input[type="text"] {
+            margin-left: 5px;
+        }
+        input[type="submit"] {
+            display: block;
+            margin: 20px auto 0;
+            background-color: #575757;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #575757;
+        }
+        footer {
+            background-color: #1d1d1d;
+            color: #fff;
+            padding: 30px 0;
+            font-size: 14px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    
+          footer ul {
+              list-style: none;
+              padding: 0;
+          }
+
+          footer ul li {
+              display: inline-block;
+              margin: 0 10px;
+          }
+
+          footer ul li a {
+              color: #fff;
+              text-decoration: none;
+              transition: color 0.3s ease;
+          }
+
+          footer ul li a:hover {
+              color: #790000;
+          }
+    
+          footer .social-icons a {
+              color: #fff;
+              font-size: 20px;
+              margin: 0 10px;
+              text-decoration: none;
+              transition: color 0.2s ease;
+          }
+
+          footer .social-icons a:hover {
+              color: #790000;
+          }
+
+          footer p {
+              margin-top: 20px;
+              font-size: 12px;
+          }
+    img{
+        float: right;
+        width: 300px;
+    }
+    h1{
+        text-align: center;
+    }
     h2{
         color: #0E2240;
     }
@@ -59,26 +156,53 @@
     .bg-body-tertiary{
         background: #0E2240;
        }
-     
+       .box-texto{
+
+        text-align:center;
+        position: absolute;
+        top:0;
+        left:0;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        display: contents;
+        background: red;
+    
+    }
+    
+    .cabecalho { width:100%; float:left; }
+    
+    .box-texto span{ display:block; }
+    
     .title{
-        margin-top: 20px;
-        font-size: 70px;
+        
+        font-size: 56px;
         font-weight: 700;
-        color: #FEC524;
+        color: #0E2240;
         font-family: 'open_sansregular';
         letter-spacing: 5px;
         margin-bottom: 20px;
-        background:#ffffff;
+        background:#fff;
         position: relative;
         animation: motion 3s 1;
     }
-    .formulario {
-        background-color: #ffdf88;
-       
+    
+    .descricao{
+    
+        font-size:1.5em;
+        color: #868686;
+        font-family: 'open_sansregular';
+        letter-spacing: 26px;
+        transition:6s;
+    
     }
+    .logo{
+        width: 5em;
+        padding-right: 30px;
+    }
+    
     @keyframes motion{
         0%{
-            color: #0E2240;
+            color: #FEC524;
             margin-bottom: -42px;
         }
         30%{
@@ -96,7 +220,7 @@
     <header class="box-texto">      
         <h1 class="title">Bem vindo Nuggets Fans!</h1>
         <span class="descricao">Denver Nuggets</span>
-      </header><br>
+    </header><br>
       <br>
   <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
