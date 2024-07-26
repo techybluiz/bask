@@ -6,17 +6,29 @@
     <title> Milwaukee Bucks </title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="http://localhost/pasta_teste/teams.css" />
+    <link rel="stylesheet" type="text/css" href="http://localhost/bask/pasta_teste/teams.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
+        .navbar-expand-lg .navbar-nav {
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            color: white;
+        }
+        h1{
+            text-align: center;
+        }
         h2{
             color: #00471B;
         }
         b {
+            padding: 15px;
             font-size: 1em;
             color: #00471B;
+        }
+        .grifado{
+            padding: 0px;
         }
         th {
             background-color: #00471B;
@@ -50,59 +62,283 @@
             border-radius: 5px;
         }
         input[type="submit"]:hover {
-            background-color: #00471B;
+            background-color: #00bb48;
         }
         .bg-light {
             background-color: darkgray;
         
         }
         .bg-body-tertiary{
-            background: #EEE1C6;
+            background: #00471B;
            }
-         
+           .box-texto{
+            text-align:center;
+            position: absolute;
+            top:0;
+            left:0;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            display: contents;
+        
+        }
+        .cabecalho { width:100%; float:left; }
+        
+        .box-texto span{ display:block; }
+        
         .title{
-            margin-top: 20px;
-            font-size: 70px;
+            
+            font-size: 56px;
             font-weight: 700;
-            color: #0b4400;
+            color: #00471B;
             font-family: 'open_sansregular';
             letter-spacing: 5px;
             margin-bottom: 20px;
-            background:#ffffff;
+            background:#fff;
             position: relative;
             animation: motion 3s 1;
         }
+        
+        .descricao{
+        
+            font-size:1.5em;
+            color: #868686;
+            font-family: 'open_sansregular';
+            letter-spacing: 26px;
+            transition:6s;
+        
+        }
+        .logo{
+            width: 6em;
+            padding-right: 30px;
+        }
+
         .formulario {
+            max-width: 80%;
+            margin: 50px auto;
+            padding: 20px;
             background-color: #EEE1C6;
-           
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        @keyframes motion{
-            0%{
-                color: #00471B;
-                margin-bottom: -42px;
-            }
-            30%{
-                letter-spacing: 30px;
-                margin-bottom: -42px;
-                }
-            85%{
-                letter-spacing: 5px;
-                margin-bottom: -42px;
-            }
+        .logo{
+            width: 5em;
+            height: 4em;
         }
+        .texto-lista{
+            padding: 15px;
+        }
+        .container1 {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        color: white;
+    }
+    h1{
+        text-align: center;
+    }
+    h2{
+        color: #007A33;
+    }
+    b {
+        padding: 15px;
+        font-size: 1em;
+        color: #007A33;
+    }
+    .grifado{
+        padding: 0px;
+    }
+    th {
+        background-color: #007A33;
+        color: white;
+    }
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    form {
+        margin-top: 20px;
+    }
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    input[type="radio"] {
+        margin-right: 10px;
+    }
+    input[type="text"] {
+        margin-left: 5px;
+    }
+    input[type="submit"] {
+        display: block;
+        margin: 20px auto 0;
+        background-color: #026b0b;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    input[type="submit"]:hover {
+        background-color: #208801;
+    }
+    .bg-light {
+        background-color: darkgray;
+    
+    }
+    .bg-body-tertiary{
+        background: #007A33;
+       }
+       .box-texto{
+        text-align:center;
+        position: absolute;
+        top:0;
+        left:0;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        display: contents;
+        background: red;
+    
+    }
+    .cabecalho { width:100%; float:left; }
+    
+    .box-texto span{ display:block; }
+    
+    .title{
+        
+        font-size: 56px;
+        font-weight: 700;
+        color: #007A33;
+        font-family: 'open_sansregular';
+        letter-spacing: 5px;
+        margin-bottom: 20px;
+        background:#fff;
+        position: relative;
+        animation: motion 3s 1;
+    }
+    
+    .descricao{
+    
+        font-size:1.5em;
+        color: #868686;
+        font-family: 'open_sansregular';
+        letter-spacing: 26px;
+        transition:6s;
+    
+    }
+    .logo{
+        width: 6em;
+        padding-right: 30px;
+    }
+
+    .formulario {
+        max-width: 80%;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #e8ffea;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .logo{
+        width: 5em;
+        height: 4em;
+    }
+    .texto-lista{
+        padding: 15px;
+    }
+    .container1 {
+        max-width: 900px;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+.form-group {
+    margin-bottom: 20px;
+}
+.baner{
+    padding-left: 150px;
+}
+footer {
+    background-color: #1d1d1d;
+    color: #fff;
+    padding: 30px 0;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+footer ul li a {
+    margin: 0 1px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+footer ul li a:hover {
+    color: #5f00cc;
+}
+
+footer .social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+footer .social-icons a:hover {
+    color: #4a2fc4;
+}
+footer p {
+    margin-top: 20px;
+    font-size: 12px;
+}
+    @keyframes motion{
+        0%{
+            color: #318f58;
+            margin-bottom: -42px;
+        }
+        30%{
+            letter-spacing: 30px;
+            margin-bottom: -42px;
+            }
+        85%{
+            letter-spacing: 5px;
+            margin-bottom: -42px;
+        }
+    }
+
+
     </style>
 </head>
 <body>
     <header class="box-texto">      
-        <h1 class="title">Bem vindo Celtics Fans!</h1>
-        <span class="descricao">Boston Celtics</span>
+        <h1 class="title">Bem vindo Bucks Fans!</h1>
+        <span class="descricao">Milwaukee Bucks</span>
       </header><br>
       <br>
 
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
        <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
-        <h1 style="color: #fff;">Teams</h1>
+        <h1 style="color: #00471B;">Teams</h1>
         
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -157,17 +393,7 @@
                     <a class="nav-link" href="CorePlayers">Core Players</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="Quiz">Quiz</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Boston Celtics
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Jogadores</a></li>
-                      <li><a class="dropdown-item" href="#">Titulos</a></li>
-                      <li><a class="dropdown-item" href="#">Temporada atual</a></li>
-                    </ul>
+                    <a class="nav-link" href="Quiz">Formulario</a>
                   </li>
                 </ul>
               </div>
@@ -181,8 +407,8 @@
             <br>
             <h1><b>Milwaukee Bucks</b></h1>
             <br>
+            <h2 id="historia"><b>História</b></h2>
             <p>
-                <h2 id="historia"><b>História</b></h2>
                 A franquia foi fundada em 1968 por Wesley Pavalon e Marvin Fishman, entre outros investidores. A NBA concedeu a cidade de Milwaukee uma equipe de expansão devido ao interesse crescente no basquete na região e ao sucesso da equipe local da NBA, o Milwaukee Hawks, que se mudou para St. Louis em 1955.
                 <br>
                     A equipe realizou um concurso para escolher o nome da nova franquia. "Bucks," que faz referência ao cervo, um símbolo comum em Wisconsin devido à popularidade da caça, foi o nome vencedor. Outros nomes considerados foram "Robins" e "Skunks."   
@@ -190,19 +416,20 @@
                     Nos anos seguintes, os Bucks continuaram a ser uma equipe competitiva, mas não conseguiram repetir o sucesso inicial. No entanto, em 1974, os Bucks conquistaram seu primeiro título de divisão. Eles alcançaram as finais da NBA novamente em 1974, mas foram derrotados pelo Boston Celtics.
                     Ao longo dos anos, os Bucks tiveram altos e baixos, passando por mudanças de propriedade e períodos de reconstrução. Eles tiveram várias estrelas ao longo de sua história, incluindo Oscar Robertson, Sidney Moncrief e Ray Allen, entre outros.
                     Em 2014, a equipe foi comprada por um grupo liderado por Marc Lasry e Wesley Edens. Desde então, os Bucks passaram por um renascimento, construindo uma equipe em torno de estrelas como Giannis Antetokounmpo e alcançando sucesso nos playoffs novamente, incluindo uma vitória no campeonato da NBA em 2021, conquistando seu segundo título da liga.
+            </p>
 
-                    <h2><b>Arena</b></h2>
-                    A arena do Milwaukee Bucks é o <a href="#">Fiserv Forum</a> , que está localizada em Milwaukee, Wisconsin. A capacidade do Fiserv Forum é de aproximadamente 17.500 espectadores para jogos de basquete.
-                    <hr>
+            <h2><b>Arena</b></h2>
+                <p>A arena do Milwaukee Bucks é o <a href="#">Fiserv Forum</a> , que está localizada em Milwaukee, Wisconsin. A capacidade do Fiserv Forum é de aproximadamente 17.500 espectadores para jogos de basquete.</p>
 
-                    <img src="https://cdn.nba.com/teams/uploads/sites/1610612749/2022/03/211026-bango-main.png" alt="mascote">
+                <img src="https://cdn.nba.com/teams/uploads/sites/1610612749/2022/03/211026-bango-main.png" alt="mascote">
+                
+                <h2><b>Cores e Mascote</b></h2>
                 <p>
-                    <h2><b>Cores e Mascote</b></h2>
-                    As cores oficiais do Milwaukee Bucks são <b style="color: green;">Verde</b>, <b style="color: rgb(214, 214, 214);">Branco</b> e <b style="color: #d6c9ae;">Creme</b><br>
+                    As cores oficiais do Milwaukee Bucks são Verde, Branco e Creme <br>
                     <br>
-                    O mascote do Milwaukee Bucks é <b>"Bango"</b>. um cervo antropomorfizado que tem sido uma presença animada e querida nos jogos dos Bucks desde sua introdução.
+                    O mascote do Milwaukee Bucks é <b class="grifado">"Bango"</b>. um cervo antropomorfizado que tem sido uma presença animada e querida nos jogos dos Bucks desde sua introdução.
                     Bango foi apresentado pela primeira vez aos fãs em 18 de outubro de 1977, durante um jogo dos Milwaukee Bucks no MECCA Arena.
-                    O nome "Bango" foi escolhido por meio de um concurso entre os fãs. O nome é uma referência ao grito usado pelos locutores de rádio dos Bucks para descrever um chute certeiro: "Bango!" O nome foi sugerido por <b>Bob Moning</b>, um fã da equipe.
+                    O nome "Bango" foi escolhido por meio de um concurso entre os fãs. O nome é uma referência ao grito usado pelos locutores de rádio dos Bucks para descrever um chute certeiro: "Bango!" O nome foi sugerido por <b class="grifado">Bob Moning</b>, um fã da equipe.
                     Desde sua introdução, Bango tem passado por diversas atualizações em sua aparência, mantendo-se sempre atualizado com a evolução do time e das preferências dos fãs. A versão atual de Bango é um cervo alto e musculoso, vestindo as cores do time.
 
                 </p>
@@ -212,12 +439,11 @@
     <section>
         <h2 id="momentosnotaveis"><b>Momentos Notáveis</b></h2>
         <p>
-            <h2><b>Momentos Notáveis</b></h2>
-            <li><b>Campeonato da NBA em 1971:</b> Os Bucks venceram seu primeiro campeonato da NBA na temporada 1970-1971, liderados por Kareem Abdul-Jabbar e Oscar Robertson. Foi uma conquista marcante na história da franquia.</li>
-            <li><b>Draft de Giannis Antetokounmpo em 2013:</b> Selecionar Giannis Antetokounmpo como a 15ª escolha no draft da NBA em 2013 foi um momento crucial. Ele se tornou o rosto da equipe e levou os Bucks a novos patamares.</li>
-            <li><b>Mudança para o Fiserv Forum em 2018:</b> A inauguração do Fiserv Forum marcou uma nova era para os Bucks, trazendo uma moderna arena e ajudando a revitalizar a área ao redor.</li>
-            <li><b>Prêmio de MVP de Giannis em 2019:</b> Giannis Antetokounmpo ganhou seu primeiro prêmio de MVP da NBA na temporada 2018-2019, destacando sua ascensão como uma estrela dominante da liga.</li>
-            <li><b>Campeonato da NBA em 2021:</b> O título de 2021 foi um momento histórico para os Bucks, encerrando um jejum de 50 anos sem títulos e solidificando Giannis Antetokounmpo como uma lenda da franquia.</li>
+            <li><b class="grifado">Campeonato da NBA em 1971:</b> Os Bucks venceram seu primeiro campeonato da NBA na temporada 1970-1971, liderados por Kareem Abdul-Jabbar e Oscar Robertson. Foi uma conquista marcante na história da franquia.</li>
+            <li><b class="grifado">Draft de Giannis Antetokounmpo em 2013:</b> Selecionar Giannis Antetokounmpo como a 15ª escolha no draft da NBA em 2013 foi um momento crucial. Ele se tornou o rosto da equipe e levou os Bucks a novos patamares.</li>
+            <li><b class="grifado">Mudança para o Fiserv Forum em 2018:</b> A inauguração do Fiserv Forum marcou uma nova era para os Bucks, trazendo uma moderna arena e ajudando a revitalizar a área ao redor.</li>
+            <li><b class="grifado">Prêmio de MVP de Giannis em 2019:</b> Giannis Antetokounmpo ganhou seu primeiro prêmio de MVP da NBA na temporada 2018-2019, destacando sua ascensão como uma estrela dominante da liga.</li>
+            <li><b class="grifado">Campeonato da NBA em 2021:</b> O título de 2021 foi um momento histórico para os Bucks, encerrando um jejum de 50 anos sem títulos e solidificando Giannis Antetokounmpo como uma lenda da franquia.</li>
         </p>
     </section>
 <hr>   
@@ -429,15 +655,14 @@
         </form>
     </div>
 
-    <div style="position: relative; width: 100%; height: 0; padding-top: 50.0000%;
- padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGGnQkrJjg&#x2F;Bd8cGJ0tGfzsaIWiiFhGaw&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-  </iframe>
-</div>
-<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGGnQkrJjg&#x2F;Bd8cGJ0tGfzsaIWiiFhGaw&#x2F;view?utm_content=DAGGnQkrJjg&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a>
- 
+    <div class="baner"> 
+        <div style="position: relative; width: 80%; height: 0; display: flex; padding-top: 56.2225%; padding-left: 20px; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform; display: flex; justify-content: center; align-items: center;">
+            <iframe loading="lazy" style="position: absolute; width: 100%; height: 80%; display: flex; top: 0; left: 0; border: none; padding: 0; margin: 0;"
+              src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGGnQkrJjg&#x2F;Bd8cGJ0tGfzsaIWiiFhGaw&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+            </iframe>
+          </div>
+          <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGGnQkrJjg&#x2F;Bd8cGJ0tGfzsaIWiiFhGaw&#x2F;view?utm_content=DAGGnQkrJjg&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a>
+    </div>
 <footer>
     <div class="footer">
         <div class="row">
