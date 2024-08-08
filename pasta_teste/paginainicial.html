@@ -25,20 +25,7 @@
         font-family: "Inter", sans-serif;
         background-color: #FFFFFF;
       }
-      .dark-mode {
-        font-family: "Inter", sans-serif;
-        background-color: #2c2c2c;
-        color: #fff; 
-      }
-      .splashbaner {
-        width: 100%;
-        height: auto;
-      }
-      .introducao {
-        padding: 35px;
-        padding-top: 10px;
-        align-items: center;
-      }
+  
       .titulo {
         font-size: 30px;
       }
@@ -80,7 +67,7 @@
       align-items: center; 
   }
       .grid-item {
-        color: #ff1616;
+        color: #790000;
         padding: 5px; 
       }
 
@@ -89,9 +76,9 @@
       }
       .tema{
         font-family: "Roboto Mono", monospace;
-        color: #b80c00;
+        color: #790000;
         padding-left: 35px;
-        margin-top: 25px;
+        margin-top: 10px;
       }
       .maurice{
             width: 300px;
@@ -106,11 +93,11 @@
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    .dark-mode .formcontainer {
+    .formcontainer {
       max-width: 800px;
       margin: auto;
-      background: #5c5c5c;
-      color: white;
+      background: #ffffff;
+      color: rgb(0, 0, 0);
       padding: 10px;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -122,14 +109,14 @@
       label {
           display: block;
           font-weight: bold;
-          color: #555;
+          color: #000000;
       }
       input[type="text"],
       input[type="email"],
       textarea {
           width: 100%;
           padding: 8px;
-          border: 1px solid #ddd;
+          border: 1px solid #000000;
           border-radius: 4px;
       }
       textarea {
@@ -161,18 +148,6 @@
         bottom: 0;
         width: 100%;
     }
-
-    .dark-mode footer {
-      background-color: #636363;
-      color: #292929;
-      padding: 30px 0;
-      font-size: 14px;
-      text-align: center;
-      position: relative;
-      bottom: 0;
-      width: 100%;
-  }
-
       footer ul {
           list-style: none;
           padding: 0;
@@ -187,7 +162,7 @@
           transition: color 0.3s ease;
       }
       footer ul li a:hover {
-          color: #cc0700;
+          color: #790000;
       }
 
       footer .social-icons a {
@@ -198,18 +173,44 @@
           transition: color 0.2s ease;
       }
       footer .social-icons a:hover {
-          color: #c00000;
+          color: #790000;
       }
       footer p {
           margin-top: 20px;
           font-size: 12px;
       }
+      h1 {
+        padding-top: 10px;
+        text-align: center;
+      }
+      p {
+        padding: 30px;
+      }
+      .row {
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: 17px;
+      }
+      .form-control{
+        border-radius: #000000;
+      }
+    .btn-primary {
+      color: #fff;
+      background-color: #cc0000;
+      border-color: #790000;
+  }
+  .baner{
+    width: 100%;
+    height: 50%;
+  }
 
-    
+      
     </style>
 </head>
   <body>
- <img  class="splashbaner" src="https://i.ibb.co/wWTKKRC/darkmode.png" alt="Onde-a-paix-o-pelo-basquete-ganha-vida"></a><a target='_blank' href='https://pt-br.imgbb.com/'></a>
+    <img class="baner" src="https://i.ibb.co/hBTpdpJ/Onde-a-paix-o-pelo-basquete-ganha-vida.png" alt="baner">
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <img class="logo" src="data:image/png;base64,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"></a>
@@ -220,7 +221,7 @@
                 <a class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="http://localhost/pasta_teste/AllStarGames.html">All Star Games</a>
+                <a class="nav-link" href="AllStarGames.html">All Star Games</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="http://localhost/pasta_teste/arenas.html">Arenas</a>
@@ -237,16 +238,14 @@
             </ul>
           </div>
         </nav>
-        <button id="toggle-mode" class="toggle-mode"><i class="fa-solid fa-moon"></i></button>
   </header>
-  <script>
-    const toggleButton = document.getElementById('toggle-mode');
-    toggleButton.addEventListener('click', function() {
-      document.body.classList.toggle('dark-mode');
-    });
-  </script>
+
+
+
+
+  
   <div>
-    <h1 class="info">Informações importantes</h1>
+    <h1 style="color: #790000;">Informações importantes</h1>
     <br>
     <P class="introducao">
         Bem-vindo(a) ao meu site dedicado ao universo da NBA!!<br>
@@ -262,23 +261,12 @@
     </P>
   </div>
 
-  <div class="grid">
- 
-      <div class="grid-item"><b>+450 Jogadores</b></div>
-      <div class="separator"><b>|</b></div>
-      <div class="grid-item"><b>+29 Arenas</b></div>
-      <div class="separator"><b>|</b></div>
-      <div class="grid-item"><b>+4,53 milhões Telespectadores</b></div>
-      <div class="separator"><b>|</b></div>
-      <div class="grid-item"><b>+70 anos de História</b></div>
-
-</div>
+  
 <br>
 <div>
   <h2 class="tema">História da NBA</h2>
   <P>
     A NBA, sigla para <b>National Basketball Association</b>, representa o ápice do basquete profissional não apenas nos Estados Unidos, mas em todo o mundo. Sua história remonta ao ano de 1946, quando foi fundada como Basketball Association of America (BAA), resultado da união de várias ligas menores de basquete. A primeira temporada oficial da NBA ocorreu em 1949, após a fusão com a <b>National Basketball League (NBL)</b>, estabelecendo-se como a principal liga profissional do esporte nos Estados Unidos.
-
     Nos seus primeiros anos, a NBA viu o surgimento de grandes jogadores como ,<a href="#">George Mikan</a>, <a href="#">Bob Cousy</a> e <a href="#">Bill Russell</a>, que ajudaram a solidificar o status da liga. A década de 1960 foi dominada pelo <a href="">Boston Celtics</a> de <a href="">Bill Russell</a>, que conquistou 11 títulos em 13 anos, estabelecendo um padrão de sucesso e rivalidade com outras equipes notáveis da época.<br>
     <br>
     Na década de 1970, a NBA testemunhou a emergência de superastros como Kareem Abdul-Jabbar e Julius Erving (Dr. J), que contribuíram para a popularidade e o crescimento da liga. Os anos 1980 foram marcados pela rivalidade lendária entre Boston Celtics e Los Angeles Lakers, personificada por Larry Bird e Magic Johnson, respectivamente. Esta década viu a NBA alcançar novos patamares de popularidade e globalização.<br>
@@ -312,23 +300,73 @@
   </p>
 </div>
 <hr>
-
-<div class="formcontainer">
-  <h2><b>Formulário de Opiniões</b></h2>
-  <p>Deixe sua opinião sobre o que achou do site</p>
-  <form action="#" method="post">
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required>
-
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="opiniao">Opinião:</label>
-      <textarea id="opiniao" name="opiniao" required></textarea>
-      <input type="submit" value="Enviar Opinião">
-  </form>
-</div>
 <br>
+
+<h2 class="tema">Deixe sua opinião</h2>
+<form class="row g-3">
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Nome</label>
+    <input type="email" class="form-control" id="inputEmail4">
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">E-mail</label>
+    <input type="email" class="form-control" id="inputEmail4">
+  </div>
+  <div class="col-md-4">
+    <label for="inputState" class="form-label">Selecione</label>
+    <select id="inputState" class="form-select">
+      <option selected>Choose...</option>
+      <option>Acre</option>
+      <option>Alagoas</option>
+      <option>Amapá</option>
+      <option>Amazonas</option>
+      <option>Bahia</option>
+      <option>Brazil</option>
+      <option>Ceará</option>
+      <option>Espírito Santo</option>
+      <option>Goiás</option>
+      <option>Maranhão</option>
+      <option>Mato Grosso</option>
+      <option>Mato Grosso do Sul</option>
+      <option>Minas Gerais</option>
+      <option>Pará</option>
+      <option>Paraíba</option>
+      <option>Paraná</option>
+      <option>Pernambuco</option>
+      <option>Piauí</option>
+      <option>Rio de Janeiro</option>
+      <option>Rio Grande do Norte</option>
+      <option>Rio Grande do Sul</option>
+      <option>Rondônia</option>
+      <option>Roraima</option>
+      <option>Santa Catarina</option>
+      <option>São Paulo</option>
+      <option>Sergipe</option>
+      <option>Tocantins</option>
+
+    </select>
+  </div>
+  <div class="col-md-8">
+    <label for="inputZip" class="form-label">Opinião</label>
+    <input type="text" class="form-control" id="inputZip">
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Receba notificações
+      </label>
+    </div>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Enviar Opinião</button>
+  </div>
+</form>
+
+
+
+<br>
+<hr>
 <footer>
   <div class="container">
       <div class="row">
@@ -336,8 +374,8 @@
               <ul>
                   <li><a href="#">Home</a></li>
                   <li><a href="#">Times</a></li>
-                  <li><a href="http://localhost/pasta_teste/players.html">Jogadores</a></li>
-                  <li><a href="#">Arenas</a></li>
+                  <li><a href="#">Jogadores</a></li>
+                  <li><a href="http://localhost/pasta_teste/arenas.html">Arenas</a></li>
                   <li><a href="#">Notícias</a></li>
                   <li><a href="#">Contato</a></li>
               </ul>
@@ -347,8 +385,8 @@
                   <a href="https://github.com/techybluiz"><i class="fa-brands fa-github"></i></a>
                   <a href="#"><i class="fab fa-twitter"></i></a>
                   <a href="#"><i class="fab fa-instagram"></i></a>
-                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                  <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                  <a href="https://www.linkedin.com/in/bianca-santos-71227a19b/"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXSnhDSBMsQXLsFNHlJrnVZsbhLNnBLzZNKgvVgRNCpXGcmGzVsCKBtzhlhHgsDJrCKMN"><i class="fa-solid fa-envelope"></i></a>
                 </div>
           </div>
       </div>
@@ -360,5 +398,5 @@
   </div>
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-fIS28fKNuSy82olZu2UNUbzJrjKk4cOeY0PnN/3kq5CkTX9aW1Kgq3M08iIKG/mnEw5rwS8QqH0a1ED6N5O4Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  </body>
-</html>
+</body>
+
